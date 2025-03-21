@@ -2,6 +2,19 @@
 \usepackage{titlesec}
 \usepackage[a4paper, left=1in, right=1in, bottom=0.4in, top=0.4in]{geometry}
 \usepackage{tikz}
+\usepackage{atbegshi} 
+\newlength{\mymargin}
+\setlength{\mymargin}{0.8cm}
+\AtBeginShipout{%
+  \AtBeginShipoutUpperLeft{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width=0.3pt] 
+        ([xshift=\mymargin, yshift=\mymargin] current page.south west) % Bottom-left corner with margin
+        rectangle 
+        ([xshift=-\mymargin, yshift=-\mymargin] current page.north east); % Top-right corner with margin
+    \end{tikzpicture}%
+  }%
+}
 \usetikzlibrary{shapes.geometric, arrows}
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
 \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
@@ -12,7 +25,6 @@
 \titleformat{\subsection}{\large\bfseries}{\thesubsection.}{0.5em}{}
 
 \begin{document}
-
 \section{User Definition}
 A user is a person who enters the app to access services such as searching for nearby clinics and doctors. They do not need special registration and can easily access information.
 
@@ -21,7 +33,7 @@ A user is a person who enters the app to access services such as searching for n
     \item \textbf{Find nearby clinics} and view their locations.
     \item \textbf{Find available doctors} and check their specialties.
     \item \textbf{View schedules} of clinics and doctors.
-    \item \textbf{Get contact numbers} to call clinics or book an appointment.
+    \item \textbf{Get contact numbers} to call clinics for an appointment or observation.
 \end{itemize}
 
 % TODO: User Diagram
@@ -35,16 +47,16 @@ A user is a person who enters the app to access services such as searching for n
     \node (searchClinic) [process, below of=start] {Search Nearby Clinics};
     \node (searchDoctor) [process, right of=searchClinic, xshift=4cm] {Find Doctors};
     \node (viewSchedule) [process, below of=searchDoctor] {View Doctor/Clinic Schedule};
-    \node (book) [decision, below of=viewSchedule] {Want to Book?};
-    \node (call) [process, left of=book, xshift=-4cm] {Call Clinic/Doctor};
-    \node (exit) [startstop, below of=book, yshift=-2cm] {Exit};
+    \node (found) [decision, below of=viewSchedule] {Found Clinic?};
+    \node (call) [process, left of=found, xshift=-4cm] {Call Clinic/Doctor};
+    \node (exit) [startstop, below of=found, yshift=-2cm] {Exit};
 
     \draw [arrow] (start) -- (searchClinic);
     \draw [arrow] (searchClinic.east) -- (searchDoctor.west);
     \draw [arrow] (searchDoctor) -- (viewSchedule);
-    \draw [arrow] (viewSchedule) -- (book);
-    \draw [arrow] (book.south) -- node[anchor=west] {No} (exit.north);
-    \draw [arrow] (book.west) -- node[anchor=south] {Yes} (call.east);
+    \draw [arrow] (viewSchedule) -- (found);
+    \draw [arrow] (found.south) -- node[anchor=west] {No} (exit.north);
+    \draw [arrow] (found.west) -- node[anchor=south] {Yes} (call.east);
     \draw [arrow] (call.south) -- (exit.north);
 
 \end{tikzpicture}
@@ -95,7 +107,7 @@ A doctor is a user who receives login credentials from the clinic they work at. 
 \begin{itemize}
     \item Log in using \textbf{the email and password} provided by the clinic.
     \item Access and manage \textbf{their schedule}.
-    \item Receive \textbf{patient bookings} and view appointment details.
+    \item Receive \textbf{patient calls} and setup an appointment.
 \end{itemize}
 
 % TODO: Doctor Diagram
@@ -108,13 +120,11 @@ A doctor is a user who receives login credentials from the clinic they work at. 
     \node (start) [startstop] {Open App};
     \node (login) [process, below of=start] {Log in with Credentials};
     \node (viewSchedule) [process, below of=login] {View Schedule};
-    \node (appointments) [process, below of=viewSchedule] {Check Patient Bookings};
-    \node (exit) [startstop, below of=appointments] {Exit};
+    \node (exit) [startstop, below of=viewSchedule] {Exit};
 
     \draw [arrow] (start) -- (login);
     \draw [arrow] (login) -- (viewSchedule);
-    \draw [arrow] (viewSchedule) -- (appointments);
-    \draw [arrow] (appointments) -- (exit);
+    \draw [arrow] (viewSchedule) -- (exit);
 
 \end{tikzpicture}
 \end{center}
