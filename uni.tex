@@ -1,54 +1,40 @@
 \documentclass{article}
-\usepackage{pgf-umlcd}
-\usepackage{tikz}
+\usepackage{pgf-umlsd}
 
 \begin{document}
 
-\begin{center}
-\begin{tikzpicture}
-  \useasboundingbox (30,-5) rectangle (-10,5);
-%   TODO: this is how to allow to place all over the place 
+\begin{sequencediagram}
+  
+  % Participants
+  \newthread{U}{User}
+  \newinst[2]{S}{System}
+  \newinst[2]{DB}{Database}
+  \newinst[2]{Log}{Logger}
 
-  % Factory Class at the center
-  \begin{class}{Factory}{0,0}
-    \attribute{}
-    \attribute{}
-    \operation{}
-    \operation{}
-  \end{class}
+  % Initial Request
+  \begin{call}{U}{Request Data}{S}{}
+    \begin{sdblock}{loop}{For each item}
+      \begin{call}{S}{Query Item}{DB}{Result}
+      \end{call}
+      \begin{call}{S}{Process Data}{S}{Processed Data}
+      \end{call}
+      \begin{sdblock}{alt}{Condition met?}
+        \begin{call}{S}{Send Response}{U}{Success}
+        \end{call}
+        \mess{S}{Error Handling}{U}
+      \end{sdblock}
+    \end{sdblock}
 
-  % Product Classes, including ProductC
-  \begin{class}{ProductA}{3,5}
-    \attribute{}
-    \attribute{}
-    \operation{}
-    \operation{}
-  \end{class}
+    \begin{call}{S}{Store Processed Data}{DB}{Success}
+    \end{call}
 
-  \begin{class}{ProductB}{-4,5}
-    \attribute{}
-    \attribute{}
-    \operation{}
-    \operation{}
-  \end{class}
+    \begin{call}{S}{Log Transaction}{Log}{Logged}
+    \end{call}
 
-  \begin{class}{ProductC}{-11,5} % Now it should work
-    \attribute{}
-    \attribute{}
-    \operation{}
-    \operation{}
-  \end{class}
+    \mess{S}{Final Confirmation}{U}
 
-  % Connect Factory to Products
-  \draw [umlcd style] (Factory.north) -- ++(0,2cm)
-                      coordinate (tmp)
-                      node[right,midway] {creates};
+  \end{call}
 
-  \foreach \endpoint in {ProductA,ProductB,ProductC}
-    \draw [umlcd style,fill=none,->] (tmp) -| (\endpoint.south)
-                                     node[pos=0.75,right] {creates};
-
-\end{tikzpicture}
-\end{center}
+\end{sequencediagram}
 
 \end{document}
