@@ -1,21 +1,24 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{tikz}
+
 \usepackage{atbegshi} 
-\usepackage[a4paper, left=1in, right=1in, bottom=0.4in, top=0.4in]{geometry}
+\usepackage[a4paper, left=1in, right=1in, bottom=0.4in, top=0.8in]{geometry}
 
 % Border settings
 \newlength{\mymargin}
 \setlength{\mymargin}{0.8cm}
+\renewcommand{\baselinestretch}{1.4} % 1.5x line height
+\pagenumbering{gobble}  % Disables page numbering
 
 \AtBeginShipout{%
   \AtBeginShipoutUpperLeft{%
     \begin{tikzpicture}[remember picture, overlay]
-      \draw[line width=0.1pt] 
+      \draw[line width=0.4pt] 
         ([xshift=\mymargin, yshift=\mymargin] current page.south west) % Bottom-left corner with margin
         rectangle 
         ([xshift=-\mymargin, yshift=-\mymargin] current page.north east); % Top-right corner with margin
@@ -28,17 +31,17 @@
 \begin{center}
 	\begin{center}\begin{minipage}
 		{0.1\textwidth}
-		\vspace{1cm}
+		
 		\centering
 		\hspace*{-0.7cm}
 			\includegraphics[width=2.2cm]{images/uni_logo.jpg}
 		\end{minipage}%
 		\hfill
 		\begin{minipage}{0.7\textwidth}
-			\vspace{1.5cm}
+			
 
 			\centering
-			\fontsize{12}{25}\selectfont % 14pt font with 18pt line spacing
+			\fontsize{12}{19}\selectfont % 14pt font with 18pt line spacing
 			\textbf{People's Democratic Republic of Algeria} \\
 			Ministry of Higher Education and Scientific Research \\
 			\textbf{Martyr Hamma Lakhdar University of El Oued} \\
@@ -46,7 +49,7 @@
 		\end{minipage}%
 		\hfill
 		\begin{minipage}{0.1\textwidth}
-			\vspace{1cm}
+			
 			\centering
 			\includegraphics[width=2.2cm]{images/uni_logo.jpg}
 		\end{minipage}
@@ -56,7 +59,7 @@
 	Faculty of Exact Sciences \\
     Department of Computer Science \\
 	\vspace{0.5cm}
-	\textbf{Graduation Project Report} \\[0.2cm]
+	\textbf{Graduation Project Report} \\
 	License 3rd And Final Year \\
 	\rule{0.85\linewidth}{0.5pt} \\[0.3cm]
 	\textbf{\Large Hospital Finder Mobile App}
@@ -65,9 +68,9 @@
 		\begin{minipage}[t]{0.8\textwidth} % Total width of both columns
 		\begin{minipage}[t]{0.48\textwidth}
 			\hspace*{-1.7cm}
-			\textbf{Prepared by:} \\[-4.7ex] 
+			\textbf{Prepared by:} \\[-7.7ex] 
 			\begin{itemize} \setlength\itemsep{0em}
-				\setlength\itemsep{0em}
+				\setlength\itemsep{-0.8em}
                 \setlength\labelsep{2cm} 
                 \setlength\labelwidth{0.5cm} 
                 \item \hspace*{-1.9cm} Gouder Hicham
@@ -79,9 +82,9 @@
 		\hfill
 		\begin{minipage}[t]{0.48\textwidth}
 			\hspace*{0.5cm}
-			\textbf{Supervised by:} \\[-4.7ex]
+			\textbf{Supervised by:} \\[-7.7ex]
 			\begin{itemize} \setlength\itemsep{0em}
-				\setlength\itemsep{0em}
+				\setlength\itemsep{-0.8em}
                 \setlength\labelsep{-0.2cm} 
                 \setlength\labelwidth{0.5cm} 
                 \item \hspace*{0.3cm} Sasci Mdileh
@@ -90,7 +93,46 @@
 		\end{minipage}
 		\end{flushright}
 		\vspace{5cm}
-		\Large Academic Year: 2023/2024 \\
+		\Large Academic Year: 2024/2025 \\
+		\vfill
    \end{center}
+   \newpage
+	
+	\begin{center}
+		\textbf{Abstract} \\
+		\vspace*{0.3cm}
+	\end{center}
+	\noindent In many regions, private medical clinics and hospitals are widespread, making it difficult for residents and visitors to locate suitable healthcare facilities quickly.  
+
+	\noindent Patients often struggle to find nearby hospitals, determine the best routes, or identify available medical services, especially in emergencies. This challenge is particularly significant for individuals unfamiliar with the area or those seeking specialized medical care.  
+	
+	\noindent To address this issue, we propose the development of a mobile application that enables users to geolocate hospitals and medical clinics efficiently.
+	\vspace*{0.5cm}  
+	
+	\noindent The application integrates mapping services to provide accurate locations and essential details about healthcare institutions. Additionally, it allows users to contact clinics directly via phone for inquiries and appointments. \vspace*{0.5cm}  
+	
+	\noindent By offering a user-friendly interface and real-time location-based services, this application aims to enhance accessibility to healthcare facilities, improve navigation for patients, and support better healthcare decision-making.  \vspace*{0.5cm}
+
+
+	\noindent \vspace*{0.5cm}\textbf{Keywords:} Mobile Application, Android, Geolocation, Google Maps.
+	\newpage
+\begin{center}
+    \textbf{Acknowledgment} \\
+    \vspace*{0.3cm}
+\end{center}
+
+\noindent I would like to express my gratitude to everyone who contributed to the completion of this project. Their support and guidance played a significant role in its successful development.  \vspace*{0.5cm}
+
+\noindent First, I extend my sincere appreciation to my supervisor, \textbf{Sassi Mdileh}, for his valuable guidance, feedback, and support throughout this work. Their expertise and constructive advice have been essential in refining the project and addressing challenges effectively.  
+
+\noindent I also thank the faculty members of the \textbf{Faculty of Exact Sciences} for their insights and recommendations, which have helped improve the quality of this work.  \vspace*{0.5cm}
+
+\noindent Furthermore, I appreciate the efforts of my colleagues, for their collaboration and commitment. Their contributions were crucial in different stages of the project, and their teamwork helped ensure its completion.  \vspace*{0.5cm}
+
+\noindent I would also like to acknowledge the administrative and technical staff at the faculty for providing necessary resources and assistance throughout the process.  \vspace*{0.5cm}
+
+\noindent Finally, I am grateful to my family for their continuous support and encouragement. Their patience and understanding allowed me to stay focused on this project.  
+
+	
 
 \end{document}
