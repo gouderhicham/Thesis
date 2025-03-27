@@ -7,13 +7,15 @@
 \usepackage{tikz}
 \usepackage{charter}
 \usepackage{atbegshi} 
+
 \usepackage[a4paper, left=1in, right=1in, bottom=0.8in, top=0.8in]{geometry}
 
 % Border settings
 \newlength{\mymargin}
 \setlength{\mymargin}{0.8cm}
 \renewcommand{\baselinestretch}{1.4} % 1.5x line height
-\pagenumbering{gobble}  % Disables page numbering
+\pagenumbering{gobble}  % Disables page numbering 
+
 
 \AtBeginShipout{%
   \AtBeginShipoutUpperLeft{%
@@ -149,6 +151,9 @@
 % ========================= ======================== = = = = 
 
 \section*{\textbf{1. Introduction}}
+\rule{\linewidth}{1pt}  % Full-width horizontal line (adjust thickness if needed)
+
+
 \addcontentsline{toc}{section}{1. Introduction}
 
 \subsection*{\textbf{1.1 Project Presentation}}
@@ -230,6 +235,75 @@ Our methodology consists of the following key steps:
         \end{itemize}
     \end{itemize}
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+\newpage
+
+\chapter{\textbf{Étude Théorique et Choix Techniques}}  
+\rule{\linewidth}{1.5pt} 
+
+
+\section{\textbf{Introduction}}  
+
+In today's digital age, access to precise and reliable healthcare information is essential. Many existing applications provide hospital location services, but they often lack \textbf{detailed and accurate clinic information}.  
+This chapter explores the theoretical aspects of our \textbf{Hospital Finder Mobile Application}, analyzes existing solutions, and presents our improved approach.  
+
+\section{\textbf{Étude Préliminaire}}  
+\vspace{-0.5cm}
+\rule{7.5cm}{1.5pt}
+\vspace{-0.5cm}
+\subsection{\textbf{Étude des solutions existantes : Géolocalisation, Recherche sur Google Maps, …}}  
+
+Several solutions exist for finding hospitals and clinics, but they have \textbf{significant limitations}:  
+
+\begin{itemize}
+    \item \textbf{Google Maps:}  
+    Google Maps is the most widely used mapping service, offering general hospital searches. However, it \textbf{lacks precise information on clinics}, including doctors' availability, specialties, and operating hours.  
+    \item \textbf{Hospital Finder by Darshan University:}  
+    This global application \textbf{only fetches hospital data from the Google Maps API} without allowing clinics to \textbf{add or modify their information}. Additionally, its \textbf{user interface is outdated}, making navigation difficult.  
+    \item \textbf{Local Availability:}  
+    Currently, \textbf{no local application} provides a \textbf{dedicated hospital and clinic management system} that allows clinics to \textbf{register themselves, update details, and display real-time doctor availability}.
+\end{itemize}
+
+\subsection{\textbf{Critique de l’existant et solution proposée}}  
+
+\textbf{Limitations of Existing Solutions:}  
+\begin{itemize}
+    \item No \textbf{custom clinic registration} or modifications  
+    \item Outdated UI and poor \textbf{user experience}  
+    \item No \textbf{detailed doctor profiles and schedules}  
+    \item Google Maps data is \textbf{too general} and lacks \textbf{localized clinic information}  
+\end{itemize}
+
+\textbf{Proposed Solution:}  
+To overcome these limitations, our \textbf{Hospital Finder Mobile Application} introduces:  
+\begin{itemize}
+    \item \textbf{Enhanced Geolocation} → Provides \textbf{precise clinic locations} added by clinic administrators themselves.  
+    \item \textbf{Clinic Registration \& Management} → Clinics can \textbf{create, modify, and update their information}.  
+    \item \textbf{Detailed Doctor Profiles} → Displays \textbf{doctor specialties, working hours, availability, and schedules}.  
+    \item \textbf{Nearby Hospital \& Clinic Recommendations} → Suggests hospitals and clinics \textbf{based on real-time location}.  
+    \item \textbf{Modern UI \& Better User Experience} → A \textbf{new, intuitive, and visually appealing interface}.  
+\end{itemize}
+
+\section{\textbf{Conclusion}}  
+\rule{\linewidth}{1.5pt}  
+
+The existing hospital location solutions fail to provide \textbf{detailed, precise, and user-friendly} hospital and clinic information. Our \textbf{Hospital Finder Mobile Application} bridges this gap by offering:  
+\begin{itemize}
+    \item A \textbf{better geolocation system} for \textbf{more accurate clinic placement}.  
+    \item The ability for \textbf{clinics to register and update their details}.  
+    \item \textbf{Comprehensive doctor profiles}, making hospital visits more efficient.  
+    \item \textbf{A modern UI} with an intuitive design for easy navigation.  
+\end{itemize}
+
+This enhanced system will significantly improve \textbf{healthcare accessibility} and provide a \textbf{better user experience} compared to existing solutions.
 
 
 
