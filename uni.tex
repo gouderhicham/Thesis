@@ -13,9 +13,6 @@
 \usepackage{array}
 \usepackage{hyperref} 
 \usepackage{cellspace}
-\setlength{\cellspacetoplimit}{6pt}
-\setlength{\cellspacebottomlimit}{6pt}
-
 \usepackage[a4paper, left=1in, right=1in, bottom=0.8in, top=0.8in]{geometry}
 
 % Border settings
@@ -23,6 +20,8 @@
 \setlength{\mymargin}{0.8cm}
 \renewcommand{\baselinestretch}{1.4} % 1.5x line height
 \pagenumbering{gobble}  % Disables page numbering 
+\setlength{\cellspacetoplimit}{6pt}
+\setlength{\cellspacebottomlimit}{6pt}
 
 
 \AtBeginShipout{%
@@ -394,25 +393,104 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Ensure System Integrity:} Monitor and manage the overall platform.
 \end{itemize}
 
-\subsection{\textbf{App users roles Table}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{App Users Roles Table}
 \noindent The application consists of multiple user roles, each with distinct responsibilities and functionalities. Understanding these roles is essential for ensuring smooth operation and proper management within the system. Below is a breakdown of the key roles and their main tasks:
-\begin{table}[H]
-    \begin{center}
-        \setlength{\tabcolsep}{8pt} 
-        \begin{tabular}{|Sc|Sl|Sl|}
-        \hline
-        \rowcolor[HTML]{C0C0C0} 
-        \multicolumn{1}{|Sc|}{\cellcolor[HTML]{C0C0C0}\textbf{Role}} & \multicolumn{1}{Sc|}{\cellcolor[HTML]{C0C0C0}\textbf{Definition}} & \multicolumn{1}{Sc|}{\cellcolor[HTML]{C0C0C0}\textbf{Main Tasks}} \\ \hline
-        \textbf{User (Patient)} & \begin{tabular}[t]{@{}l@{}}A person accessing the\\ app to find clinics and\\ doctors without \\ registration.\end{tabular} & \begin{tabular}[t]{@{}l@{}}• Search for nearby clinics\\  \hspace*{0.2cm} and doctors.\\ • View doctor specialties and\\ \hspace*{0.2cm} clinic details.\\ • Check clinic and doctor\\  \hspace*{0.2cm} schedules.\\ • Contact clinics for appointments.\end{tabular} \\ \hline
-        \textbf{Clinic}         & \begin{tabular}[t]{@{}l@{}}An entity that registers on\\ the app to manage doc\\ tors and provide services.\\ Approval by admin is \\ required.\end{tabular} & \begin{tabular}[t]{@{}l@{}}• Register and provide clinic\\  \hspace*{0.2cm} details.\\ • Wait for admin approval.\\ • Add and manage doctors.\\ • Provide login credentials to\\ \hspace*{0.2cm}  doctors.\end{tabular} \\ \hline
-        \textbf{Doctor}         & \begin{tabular}[t]{@{}l@{}}A medical professional \\ registered under a clinic\\ who cannot independently \\ sign up.\end{tabular} & \begin{tabular}[t]{@{}l@{}}• Log in with clinic-provided\\  \hspace*{0.2cm} credentials.\\ • Manage and update their\\ \hspace*{0.2cm}  schedule.\\ • Receive and manage patient\\ \hspace*{0.2cm}  appointments.\end{tabular} \\ \hline
-        \textbf{Admin}          & \begin{tabular}[t]{@{}l@{}}The system manager \\ responsible for approving\\ clinics and ensuring\\ smooth operation.\end{tabular} & \begin{tabular}[t]{@{}l@{}}• Review and approve/reject\\   \hspace*{0.2cm} clinic registrations.\\ • Monitor system performance\\  \hspace*{0.2cm}  and security.\\ • Ensure proper functionality\\  \hspace*{0.2cm}  of the platform.\end{tabular} \\ \hline
-        \end{tabular}
-    \end{center}
-\end{table}
 
+% Longtable for splitting across pages
+\renewcommand{\arraystretch}{1.3} % Adjust row spacing
+
+\begin{longtable}{|p{3cm}|p{6cm}|p{6cm}|}
+	
+	\hline
+	\rowcolor[HTML]{C0C0C0}
+	\hspace*{1cm}\textbf{Role}                                                                               & \hspace*{1.9cm} \textbf{Definition}                                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
+	\hline
+	\endfirsthead
+
+	\hline
+	\rowcolor[HTML]{C0C0C0}
+	\hspace*{1cm}\textbf{Role}                                                                                              & \hspace*{1.9cm} \textbf{Definition}                                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
+	\hline
+	\endhead
+
+	\hspace*{0.1cm}\textbf{User (Patient)}                                                                                    & A person accessing the app to find clinics and doctors without registration.        &
+	• Search for nearby clinics and doctors.\newline
+	• View doctor specialties and clinic details.\newline
+	• Check clinic and doctor schedules.\newline
+	• Contact clinics for appointments.                                                                                                                                                                                    \\
+	\hline
+
+	\hspace*{0.9cm}\textbf{Clinic}                                                                                            &
+	An entity that registers on the app to manage doctors and provide services. Approval by admin is required. &
+	• Register and provide clinic details.\newline
+	• Wait for admin approval.\newline
+	• Add and manage doctors.\newline
+	• Provide login credentials to doctors.                                                                                                                                                                                \\
+	\hline
+
+
+	\hspace*{0.85cm}\textbf{Doctor}                                                                                            & A medical professional registered under a clinic who cannot independently sign up.  &
+	• Log in with clinic-provided credentials.\newline
+	• Manage and update their schedule.\newline
+	• Receive and manage patient appointments.                                                                                                                                                                             \\
+	\hline
+
+	\hspace*{0.85cm}\textbf{Admin}                                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
+	• Review and approve/reject clinic registrations.\newline
+	• Monitor system performance and security.\newline
+	• Ensure proper functionality of the platform.                                                                                                                                                                         \\
+	\hline
+
+
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Conclusion}
+This document has provided an overview of the system, focusing on the roles and responsibilities of users. The Hospital Finder Mobile App ensures smooth interaction between patients, clinics, and administrators.
 \vspace{0.5cm}
-
 \section{\textbf{Functional Requirements Specification}}
 
 \noindent The functional requirements define the expected behavior of the application. These include:
@@ -435,6 +513,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Scalability:} The system should handle a growing number of users and clinics efficiently.
 	\item \textbf{User-Friendly Interface:} The UI should be intuitive and responsive across all devices.
 \end{itemize}
+
 
 \section{\textbf{Use Case Diagrams}}
 \rule{0.45\linewidth}{0.7pt}

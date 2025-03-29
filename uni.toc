@@ -20,7 +20,8 @@
 \contentsline {subsubsection}{\textbf {Doctor Tasks}}{}{subsubsection*.5}%
 \contentsline {subsection}{\numberline {2.2.4}\textbf {Admin Definition}}{}{subsection.2.2.4}%
 \contentsline {subsubsection}{\textbf {Admin Tasks}}{}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {2.2.5}\textbf {App users roles Table}}{}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.5}App Users Roles Table}{}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Conclusion}{}{subsection.2.2.6}%
 \contentsline {section}{\numberline {2.3}\textbf {Functional Requirements Specification}}{}{section.2.3}%
 \contentsline {section}{\numberline {2.4}\textbf {Non-Functional Requirements Specification}}{}{section.2.4}%
 \contentsline {section}{\numberline {2.5}\textbf {Use Case Diagrams}}{}{section.2.5}%
