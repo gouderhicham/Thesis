@@ -1,0 +1,33 @@
+\contentsline {chapter}{General Introduction}{}{chapter*.1}%
+\contentsline {section}{1. Introduction}{}{section*.2}%
+\contentsline {subsection}{1.1 Project Presentation}{}{section*.2}%
+\contentsline {subsection}{1.2 Application Objectives}{}{section*.2}%
+\contentsline {subsection}{1.3 Methodology and Adopted Formalisms}{}{section*.2}%
+\contentsline {chapter}{\numberline {1}\textbf {Theoretical Study and Technical Choices}}{}{chapter.1}%
+\contentsline {section}{\numberline {1.1}\textbf {Introduction}}{}{section.1.1}%
+\contentsline {section}{\numberline {1.2}\textbf {Preliminary Study}}{}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}\textbf {Study of Existing Solutions: Geolocation, Search on Google Maps, …}}{}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}\textbf {Critique of Existing Solutions and Proposed Solution}}{}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}\textbf {Conclusion}}{}{section.1.3}%
+\contentsline {chapter}{\numberline {2}\textbf {Analysis and Specification of Requirements}}{}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textbf {Introduction}}{}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\textbf {Global Analysis of the Application}}{}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}\textbf {User Definition}}{}{subsection.2.2.1}%
+\contentsline {subsubsection}{\textbf {Main Tasks of a User}}{}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {2.2.2}\textbf {Clinic Definition}}{}{subsection.2.2.2}%
+\contentsline {subsubsection}{\textbf {Main Tasks of a Clinic}}{}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {2.2.3}\textbf {Doctor Definition}}{}{subsection.2.2.3}%
+\contentsline {subsubsection}{\textbf {Doctor Tasks}}{}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.2.4}\textbf {Admin Definition}}{}{subsection.2.2.4}%
+\contentsline {subsubsection}{\textbf {Admin Tasks}}{}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {2.2.5}\textbf {App users roles Table}}{}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}\textbf {Functional Requirements Specification}}{}{section.2.3}%
+\contentsline {section}{\numberline {2.4}\textbf {Non-Functional Requirements Specification}}{}{section.2.4}%
+\contentsline {section}{\numberline {2.5}\textbf {Use Case Diagrams}}{}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}\textbf {Definition of Use Case Diagrams}}{}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}\textbf {Use Case Diagrams for the Application}}{}{subsection.2.5.2}%
+\contentsline {subsubsection}{\textbf {Doctor Interactions}}{}{subsubsection*.7}%
+\contentsline {subsubsection}{\textbf {User Interactions (Patients)}}{}{subsubsection*.8}%
+\contentsline {subsubsection}{\textbf {Clinic Interactions}}{}{subsubsection*.9}%
+\contentsline {subsubsection}{\textbf {Admin Interactions}}{}{subsubsection*.10}%
+\contentsline {section}{\numberline {2.6}\textbf {Conclusion}}{}{section.2.6}%
