@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.29)  29 MAR 2025 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.29)  12 APR 2025 23:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,48 +462,74 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen274
 \Gm@layoutvoffset=\dimen275
 \Gm@dimlist=\toks41
- (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+ (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/pgf-umlsd\pgf-umlsd.sty
+Package: pgf-umlsd 2011/07/27 v0.6 Some LaTeX macros for UML Sequence Diagrams.
+ (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (E:\MikTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen276
+)) (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (E:\MikTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\c@preinst=\count318
+\c@instnum=\count319
+\c@threadnum=\count320
+\c@seqlevel=\count321
+\c@callevel=\count322
+\c@callselflevel=\count323
+\c@blocklevel=\count324
+)
 \mymargin=\skip78
-LaTeX Font Info:    Trying to load font information for OT1+bch on input line 38.
+ (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (E:\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+LaTeX Font Info:    Trying to load font information for OT1+bch on input line 40.
  (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 ) (E:\MikTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
+\l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box73
 ) (uni.aux)
 \openout1 = `uni.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (E:\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen276
+\scratchcounter=\count326
+\scratchdimen=\dimen277
 \scratchbox=\box74
-\nofMPsegments=\count320
-\nofMParguments=\count321
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen277
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen278
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks43
 ) (E:\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -511,7 +537,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (E:\MikTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 40.
  (uni.out) (uni.out)
 \@outlinefile=\write4
 \openout4 = `uni.out'.
@@ -551,36 +577,36 @@ Package hyperref Info: Link coloring OFF on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/uni_logo.jpg, id=107, 950.55125pt x 963.6pt>
+<images/uni_logo.jpg, id=131, 950.55125pt x 963.6pt>
 File: images/uni_logo.jpg Graphic file (type jpg)
 <use images/uni_logo.jpg>
-Package pdftex.def Info: images/uni_logo.jpg  used on input line 46.
+Package pdftex.def Info: images/uni_logo.jpg  used on input line 48.
 (pdftex.def)             Requested size: 62.59596pt x 63.44487pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 47.
+(Font)              <12> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 49.
 File: images/uni_logo.jpg Graphic file (type jpg)
 <use images/uni_logo.jpg>
-Package pdftex.def Info: images/uni_logo.jpg  used on input line 63.
+Package pdftex.def Info: images/uni_logo.jpg  used on input line 65.
 (pdftex.def)             Requested size: 62.59596pt x 63.44487pt.
 
-Overfull \hbox (17.29642pt too wide) in paragraph at lines 63--64
+Overfull \hbox (17.29642pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 85.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 87.
 (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
@@ -598,7 +624,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \newpage
+l.111 \newpage
                [2
 
 ]
@@ -607,18 +633,18 @@ l.109 \newpage
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.127 \newpage
+l.129 \newpage
                [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \newpage
+l.147 \newpage
                [4]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 164.
+(hyperref)                be the same. Added a new anchor on input line 166.
 
 
 
@@ -626,21 +652,21 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.190 	\item \textbf
+l.192 	\item \textbf
                     {Integrate Geolocation Services:} Enable real-time locat... [5]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.230 		      \item C
+l.232 		      \item C
                      onduct rigorous \textbf{functionality, performance, and... [6]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \newpage
+l.256 \newpage
                [7]
 Chapter 1.
 
@@ -649,16 +675,10 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.278 	\item \textbf
+l.280 	\item \textbf
                     {Local Availability:} [8
 
 ]
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family bch in TS1 encoding.
-            Default family used instead on input line 295.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family bch in TS1 encoding.
-            Default family used instead on input line 296.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
             Default family used instead on input line 297.
@@ -668,20 +688,26 @@ LaTeX Info: Symbol \textrightarrow not provided by
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
             Default family used instead on input line 299.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family bch in TS1 encoding.
+            Default family used instead on input line 300.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family bch in TS1 encoding.
+            Default family used instead on input line 301.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 	\item \textbf
+l.310 	\item \textbf
                     {Comprehensive doctor profiles}, making hospital visits ... [9]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.324 \newpage
+l.326 \newpage
                [10]
 Chapter 2.
 
@@ -690,7 +716,7 @@ Chapter 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 	\item \textbf
+l.351 	\item \textbf
                     {Find Available Doctors:} Check their specialties and sc... [11
 
 ]
@@ -699,44 +725,44 @@ l.349 	\item \textbf
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 \subsubsection{\textbf{Admin Tasks}}
+l.391 \subsubsection{\textbf{Admin Tasks}}
                                            [12]
-Overfull \hbox (11.42339pt too wide) in alignment at lines 419--425
+Overfull \hbox (11.42339pt too wide) in alignment at lines 421--427
  [] [] [] 
  []
 
 
-Overfull \hbox (11.42339pt too wide) in alignment at lines 425--431
+Overfull \hbox (11.42339pt too wide) in alignment at lines 427--433
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 434--438
+Underfull \hbox (badness 1097) in paragraph at lines 436--440
 \TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 View doc-tor spe-cial-ties and
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 434--438
+Underfull \hbox (badness 1297) in paragraph at lines 436--440
 \TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Con-tact clin-ics for ap-point-
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 449--449
+Underfull \hbox (badness 3792) in paragraph at lines 451--451
 []|\OT1/bch/m/n/12 A med-i-cal pro-fes-sional reg-is-
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 450--453
+Underfull \hbox (badness 4378) in paragraph at lines 452--455
 \TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Man-age and up-date their
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 456--459
+Underfull \hbox (badness 3375) in paragraph at lines 458--461
 []|\TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Re-view and ap-prove/reject
  []
 
 
-Overfull \hbox (11.42339pt too wide) in alignment at lines 431--462
+Overfull \hbox (11.42339pt too wide) in alignment at lines 433--463
  [] [] [] 
  []
 
@@ -744,30 +770,30 @@ Overfull \hbox (11.42339pt too wide) in alignment at lines 431--462
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.462 \end{longtable}
+l.463 \end{longtable}
                       [13]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.511 	\item \textbf
+l.512 	\item \textbf
                     {Performance:} The application should provide quick sear... [14]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.540 \subsubsection{\textbf{Doctor Interactions}}
+l.541 \subsubsection{\textbf{Doctor Interactions}}
                                                    [15]
-<images/doctorCAS.pdf, id=197, 291.33844pt x 231.86626pt>
+<images/doctorCAS.pdf, id=221, 291.33844pt x 231.86626pt>
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 546.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 547.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 555.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 556.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -775,11 +801,11 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 555.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.556 \end{center}
+l.557 \end{center}
                    [16 <./images/doctorCAS.pdf>]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 564.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 565.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -787,11 +813,11 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 564.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 \end{center}
+l.566 \end{center}
                    [17]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 573.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 574.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -799,14 +825,14 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 573.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.574 \end{center}
+l.575 \end{center}
                    [18]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.584 \end{document}
+l.585 \end{document}
                      [19] (uni.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -816,17 +842,17 @@ Package rerunfilecheck Info: File `uni.out' has not changed.
 (rerunfilecheck)             Checksum: 3108B3EF2CCBFAF492A408B2E3C82FA3;5022.
  ) 
 Here is how much of TeX's memory you used:
- 20992 strings out of 473522
- 386145 string characters out of 5731444
- 777886 words of memory out of 5000000
- 43828 multiletter control sequences out of 15000+600000
+ 22216 strings out of 473522
+ 417792 string characters out of 5731444
+ 815736 words of memory out of 5000000
+ 45026 multiletter control sequences out of 15000+600000
  574601 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,87p,621b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,93p,621b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on uni.pdf (19 pages, 173322 bytes).
+Output written on uni.pdf (19 pages, 179854 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
+ 268 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,7 +14,8 @@
 \usepackage{hyperref} 
 \usepackage{cellspace}
 \usepackage[a4paper, left=1in, right=1in, bottom=0.8in, top=0.8in]{geometry}
-
+\usepackage{tikz}
+\usepackage{pgf-umlsd}
 % Border settings
 \newlength{\mymargin}
 \setlength{\mymargin}{0.8cm}
@@ -22,6 +23,7 @@
 \pagenumbering{gobble}  % Disables page numbering 
 \setlength{\cellspacetoplimit}{6pt}
 \setlength{\cellspacebottomlimit}{6pt}
+\usetikzlibrary{shapes.geometric, arrows}
 
 
 \AtBeginShipout{%
@@ -457,7 +459,6 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	• Monitor system performance and security.\newline
 	• Ensure proper functionality of the platform.                                                                                                                                                                         \\
 	\hline
-
 
 \end{longtable}
 
