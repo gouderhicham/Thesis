@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.29)  12 APR 2025 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  14 APR 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,7 +577,7 @@ Package hyperref Info: Link coloring OFF on input line 40.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/uni_logo.jpg, id=131, 950.55125pt x 963.6pt>
+<images/uni_logo.jpg, id=135, 950.55125pt x 963.6pt>
 File: images/uni_logo.jpg Graphic file (type jpg)
 <use images/uni_logo.jpg>
 Package pdftex.def Info: images/uni_logo.jpg  used on input line 48.
@@ -614,7 +614,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
 [1
 
-{C:/Users/LAPTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{E:/MikTeX/fonts/enc/dvips/base/8r.enc} <./images/uni_logo.jpg>] (uni.toc)
+{C:/Users/LAPTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{E:/MikTeX/fonts/enc/dvips/base/8r.enc} <./images/uni_logo.jpg>] (uni.toc
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...La Conception d'Application}}{}{chapter.3}
+                                                  % [2
+
+])
 \tf@toc=\write5
 \openout5 = `uni.toc'.
 
@@ -625,23 +634,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.111 \newpage
-               [2
-
-]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129 \newpage
                [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.147 \newpage
+l.129 \newpage
                [4]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.147 \newpage
+               [5]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 166.
@@ -653,21 +660,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.192 	\item \textbf
-                    {Integrate Geolocation Services:} Enable real-time locat... [5]
+                    {Integrate Geolocation Services:} Enable real-time locat... [6]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.232 		      \item C
-                     onduct rigorous \textbf{functionality, performance, and... [6]
+                     onduct rigorous \textbf{functionality, performance, and... [7]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.256 \newpage
-               [7]
+               [8]
 Chapter 1.
 
 
@@ -676,7 +683,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.280 	\item \textbf
-                    {Local Availability:} [8
+                    {Local Availability:} [9
 
 ]
 LaTeX Info: Symbol \textrightarrow not provided by
@@ -701,14 +708,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.310 	\item \textbf
-                    {Comprehensive doctor profiles}, making hospital visits ... [9]
+                    {Comprehensive doctor profiles}, making hospital visits ... [10]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.326 \newpage
-               [10]
+               [11]
 Chapter 2.
 
 
@@ -717,7 +724,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.351 	\item \textbf
-                    {Find Available Doctors:} Check their specialties and sc... [11
+                    {Find Available Doctors:} Check their specialties and sc... [12
 
 ]
 
@@ -726,7 +733,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.391 \subsubsection{\textbf{Admin Tasks}}
-                                           [12]
+                                           [13]
 Overfull \hbox (11.42339pt too wide) in alignment at lines 421--427
  [] [] [] 
  []
@@ -771,22 +778,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.463 \end{longtable}
-                      [13]
+                      [14]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.512 	\item \textbf
-                    {Performance:} The application should provide quick sear... [14]
+                    {Performance:} The application should provide quick sear... [15]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.541 \subsubsection{\textbf{Doctor Interactions}}
-                                                   [15]
-<images/doctorCAS.pdf, id=221, 291.33844pt x 231.86626pt>
+                                                   [16]
+<images/doctorCAS.pdf, id=229, 291.33844pt x 231.86626pt>
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
 Package pdftex.def Info: images/doctorCAS.pdf  used on input line 547.
@@ -802,7 +809,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.557 \end{center}
-                   [16 <./images/doctorCAS.pdf>]
+                   [17 <./images/doctorCAS.pdf>]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
 Package pdftex.def Info: images/doctorCAS.pdf  used on input line 565.
@@ -814,7 +821,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.566 \end{center}
-                   [17]
+                   [18]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
 Package pdftex.def Info: images/doctorCAS.pdf  used on input line 574.
@@ -826,33 +833,181 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.575 \end{center}
-                   [18]
+                   [19]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.585 \end{document}
-                     [19] (uni.aux)
+l.610 \newpage
+               [20]
+Chapter 3.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.632 \newpage
+               [21
+
+]
+<images/appcucle@2x.pdf, id=253, 412.54124pt x 432.86719pt>
+File: images/appcucle@2x.pdf Graphic file (type pdf)
+<use images/appcucle@2x.pdf>
+Package pdftex.def Info: images/appcucle@2x.pdf  used on input line 636.
+(pdftex.def)             Requested size: 317.07614pt x 332.7011pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.650 \end{itemize}
+                    [22 <./images/appcucle@2x.pdf>]
+File: images/appcucle@2x.pdf Graphic file (type pdf)
+<use images/appcucle@2x.pdf>
+Package pdftex.def Info: images/appcucle@2x.pdf  used on input line 653.
+(pdftex.def)             Requested size: 284.52756pt x 298.54657pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.673 
+       [23]
+Overfull \hbox (1.71024pt too wide) in paragraph at lines 684--685
+[]\OT1/bch/m/n/12 It re-flects both the log-i-cal ar-chi-tec-ture and the de-sign of the ap-pli-ca-tion's database. 
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.701     \item \textbf
+                       {TODO }: TODO LATER [24]
+<images/dbclass.pdf, id=265, 1346.63098pt x 1047.915pt>
+File: images/dbclass.pdf Graphic file (type pdf)
+<use images/dbclass.pdf>
+Package pdftex.def Info: images/dbclass.pdf  used on input line 707.
+(pdftex.def)             Requested size: 430.31812pt x 334.85995pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.721 
+       [25 <./images/dbclass.pdf>]
+\pgf@layerbox@umlsd@background=\box75
+\pgf@layerboxsaved@umlsd@background=\box76
+\pgf@layerbox@umlsd@threadlayer=\box77
+\pgf@layerboxsaved@umlsd@threadlayer=\box78
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.792 \noindent
+               \underline{\textbf{Admin Managing Terms and Conditions of the... [26]
+Overfull \vbox (2.79732pt too high) has occurred while \output is active []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.792 \noindent
+               \underline{\textbf{Admin Managing Terms and Conditions of the... [27]
+Overfull \hbox (1.78633pt too wide) in paragraph at lines 839--840
+[][] 
+ []
+
+
+Overfull \hbox (1.78633pt too wide) in paragraph at lines 897--898
+[][] 
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.903 
+       [28]
+Overfull \vbox (45.6474pt too high) has occurred while \output is active []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.903 
+       [29]
+Overfull \hbox (25.3212pt too wide) in paragraph at lines 957--958
+[][] 
+ []
+
+
+Overfull \hbox (9.49956pt too wide) in paragraph at lines 959--961
+$[]$ \OT1/bch/m/n/12 This se-quence di-a-gram mod-els the pro-cess by which
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1020 
+        [30]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1070 \section*{3. Conclusion}
+                                [31]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1081 
+        [32]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1100 \end{document}
+                      [33] (uni.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `uni.out' has not changed.
-(rerunfilecheck)             Checksum: 3108B3EF2CCBFAF492A408B2E3C82FA3;5022.
+(rerunfilecheck)             Checksum: 822FE87092221A73B4D56C402414F425;5207.
  ) 
 Here is how much of TeX's memory you used:
- 22216 strings out of 473522
- 417792 string characters out of 5731444
- 815736 words of memory out of 5000000
- 45026 multiletter control sequences out of 15000+600000
- 574601 words of font info for 61 fonts, out of 8000000 for 9000
+ 22977 strings out of 473522
+ 434905 string characters out of 5731444
+ 899211 words of memory out of 5000000
+ 45782 multiletter control sequences out of 15000+600000
+ 578170 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,93p,621b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on uni.pdf (19 pages, 179854 bytes).
+ 84i,8n,93p,621b,1091s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb>
+Output written on uni.pdf (33 pages, 428312 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
