@@ -4,6 +4,7 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
+\usepackage[pdfborder={0 0 0}]{hyperref} 
 \usepackage{tikz}
 \usepackage{charter}
 \usepackage[table]{xcolor} 
@@ -11,32 +12,29 @@
 \usepackage{longtable}  
 \usepackage{atbegshi} 
 \usepackage{array}
-\usepackage{hyperref} 
 \usepackage{cellspace}
 \usepackage[a4paper, left=1in, right=1in, bottom=0.8in, top=0.8in]{geometry}
 \usepackage{tikz}
 \usepackage{pgf-umlsd}
-% Border settings
 \newlength{\mymargin}
 \setlength{\mymargin}{0.8cm}
-\renewcommand{\baselinestretch}{1.4} % 1.4x line height
-\pagenumbering{gobble}  % Disables page numbering 
+\renewcommand{\baselinestretch}{1.4}
+\pagenumbering{gobble}  % disable page numbering
 \setlength{\cellspacetoplimit}{6pt}
 \setlength{\cellspacebottomlimit}{6pt}
 \usetikzlibrary{shapes.geometric, arrows}
 
-
+% Draw border around page
 \AtBeginShipout{%
   \AtBeginShipoutUpperLeft{%
     \begin{tikzpicture}[remember picture, overlay]
       \draw[line width=0.4pt] 
-        ([xshift=\mymargin, yshift=\mymargin] current page.south west) % Bottom-left corner with margin
+        ([xshift=\mymargin, yshift=\mymargin] current page.south west)
         rectangle 
-        ([xshift=-\mymargin, yshift=-\mymargin] current page.north east); % Top-right corner with margin
+        ([xshift=-\mymargin, yshift=-\mymargin] current page.north east);
     \end{tikzpicture}%
   }%
 }
-
 \begin{document}
 
 \begin{center}
@@ -98,7 +96,7 @@
 					\setlength\itemsep{-0.8em}
 					\setlength\labelsep{-0.2cm}
 					\setlength\labelwidth{0.5cm}
-					\item \hspace*{0.3cm} Sasci Mdileh
+					\item \hspace*{0.3cm} Saci Medileh
 				\end{itemize}
 			\end{minipage}
 		\end{minipage}
@@ -113,17 +111,14 @@
 	\textbf{Abstract} \\
 	\vspace*{0.3cm}
 \end{center}
-\noindent In many regions, private medical clinics and hospitals are widespread, making it difficult for residents and visitors to locate suitable healthcare facilities quickly.
 
-\noindent Patients often struggle to find nearby hospitals, determine the best routes, or identify available medical services, especially in emergencies. This challenge is particularly significant for individuals unfamiliar with the area or those seeking specialized medical care.
+\noindent In regions like El Oued, private medical clinics, healthcare complexes, and hospitals are widespread, attracting patients from both within and outside the state. However, locating these facilities, determining the shortest routes, or finding accurate addresses remains a significant challenge, especially for visitors or those unfamiliar with the area. This difficulty often delays access to timely medical care. \vspace*{0.5cm}
 
-\noindent To address this issue, we propose the development of a mobile application that enables users to geolocate hospitals and medical clinics efficiently.
-\vspace*{0.5cm}
+\noindent To address this issue, we propose the development of a mobile application designed to provide the geographic locations of healthcare institutions in \textbf{El Oued}, with the potential for future expansion to other cities. \vspace*{0.5cm}
 
-\noindent The application integrates mapping services to provide accurate locations and essential details about healthcare institutions. Additionally, it allows users to contact clinics directly via phone for inquiries and appointments. \vspace*{0.5cm}
+\noindent The app will offer detailed information about these facilities and integrate mapping services to assist users in navigation. Additionally, it may include a direct communication feature for inquiries and appointment scheduling. \vspace*{0.5cm}
 
-\noindent By offering a user-friendly interface and real-time location-based services, this application aims to enhance accessibility to healthcare facilities, improve navigation for patients, and support better healthcare decision-making.  \vspace*{0.5cm}
-
+\noindent By combining real-time location-based services with a user-friendly interface, the application aims to simplify the process of finding healthcare facilities, improve patient navigation, and enhance overall access to medical services. \vspace*{0.5cm}
 
 \noindent \vspace*{0.5cm}\textbf{Keywords:} Mobile Application, Android, Geolocation, Google Maps.
 \newpage
@@ -134,13 +129,13 @@
 
 \noindent I would like to express my gratitude to everyone who contributed to the completion of this project. Their support and guidance played a significant role in its successful development.  \vspace*{0.5cm}
 
-\noindent First, I extend my sincere appreciation to my supervisor, \textbf{Sasci Mdileh}, for his valuable guidance, feedback, and support throughout this work. Their expertise and constructive advice have been essential in refining the project and addressing challenges effectively.
+\noindent First, I extend my sincere appreciation to my supervisor, \textbf{Saci Medileh}, for his valuable guidance, feedback, and support throughout this work. his expertise and constructive advice have been essential in refining the project and addressing challenges effectively. \vspace*{0.5cm}
 
-\noindent I also thank the faculty members of the \textbf{Faculty of Exact Sciences} for their insights and recommendations, which have helped improve the quality of this work.  \vspace*{0.5cm}
+\noindent Furthermore, thank the faculty members of the \textbf{Faculty of Exact Sciences} for their insights and recommendations, which have helped improve the quality of this work.  \vspace*{0.5cm}
 
-\noindent Furthermore, I appreciate the efforts of my colleagues, for their collaboration and commitment. Their contributions were crucial in different stages of the project, and their teamwork helped ensure its completion.  \vspace*{0.5cm}
+\noindent I also like to acknowledge the \textbf{administrative and technical staff} at the faculty for providing necessary resources and assistance throughout the process.  \vspace*{0.5cm}
 
-\noindent I would also like to acknowledge the administrative and technical staff at the faculty for providing necessary resources and assistance throughout the process.  \vspace*{0.5cm}
+\noindent I also, I appreciate the efforts of my colleagues, for their collaboration and commitment. Their contributions were crucial in different stages of the project, and their teamwork helped ensure its completion.  \vspace*{0.5cm}
 
 \noindent Finally, I am grateful to my family for their continuous support and encouragement. Their patience and understanding allowed me to stay focused on this project.
 
@@ -159,7 +154,7 @@
 
 % ========================= ======================== = = = = 
 
-\section*{\textbf{1. Introduction}}
+\section*{\textbf{1. General Introduction}}
 \rule{\linewidth}{1pt}  % Full-width horizontal line (adjust thickness if needed)
 
 
@@ -407,47 +402,46 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \renewcommand{\arraystretch}{1.3} % Adjust row spacing
 
 \begin{longtable}{|p{3cm}|p{6cm}|p{6cm}|}
-	
+
 	\hline
 	\rowcolor[HTML]{C0C0C0}
-	\hspace*{1cm}\textbf{Role}                                                                               & \hspace*{1.9cm} \textbf{Definition}                                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
+	\hspace*{1cm}\textbf{Role}                                                                                 & \hspace*{1.9cm} \textbf{Definition}                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
 	\hline
 	\endfirsthead
 
 	\hline
 	\rowcolor[HTML]{C0C0C0}
-	\hspace*{1cm}\textbf{Role}                                                                                              & \hspace*{1.9cm} \textbf{Definition}                                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
+	\hspace*{1cm}\textbf{Role}                                                                                 & \hspace*{1.9cm} \textbf{Definition}                                                 & \hspace*{1.9cm}\textbf{Main Tasks} \\
 	\hline
 	\endhead
 
-	\hspace*{0.1cm}\textbf{User (Patient)}                                                                                    & A person accessing the app to find clinics and doctors without registration.        &
+	\hspace*{0.1cm}\textbf{User (Patient)}                                                                     & A person accessing the app to find clinics and doctors without registration.        &
 	• Search for nearby clinics and doctors.\newline
 	• View doctor specialties and clinic details.\newline
 	• Check clinic and doctor schedules.\newline
-	• Contact clinics for appointments.                                                                                                                                                                                    \\
+	• Contact clinics for appointments.                                                                                                                                                                                                   \\
 	\hline
 
-	\hspace*{0.9cm}\textbf{Clinic}                                                                                            &
+	\hspace*{0.9cm}\textbf{Clinic}                                                                             &
 	An entity that registers on the app to manage doctors and provide services. Approval by admin is required. &
 	• Register and provide clinic details.\newline
 	• Wait for admin approval.\newline
 	• Add and manage doctors.\newline
-	• Provide login credentials to doctors.                                                                                                                                                                                \\
+	• Provide login credentials to doctors.                                                                                                                                                                                               \\
 	\hline
 
 
-	\hspace*{0.85cm}\textbf{Doctor}                                                                                            & A medical professional registered under a clinic who cannot independently sign up.  &
+	\hspace*{0.85cm}\textbf{Doctor}                                                                            & A medical professional registered under a clinic who cannot independently sign up.  &
 	• Log in with clinic-provided credentials.\newline
 	• Manage and update their schedule.\newline
-	• Receive and manage patient appointments.                                                                                                                                                                             \\
+	• Receive and manage patient appointments.                                                                                                                                                                                            \\
 	\hline
 
-	\hspace*{0.85cm}\textbf{Admin}                                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
+	\hspace*{0.85cm}\textbf{Admin}                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
 	• Review and approve/reject clinic registrations.\newline
 	• Monitor system performance and security.\newline
-	• Ensure proper functionality of the platform.                                                                                                                                                                         \\
+	• Ensure proper functionality of the platform.                                                                                                                                                                                        \\
 	\hline
-
 \end{longtable}
 
 \subsection{Conclusion}
@@ -576,7 +570,7 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 
 \section*{\textbf{1. Introduction}}
 
-\noindent In this chapter, we present the design phase of our mobile application \textit{Hospital Finder}. Following the analysis and specification of requirements, this stage is essential to define the structural and behavioral aspects of the application. 
+\noindent In this chapter, we present the design phase of our mobile application \textit{Hospital Finder}. Following the analysis and specification of requirements, this stage is essential to define the structural and behavioral aspects of the application.
 
 \noindent The design phase translates the identified functionalities into technical diagrams that guide implementation. These include use case diagrams, class diagrams, and sequence diagrams. Each diagram offers a different perspective, illustrating how components interact and how the system is structured internally.
 
@@ -585,68 +579,83 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \noindent The application involves multiple actors such as:
 
 \begin{itemize}
-    \item \textbf{User}: the main end-user searching for hospitals or clinics.
-    \item \textbf{Clinic}: responsible for managing their own clinic profile and associated doctors.
-    \item \textbf{Admin}: oversees the system and manages reported data or misuse.
-    \item \textbf{Doctor}: while present in the system, the doctor does not interact directly with the application and is managed entirely by the clinic.
+	\item \textbf{User}: the main end-user searching for hospitals or clinics.
+	\item \textbf{Clinic}: responsible for managing their own clinic profile and associated doctors.
+	\item \textbf{Admin}: oversees the system and manages reported data or misuse.
+	\item \textbf{Doctor}: while present in the system, the doctor does not interact directly with the application and is managed entirely by the clinic.
 \end{itemize}
 \newpage
-\noindent To better understand the roles and relationships of these actors, we will observe their interactions more thoroughly in the diagrams presented in the following sections. However, \textbf{ a summarized view of the main actors is illustrated in the diagram below: }
+\noindent We will observe their interactions more thoroughly in the diagrams presented in the following sections.
+
+\noindent \textbf{A summarized view of the main actors is illustrated in the diagram below :}
+
 \vspace*{0.6cm}
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{images/appcucle@2x.pdf}
+	\includegraphics[width=0.7\textwidth]{images/appcucle@2x.pdf}
 \end{center}
+\vspace{0.1cm}
+\begin{center}
+	\textit{\textbf{Figure 3.1: Application Cycle between App actors .}}
+\end{center}
+\vspace{0.5cm}
 
 \section*{2. Detailed Design}
 
 This section presents the core structural design of the \textit{Hospital Finder} application. After analyzing the system’s requirements and actors, we now focus on how these elements are implemented internally.
 
-\noindent The detailed design phase provides a clear technical blueprint by describing the key components, their responsibilities, and how they interact. This allows for a smooth transition from the functional analysis to the actual development.
+\noindent The detailed design phase provides a clear \textbf{technical blueprint} by describing the key components, their responsibilities, and how they interact. This allows for a smooth transition from the functional analysis to the actual development.
 
-\noindent UML (Unified Modeling Language) offers various diagrams to describe a software system from different perspectives. These diagrams are generally grouped into two main categories:
+\noindent \textbf{UML} (Unified Modeling Language) offers various diagrams to describe a software system from different perspectives. These diagrams are generally grouped into two main categories:
+
 
 \begin{itemize}
-    \item \textbf{Structural diagrams} - describe the static aspects of the system, such as classes and their relationships.
-    \item \textbf{Behavioral diagrams} - illustrate the dynamic behavior of the system, such as interactions and workflows between components.
+	\item \textbf{Structural diagrams} - describe the static aspects of the system, such as classes and their relationships.
+	\item \textbf{Behavioral diagrams} - illustrate the dynamic behavior of the system, such as interactions and workflows between components.
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width=10cm]{images/diagramtypes.pdf}
+	\vspace{1.5cm}
+	\hspace{1cm}
+	\includegraphics[width=14cm]{images/diagramType.pdf}
+
 \end{center}
-
-\textit{Figure 3.1: Classification of UML diagrams (structure vs behavior).}
-
+\begin{center}
+	\textit{\textbf{Figure 3.1: Classification of UML diagrams (structure vs behavior).}}
+\end{center}
+\vspace{0.5cm}
 \noindent In Chapter 2, we presented a \textbf{Use Case Diagram}, which belongs to the behavioral category. In this chapter, we will explore two additional diagrams:
 \begin{itemize}
-    \item The \textbf{Class Diagram}, selected from the structural diagrams.
-    \item The \textbf{Sequence Diagram}, selected from the behavioral diagrams.
+	\item The \textbf{Class Diagram}, selected from the structural diagrams.
+	\item The \textbf{Sequence Diagram}, selected from the behavioral diagrams.
 \end{itemize}
 
-These diagrams allow us to model both the architecture and the interactions in our application in a clear and structured manner. We begin with the class diagram in the next section.
+\noindent These diagrams allow us to model both the architecture and the interactions in our application in a clear and structured manner. We begin with the class diagram in the next section.
 
 \subsection*{2.1 Class Diagram}
 
 A class diagram plays a key role in the object-oriented design of software systems. In this section, we will define what a class diagram is, explain its importance in the development process, and finally present the class diagram of our \textit{Hospital Finder} application.
 
-\subsubsection*{2.1.1 What is a Class Diagram?}
+\subsubsection*{2.1.1 What is a Class Diagram ?}
 
-A class diagram is a static structural diagram that describes the types of objects in the system and the various kinds of relationships that exist among them. It shows the system's classes, their attributes, methods, and the associations between objects. It is one of the most commonly used diagrams in UML (Unified Modeling Language) and serves as a blueprint for the implementation phase.
+A \textbf{class diagram} is a static structural diagram that describes the types of objects in the system and the various kinds of \textbf{relationships} that exist among them. It shows the system's \textbf{classes}, their \textbf{attributes}, \textbf{methods}, and the \textbf{associations} between objects. It is one of the most commonly used diagrams in \textbf{UML} (Unified Modeling Language) and serves as a \textbf{blueprint} for the \textbf{implementation phase}.
 
-\noindent Each class is represented as a rectangle divided into compartments. The top compartment shows the class name, the middle one lists the attributes, and the bottom lists the operations or methods.
+\noindent Each class is represented as a rectangle divided into compartments. The top compartment shows the \textbf{class name}, the middle one lists the \textbf{attributes}, and the bottom lists the \textbf{operations} or \textbf{methods}.
+
 
 \subsubsection*{2.1.2 Why Use a Class Diagram?}
 
-The class diagram is essential in the software development lifecycle for the following reasons:
+The \textbf{class diagram} is essential in the software development lifecycle for the following reasons:
 
 \begin{itemize}
-    \item It provides a visual overview of the system structure.
-    \item It helps developers understand how data is organized and managed.
-    \item It facilitates the identification of responsibilities and roles of each class.
-    \item It reflects both the logical architecture and the design of the application's database.
-    \item It helps in detecting potential design flaws early in the development process.
+	\item It provides a visual overview of the system \textbf{structure}.
+	\item It helps developers understand how \textbf{data} is organized and managed.
+	\item It facilitates the identification of responsibilities and roles of each class.
+	\item It reflects both the logical architecture and the design of the application's \textbf{database}.
+	\item It helps in detecting potential \textbf{design flaws} early in the development process.
 \end{itemize}
 
-\noindent In the context of our project, the class diagram acts as a bridge between the actors (users, clinics, doctors, and admins) and the data handled internally. It helps clarify how the components of the system interact with one another and ensures a consistent and maintainable code structure.
+\noindent In the context of our project, the \textbf{class diagram} acts as a bridge between the \textbf{actors} (users, clinics, doctors, and admins) and the data handled internally. It helps clarify how the \textbf{components} of the system interact with one another and ensures a consistent and maintainable code structure.
+
 
 \subsubsection*{2.1.3 Class Diagram of the Application}
 
@@ -654,22 +663,24 @@ The class diagram of the \textit{Hospital Finder} application was developed base
 
 \begin{itemize}
 
-    \item \textbf{User}: Represents a normal user of the app who can log in, search for hospitals or clinics, and view details.
-    \item \textbf{Clinic}: Can register, log in, and manage doctors under its name.
-    \item \textbf{Doctor}: Doctors are managed by clinics and linked to their profiles but do not directly interact with the system.
-    \item \textbf{Admin}: Has elevated privileges and can monitor the system, manage content, and respond to reports or user issues.
-    \item \textbf{Hospital}: A general entity with details such as name, location, specialty, and contact information.
-    \item \textbf{TODO }: TODO LATER 
+	\item \textbf{User}: Represents a normal user of the app who can log in, search for hospitals or clinics, and view details.
+	\item \textbf{Clinic}: Can register, log in, and manage doctors under its name.
+	\item \textbf{Doctor}: Doctors are managed by clinics and linked to their profiles but do not directly interact with the system.
+	\item \textbf{Admin}: Has elevated privileges and can monitor the system, manage content, and respond to reports or user issues.
+	\item \textbf{Hospital}: A general entity with details such as name, location, specialty, and contact information.
+	\item \textbf{TODO }: TODO < WILL CORRECT LATER
 \end{itemize}
 
-The class diagram is shown below:
+\textbf{ The class diagram is shown below : }
 
 \begin{center}
-    \includegraphics[width=0.95\textwidth]{images/dbclass.pdf}
+	\includegraphics[width=0.95\textwidth]{images/dbclass.pdf}
 \end{center}
 
-\textit{Figure 3.2: Class diagram of the Hospital Finder application.}
-
+\begin{center}
+	\textit{\textbf{ Figure 3.2: Class diagram of the Hospital Finder application.}}
+\end{center}
+\vspace{0.5cm}
 \subsection*{2.2 Sequence Diagrams}
 
 \subsubsection{2.2.1 Definition}
@@ -678,22 +689,23 @@ Sequence diagrams are a type of UML behavioral diagram that show how objects or 
 Each sequence diagram illustrates how different entities collaborate in a particular process, using lifelines, messages, and activation bars to convey their roles and responsibilities.
 
 \subsubsection*{2.2.2 Purpose and Importance}
-Sequence diagrams are essential for modeling dynamic behavior in a system. They help developers understand the exact flow of operations, communication between objects, and timing of events.
+
+\textbf{Sequence diagrams} are essential for modeling \textbf{dynamic behavior} in a system. They help developers understand the exact \textbf{flow of operations}, communication between objects, and timing of events.
 
 In our case, these diagrams allow us to:
 \begin{itemize}
-    \item Clearly visualize interactions between the application interface, users (like admin), and the backend (database).
-    \item Ensure that the designed processes are logically consistent and complete.
-    \item Serve as references for both implementation and testing phases.
+	\item Clearly visualize \textbf{interactions} between the application interface, users (like admin), and the backend (\textbf{database}).
+	\item Ensure that the designed processes are logically consistent and complete.
 \end{itemize}
+
 
 \subsubsection*{2.2.3 Application Sequence Diagrams}
 Below, we present a set of sequence diagrams that demonstrate different operations carried out by the admin user. Each diagram focuses on a specific use case and models the message flow involved.
 
-\vspace{1em}
+\vspace{1cm}
 
-\noindent\underline{\textbf{Admin Managing Specialties and Doctors:}}
-This diagram illustrates how the admin adds or updates medical specialties and their associated doctors, including names and photos, through the app interface, with all changes saved to the database.
+\noindent\underline{\textbf{• Admin Managing Specialties and Doctors:}}
+This diagram below illustrates how the admin adds or updates medical specialties and their associated doctors, including names and photos, through the app interface, with all changes saved to the database.
 
 \begin{sequencediagram}
 	% Participants
@@ -750,16 +762,16 @@ This diagram illustrates how the admin adds or updates medical specialties and t
 	\mess{S}{Operation Complete}{A}
 \end{sequencediagram}
 
-\noindent\underline{\textbf{Admin Managing Terms and Conditions of the App:}}
-This sequence diagram models how the admin adds or edits the Terms and Conditions of the application. Admin actions pass through the interface, updating the data in the database accordingly.
+\vspace{1cm}
+\noindent\underline{\textbf{• Admin Managing Terms and Conditions of the App:}}
+This sequence diagram models how the admin adds or edits the Terms and Conditions of the application. Admin actions pass through the interface, updating the data in the database accordingly.\vspace{1.5cm}
 
-\vspace*{1em}
 
 \begin{sequencediagram}
 	% Participants with increased spacing
-	\newinst[3]{A}{Admin}
-	\newinst[3]{S}{App Interface}
-	\newinst[3]{DB}{Database}
+	\newinst[0]{A}{Admin}
+	\newinst[4]{S}{App Interface}
+	\newinst[4]{DB}{Database}
 
 	% Vertical space before operations
 	\postlevel
@@ -799,16 +811,22 @@ This sequence diagram models how the admin adds or edits the Terms and Condition
 	\mess{S}{Operation Complete}{A}
 \end{sequencediagram}
 
-\noindent\underline{\textbf{Searching for a Clinic or Doctor:}}
-This sequence diagram models the process in which the user searches for a clinic or doctor. The user logs into the app, performs a search, and the app displays results or error messages if the search does not yield results.
+\vspace{0.7cm}
+\noindent\underline{\textbf{• Searching for a Clinic or Doctor:}}\\
+This sequence diagram models the process in which the user searches for a clinic or doctor.
 
-\vspace*{1em}
+
+\noindent
+\begin{minipage}{\textwidth}
+The user logs into the app, performs a search, and the app displays results or error messages if the search does not yield results.
+
+\vspace{0.9cm}
 
 \begin{sequencediagram}
 	% Participants with increased spacing
-	\newinst[3]{U}{User}
-	\newinst[3]{S}{App Interface}
-	\newinst[3]{DB}{Database}
+	\newinst[1]{U}{User}
+	\newinst[4]{S}{App Interface}
+	\newinst[4]{DB}{Database}
 
 	% Login and Initial Search
 	\begin{call}{U}{Login(username, password)}{S}{}
@@ -837,13 +855,11 @@ This sequence diagram models the process in which the user searches for a clinic
 		\end{call}
 
 		\begin{sdblock}{alt}{Found?}
-			% Found case
 			\begin{sdblock}{Yes}{}
 				\begin{call}{S}{Display Results}{U}{}
 				\end{call}
 			\end{sdblock}
 
-			% Not found case
 			\begin{sdblock}{No}{}
 				\begin{call}{S}{Show "Not Found" Error}{U}{}
 				\end{call}
@@ -852,21 +868,22 @@ This sequence diagram models the process in which the user searches for a clinic
 			\end{sdblock}
 		\end{sdblock}
 	\end{sdblock}
-	% Final Results
+
 	\begin{call}{S}{Display Final Results}{U}{}
 	\end{call}
-\end{sequencediagram} 
+\end{sequencediagram}
 
-\vspace*{1em}
 
-\noindent\underline{\textbf{Clinic Registering In The Application :}}
+\end{minipage}
+
+\noindent\underline{\textbf{• Clinic Registering In The Application :}}
 This sequence diagram illustrates the process by which a clinic registers on the app. The clinic submits information through the app, which is then stored in the database. Admin verifies the submission and either approves or rejects the registration.
 
-\vspace*{1em}
+\vspace{1cm}
 
 \begin{sequencediagram}
 	% Participants with increased spacing
-	\newinst[2]{C}{Clinic/Doctor}
+	\newinst[0]{C}{Clinic/Doctor}
 	\newinst[1.5]{A}{App Interface}
 	\newinst[1.5]{DB}{Database}
 	\newinst[2]{Ad}{Admin}
@@ -917,16 +934,16 @@ This sequence diagram illustrates the process by which a clinic registers on the
 	\end{sdblock}
 \end{sequencediagram}
 
-\noindent\underline{\textbf{Admin Managing Clinics Requests:}}
+\noindent\underline{\textbf{• Admin Managing Clinics Requests:}}
 This sequence diagram models the process by which the admin handles clinic registration requests. The admin reviews the applications, makes a decision, and updates the database accordingly.
 
-\vspace*{1em}
+\vspace*{0.9cm}
 
 \begin{sequencediagram}
 	% Participants with increased spacing
-	\newinst[2]{Ad}{Admin}
-	\newinst[3]{A}{App Interface}
-	\newinst[3]{DB}{Database}
+	\newinst[0]{Ad}{Admin}
+	\newinst[4]{A}{App Interface}
+	\newinst[4]{DB}{Database}
 
 	% Access Requests List
 	\begin{call}{Ad}{Access Request List}{A}{}
@@ -974,19 +991,19 @@ This sequence diagram models the process by which the admin handles clinic regis
 	\mess{A}{Processing Complete}{Ad}
 \end{sequencediagram}
 
-\vspace*{1em}
+\newpage
 
-\noindent\underline{\textbf{User Report Activity:}}
+\noindent\underline{\textbf{• User Report Activity:}}
 This sequence diagram models the process when a user submits a report. After submission, the admin reviews the report and takes action, which may result in a notification being sent to the user.
 
-\vspace*{1em}
+\vspace*{1cm}
 
 \begin{sequencediagram}
 	% Participants with increased spacing
-	\newinst[1.5]{U}{User}
-	\newinst[2]{A}{App Interface}
-	\newinst[1.5]{DB}{Database}
-	\newinst[1.5]{Ad}{Admin}
+	\newinst[0]{U}{User}
+	\newinst[2.4]{A}{App Interface}
+	\newinst[2.1]{DB}{Database}
+	\newinst[2.1]{Ad}{Admin}
 
 	% Reporting Flow
 	\begin{call}{U}{Submit Report}{A}{}
@@ -1027,14 +1044,13 @@ This sequence diagram models the process when a user submits a report. After sub
 \end{sequencediagram}
 
 
-
+\newpage
 \section*{3. Conclusion}
 
 \vspace{1em}
 
 \noindent
 The design phase of our \textit{Hospital Finder} mobile application has been carefully structured to ensure clarity, consistency, and extensibility. Throughout this chapter, we laid the foundation of the application by modeling its components and interactions using essential UML diagrams.
-
 \vspace{1em}
 
 \noindent
