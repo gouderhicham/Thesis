@@ -5,11 +5,12 @@
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage[pdfborder={0 0 0}]{hyperref} 
+\usepackage{silence}
 \usepackage{tikz}
 \usepackage{charter}
 \usepackage[table]{xcolor} 
 \usepackage{float}  
-\usepackage{longtable}  
+\usepackage{longtable}          
 \usepackage{atbegshi} 
 \usepackage{array}
 \usepackage{cellspace}
@@ -35,6 +36,11 @@
     \end{tikzpicture}%
   }%
 }
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\WarningsOff*
+
 \begin{document}
 
 \begin{center}
@@ -253,17 +259,16 @@ Our methodology consists of the following key steps:
 \chapter{\textbf{Theoretical Study and Technical Choices}}
 \rule{\linewidth}{1.5pt}
 
-
 \section{\textbf{Introduction}}
 
-In today's digital age, access to precise and reliable healthcare information is essential. Many existing applications provide hospital location services, but they often lack \textbf{detailed and accurate clinic information}.
+In today's digital age, access to precise and reliable healthcare information is essential. Many existing applications provide hospital location services, but they often lack \textbf{detailed and accurate clinic information}. 
 This chapter explores the theoretical aspects of our \textbf{Hospital Finder Mobile Application}, analyzes existing solutions, and presents our improved approach.
 
 \section{\textbf{Preliminary Study}}
 \vspace{-0.5cm}
 \rule{7.5cm}{1.5pt}
 \vspace{-0.5cm}
-\subsection{\textbf{Study of Existing Solutions: Geolocation, Search on Google Maps, …}}
+\subsection{\textbf{Study of Existing Solutions: Geolocation, Search on Google Maps}}
 
 Several solutions exist for finding hospitals and clinics, but they have \textbf{significant limitations}:
 
@@ -284,6 +289,7 @@ Several solutions exist for finding hospitals and clinics, but they have \textbf
 	\item Outdated UI and poor \textbf{user experience}
 	\item No \textbf{detailed doctor profiles and schedules}
 	\item Google Maps data is \textbf{too general} and lacks \textbf{localized clinic information}
+	\item \textbf{Navigation issues} due to the absence of clear or guided paths to clinic locations, especially in certain areas
 \end{itemize}
 
 \noindent \textbf{Proposed Solution:}
@@ -293,6 +299,7 @@ To overcome these limitations, our \textbf{Hospital Finder Mobile Application} i
 	\item \textbf{Clinic Registration \& Management} → Clinics can \textbf{create, modify, and update their information}.
 	\item \textbf{Detailed Doctor Profiles} → Displays \textbf{doctor specialties, working hours, availability, and schedules}.
 	\item \textbf{Nearby Hospital \& Clinic Recommendations} → Suggests hospitals and clinics \textbf{based on real-time location}.
+	\item \textbf{Integrated GPS \& Path Navigation} → Provides \textbf{step-by-step directions and map-based paths to each clinic}, addressing the issue of poor accessibility in some areas.
 	\item \textbf{Modern UI \& Better User Experience} → A \textbf{new, intuitive, and visually appealing interface}.
 \end{itemize}
 
@@ -303,11 +310,11 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item A \textbf{better geolocation system} for \textbf{more accurate clinic placement}.
 	\item The ability for \textbf{clinics to register and update their details}.
 	\item \textbf{Comprehensive doctor profiles}, making hospital visits more efficient.
+	\item \textbf{Map-based navigation with GPS}, enhancing access and ease of finding clinics.
 	\item \textbf{A modern UI} with an intuitive design for easy navigation.
 \end{itemize}
 
 \noindent This enhanced system will significantly improve \textbf{healthcare accessibility} and provide a \textbf{better user experience} compared to existing solutions.
-
 
 
 
@@ -393,11 +400,46 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 
 
+\subsection{App Users Information Table}
+\noindent The application collects specific information for each user type to support functionality, access control, and communication. Each user type—whether a patient, clinic, doctor, or admin—has a tailored set of required details that align with their role in the system. The table below outlines the key types of users in the application and the information stored for each to facilitate registration, authentication, and system interaction.
+\vspace{0.3cm}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|p{4cm}|p{11.5cm}|}
+	\hline
+	\rowcolor[HTML]{C0C0C0}
+	\textbf{User Type} & \textbf{Stored Information} \\
+	\hline
+	
+	\hspace{0.5cm}\textbf{Patient / Guest} & 
+	Full name, email, password, Google Login id, notification preferences. \\
+	\hline
+	
+	\hspace{1.4cm}\textbf{Clinic} & 
+	Clinic name, email, password, phone number, address, location coordinates, registration number and images. \\
+	\hline
+	
+	\hspace{1.4cm}\textbf{Doctor} & 
+	Full name, email, phone number, associated clinic and specialty, availability schedule. \\
+	\hline
+	
+	\hspace{1.4cm}\textbf{Admin} & 
+	Email and password only, used for platform management access. \\
+	\hline
+	
+	\end{tabular}
+	\begin{center}
+	    \vspace{0.5cm}
+		\textit{\textbf{Figure 2.2.5: App user types and the information they store.}}
+	\end{center}
+	\end{table}
+	
 
-
+\newpage
 \subsection{App Users Roles Table}
 \noindent The application consists of multiple user roles, each with distinct responsibilities and functionalities. Understanding these roles is essential for ensuring smooth operation and proper management within the system. Below is a breakdown of the key roles and their main tasks:
-
+\vspace{0.2cm}
 % Longtable for splitting across pages
 \renewcommand{\arraystretch}{1.3} % Adjust row spacing
 
@@ -442,7 +484,12 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	• Monitor system performance and security.\newline
 	• Ensure proper functionality of the platform.                                                                                                                                                                                        \\
 	\hline
+	
 \end{longtable}
+\begin{center}
+	\textit{\textbf{Figure 2.2.6: App user roles and desception.}}
+\end{center}
+
 
 \subsection{Conclusion}
 This document has provided an overview of the system, focusing on the roles and responsibilities of users. The Hospital Finder Mobile App ensures smooth interaction between patients, clinics, and administrators.
@@ -568,13 +615,13 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \rule{\linewidth}{1.5pt}
 
 
-\section*{\textbf{1. Introduction}}
+\section{\textbf{Introduction}}
 
 \noindent In this chapter, we present the design phase of our mobile application \textit{Hospital Finder}. Following the analysis and specification of requirements, this stage is essential to define the structural and behavioral aspects of the application.
 
 \noindent The design phase translates the identified functionalities into technical diagrams that guide implementation. These include use case diagrams, class diagrams, and sequence diagrams. Each diagram offers a different perspective, illustrating how components interact and how the system is structured internally.
 
-\subsection*{1.1 Use Case Actors Overview}
+\subsection{Use Case Actors Overview}
 
 \noindent The application involves multiple actors such as:
 
@@ -599,7 +646,7 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \end{center}
 \vspace{0.5cm}
 
-\section*{2. Detailed Design}
+\section{Detailed Design}
 
 This section presents the core structural design of the \textit{Hospital Finder} application. After analyzing the system’s requirements and actors, we now focus on how these elements are implemented internally.
 
@@ -631,18 +678,21 @@ This section presents the core structural design of the \textit{Hospital Finder}
 
 \noindent These diagrams allow us to model both the architecture and the interactions in our application in a clear and structured manner. We begin with the class diagram in the next section.
 
-\subsection*{2.1 Class Diagram}
+\subsection{Class Diagram}
 
 A class diagram plays a key role in the object-oriented design of software systems. In this section, we will define what a class diagram is, explain its importance in the development process, and finally present the class diagram of our \textit{Hospital Finder} application.
 
-\subsubsection*{2.1.1 What is a Class Diagram ?}
+\subsubsection{What is a Class Diagram ?}
+\vspace{0.1cm}
 
 A \textbf{class diagram} is a static structural diagram that describes the types of objects in the system and the various kinds of \textbf{relationships} that exist among them. It shows the system's \textbf{classes}, their \textbf{attributes}, \textbf{methods}, and the \textbf{associations} between objects. It is one of the most commonly used diagrams in \textbf{UML} (Unified Modeling Language) and serves as a \textbf{blueprint} for the \textbf{implementation phase}.
 
 \noindent Each class is represented as a rectangle divided into compartments. The top compartment shows the \textbf{class name}, the middle one lists the \textbf{attributes}, and the bottom lists the \textbf{operations} or \textbf{methods}.
 
 
-\subsubsection*{2.1.2 Why Use a Class Diagram?}
+\subsubsection{Why Use a Class Diagram ?}
+\vspace{0.1cm}
+
 
 The \textbf{class diagram} is essential in the software development lifecycle for the following reasons:
 
@@ -657,38 +707,115 @@ The \textbf{class diagram} is essential in the software development lifecycle fo
 \noindent In the context of our project, the \textbf{class diagram} acts as a bridge between the \textbf{actors} (users, clinics, doctors, and admins) and the data handled internally. It helps clarify how the \textbf{components} of the system interact with one another and ensures a consistent and maintainable code structure.
 
 
-\subsubsection*{2.1.3 Class Diagram of the Application}
+\subsubsection{Class Diagram of the Application}
+\vspace{0.1cm}
+
 
 The class diagram of the \textit{Hospital Finder} application was developed based on the functional and non-functional requirements outlined during the analysis phase. It models the following key classes:
 
 \begin{itemize}
 
-	\item \textbf{User}: Represents a normal user of the app who can log in, search for hospitals or clinics, and view details.
-	\item \textbf{Clinic}: Can register, log in, and manage doctors under its name.
-	\item \textbf{Doctor}: Doctors are managed by clinics and linked to their profiles but do not directly interact with the system.
-	\item \textbf{Admin}: Has elevated privileges and can monitor the system, manage content, and respond to reports or user issues.
-	\item \textbf{Hospital}: A general entity with details such as name, location, specialty, and contact information.
-	\item \textbf{TODO }: TODO < WILL CORRECT LATER
+	\item \textbf{users}: Stores core information for every system user. This includes:
+	\begin{itemize}
+		\item \texttt{id}: Primary key.
+		\item \texttt{google\_id}: Used when logging in with Google.
+		\item \texttt{name}, \texttt{email}, \texttt{password}: Basic user credentials.
+		\item \texttt{email\_verified\_at}: Timestamp indicating when the user's email was verified.
+		\item \texttt{user\_notify\_status}: Boolean indicating if notifications are enabled.
+		\item \texttt{fcm\_token}: Used for Firebase push notifications.
+		\item \texttt{user\_role}: Small integer representing the role type.
+		\item \texttt{created\_at}: Account creation date.
+	\end{itemize}
+
+	\item \textbf{role}: Defines all possible roles within the app (e.g., admin, doctor, clinic, general user). Supports role-based access control.
+
+	\item \textbf{roles\_user}: A pivot table allowing users to have multiple roles. Fields include:
+	\begin{itemize}
+		\item \texttt{user\_id}: References \texttt{users.id}.
+		\item \texttt{role\_id}: References \texttt{role.id}.
+	\end{itemize}
+
+	\item \textbf{specialties}: Stores medical specialties such as dermatology or pediatrics. Includes:
+	\begin{itemize}
+		\item \texttt{name}: The default name (usually in Arabic).
+		\item \texttt{name\_fr}: The name written in Latin (French) characters.
+		\item \texttt{specialy\_img}: Optional image representing the specialty.
+	\end{itemize}
+
+	\item \textbf{municipalities}: Represents cities or regions where clinics are located. Includes:
+	\begin{itemize}
+		\item \texttt{name}: Default name.
+		\item \texttt{name\_fr}: Latin-character version of the name.
+	\end{itemize}
+
+	\item \textbf{clinic\_schedules}: Contains working hours of clinics. Includes:
+	\begin{itemize}
+		\item \texttt{clinic\_id}: References the clinic.
+		\item \texttt{day}, \texttt{opening\_time}, \texttt{closing\_time}: Working day and hours.
+	\end{itemize}
+
+	\item \textbf{Clinics}: Represents registered health facilities. Each clinic:
+	\begin{itemize}
+		\item Belongs to a \texttt{user} (usually the clinic owner or admin).
+		\item Is located in a \texttt{municipality}.
+		\item Includes details like multilingual name (\texttt{name}, \texttt{name\_fr}), contact info, location (latitude and longitude), and media (profile and cover images).
+		\item Has a \texttt{type} (e.g., clinic or hospital).
+		\item Has a \texttt{status} (active/inactive), registration number, and creation timestamp.
+	\end{itemize}
+
+	\item \textbf{doctor}: Contains profiles of medical professionals. Each doctor:
+	\begin{itemize}
+		\item Is a registered \texttt{user}.
+		\item Works at a specific \texttt{clinic}.
+		\item Belongs to a specific \texttt{specialty}.
+		\item Has personal details such as \texttt{name}, \texttt{email}, \texttt{phone}, and \texttt{created\_at}.
+	\end{itemize}
+
+	\item \textbf{Doctor\_schedules}: Specifies working hours for doctors. (Note: \texttt{clinic\_id} in this table seems to be misnamed and likely refers to \texttt{doctor\_id}.)
+
+	\item \textbf{notifications}: Stores push or in-app notifications sent to users. Includes:
+	\begin{itemize}
+		\item \texttt{title}, \texttt{content}: Notification text.
+		\item \texttt{is\_read}: Boolean indicating if the user has seen the notification.
+		\item \texttt{user\_id}: Target recipient.
+	\end{itemize}
+
+	\item \textbf{reports}: Enables users to report other users for various reasons. Includes:
+	\begin{itemize}
+		\item \texttt{reporter\_id}: The user submitting the report.
+		\item \texttt{reported\_id}: The user being reported.
+		\item \texttt{reason}, \texttt{created\_at}: Reason for reporting and time of submission.
+	\end{itemize}
+
 \end{itemize}
-
-\textbf{ The class diagram is shown below : }
-
+\vspace{4cm}
 \begin{center}
-	\includegraphics[width=0.95\textwidth]{images/dbclass.pdf}
+	\textbf{ The class diagram is shown below : }
 \end{center}
-
 \begin{center}
-	\textit{\textbf{ Figure 3.2: Class diagram of the Hospital Finder application.}}
+	\hspace*{-0.4cm}\includegraphics[width=1.1\textwidth]{images/dbclass.pdf}
 \end{center}
 \vspace{0.5cm}
-\subsection*{2.2 Sequence Diagrams}
+\begin{center}
+	\textit{\textbf{3.2.1.3 Figure : Class diagram of the Hospital Finder application.}}
 
-\subsubsection{2.2.1 Definition}
+\end{center}
+\vspace{0.5cm}
+\subsection{Sequence Diagrams}
+\vspace{-0.3cm}
+\rule{7.2cm}{1.2pt}
+\vspace{-0.3cm}
+
+\subsubsection{Definition}
+\vspace{0.1cm}
+
 Sequence diagrams are a type of UML behavioral diagram that show how objects or components in a system interact with each other over time. They describe the flow of messages and the order of operations between actors and system parts in specific scenarios.
 
 Each sequence diagram illustrates how different entities collaborate in a particular process, using lifelines, messages, and activation bars to convey their roles and responsibilities.
 
-\subsubsection*{2.2.2 Purpose and Importance}
+\subsubsection{Purpose and Importance}
+\vspace{0.1cm}
+
 
 \textbf{Sequence diagrams} are essential for modeling \textbf{dynamic behavior} in a system. They help developers understand the exact \textbf{flow of operations}, communication between objects, and timing of events.
 
@@ -699,7 +826,9 @@ In our case, these diagrams allow us to:
 \end{itemize}
 
 
-\subsubsection*{2.2.3 Application Sequence Diagrams}
+\subsubsection{Application Sequence Diagrams}
+\vspace{0.1cm}
+
 Below, we present a set of sequence diagrams that demonstrate different operations carried out by the admin user. Each diagram focuses on a specific use case and models the message flow involved.
 
 \vspace{1cm}
@@ -1045,7 +1174,7 @@ This sequence diagram models the process when a user submits a report. After sub
 
 
 \newpage
-\section*{3. Conclusion}
+\section{Conclusion}
 
 \vspace{1em}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  18 APR 2025 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  20 APR 2025 00:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,8 +198,30 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip67
+) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/silence\silence.sty
+Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
+\sl@Save=\count283
+\sl@StateNumber=\count284
+\sl@MessageCount=\count285
+\sl@Casualties=\count286
+\sl@Filter=\toks22
+\sl@Message=\toks23
+\sl@UnexpandedMessage=\toks24
+\sl@Mess@ge=\toks25
+\sl@WarningCount=\count287
+\sl@WarningNumber=\count288
+\sl@WarningCasualties=\count289
+\sl@TempBOW=\toks26
+\sl@BankOfWarnings=\toks27
+LaTeX Info: Redefining \GenericWarning on input line 433.
+\sl@ErrorCount=\count290
+\sl@ErrorNumber=\count291
+\sl@ErrorCasualties=\count292
+\sl@TempBOE=\toks28
+\sl@BankOfErrors=\toks29
+LaTeX Info: Redefining \GenericError on input line 601.
 ) (E:\MikTeX\tex/latex/pgf/frontendlayer\tikz.sty (E:\MikTeX\tex/latex/pgf/basiclayer\pgf.sty (E:\MikTeX\tex/latex/pgf/utilities\pgfrcs.sty (E:\MikTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen153
 \pgfutil@tempdimb=\dimen154
 ) (E:\MikTeX\tex/generic/pgf/utilities\pgfutil-latex.def
@@ -211,10 +233,10 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/latex/pgf/basiclayer\pgfcore.sty (E:\MikTeX\tex/latex/pgf/systemlayer\pgfsys.sty (E:\MikTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
  (E:\MikTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen155
 \pgf@y=\dimen156
@@ -228,14 +250,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen164
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count283
-\c@pgf@countb=\count284
-\c@pgf@countc=\count285
-\c@pgf@countd=\count286
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count287
+\c@pgf@counta=\count293
+\c@pgf@countb=\count294
+\c@pgf@countc=\count295
+\c@pgf@countd=\count296
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count297
  (E:\MikTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -246,21 +268,21 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (E:\MikTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count288
-\pgfsyssoftpath@bigbuffer@items=\count289
+\pgfsyssoftpath@smallbuffer@items=\count298
+\pgfsyssoftpath@bigbuffer@items=\count299
 ) (E:\MikTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/generic/pgf/math\pgfmath.code.tex (E:\MikTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen165
-\pgfmath@count=\count290
+\pgfmath@count=\count300
 \pgfmath@box=\box54
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 ) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (E:\MikTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count291
+\c@pgfmathroundto@lastzeros=\count301
 )) (E:\MikTeX\tex/generic/pgf/math\pgfint.code.tex) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen166
@@ -290,7 +312,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count292
+\pgf@picture@serial@count=\count302
 ) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen184
@@ -311,8 +333,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count293
-\pgf@shadingcount=\count294
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
 ) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (E:\MikTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
@@ -341,13 +363,13 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen192
 \pgffor@skip=\dimen193
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 )) (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count295
+\pgf@plot@mark@count=\count305
 \pgfplotmarksize=\dimen194
 )
 \tikz@lastx=\dimen195
@@ -362,17 +384,17 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box61
 \tikz@tempbox=\box62
 \tikz@tempbox@bg=\box63
-\tikztreelevel=\count296
-\tikznumberofchildren=\count297
-\tikznumberofcurrentchild=\count298
-\tikz@fig@count=\count299
+\tikztreelevel=\count306
+\tikznumberofchildren=\count307
+\tikznumberofcurrentchild=\count308
+\tikz@fig@count=\count309
  (E:\MikTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count300
-\pgfmatrixcurrentcolumn=\count301
-\pgf@matrix@numberofcolumns=\count302
+\pgfmatrixcurrentrow=\count310
+\pgfmatrixcurrentcolumn=\count311
+\pgf@matrix@numberofcolumns=\count312
 )
-\tikz@expandcount=\count303
+\tikz@expandcount=\count313
  (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/psnfss\charter.sty
@@ -384,20 +406,20 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen259
 \ar@mcellbox=\box64
 \extrarowheight=\dimen260
-\NC@list=\toks34
+\NC@list=\toks42
 \extratabsurround=\skip68
 \backup@length=\skip69
 \ar@cellbox=\box65
 )
-\everycr=\toks35
+\everycr=\toks43
 \minrowclearance=\skip70
-\rownum=\count304
+\rownum=\count314
 ) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count305
-\float@exts=\toks36
+\c@float@type=\count315
+\float@exts=\toks44
 \float@box=\box66
-\@float@everytoks=\toks37
+\@float@everytoks=\toks45
 \@floatcapt=\box67
 ) (E:\MikTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
@@ -405,41 +427,41 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \LTright=\skip72
 \LTpre=\skip73
 \LTpost=\skip74
-\LTchunksize=\count306
+\LTchunksize=\count316
 \LTcapwidth=\dimen261
 \LT@head=\box68
 \LT@firsthead=\box69
 \LT@foot=\box70
 \LT@lastfoot=\box71
 \LT@gbox=\box72
-\LT@cols=\count307
-\LT@rows=\count308
-\c@LT@tables=\count309
-\c@LT@chunks=\count310
-\LT@p@ftn=\toks38
+\LT@cols=\count317
+\LT@rows=\count318
+\c@LT@tables=\count319
+\c@LT@chunks=\count320
+\LT@p@ftn=\toks46
 ) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/cellspace\cellspace.sty
 Package: cellspace 2022/01/04 v1.9.0 Spacing table cells (JN)
  (E:\MikTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (E:\MikTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count311
-\calc@Bcount=\count312
+\calc@Acount=\count321
+\calc@Bcount=\count322
 \calc@Adimen=\dimen262
 \calc@Bdimen=\dimen263
 \calc@Askip=\skip75
 \calc@Bskip=\skip76
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count313
+\calc@Ccount=\count323
 \calc@Cskip=\skip77
 ) (E:\MikTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (E:\MikTeX\tex/generic/xkeyval\xkeyval.tex (E:\MikTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks39
-\XKV@tempa@toks=\toks40
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count314
+\XKV@depth=\count324
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \cellspacetoplimit=\dimen264
@@ -451,9 +473,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (E:\MikTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count315
-\Gm@cntv=\count316
-\c@Gm@tempcnt=\count317
+\Gm@cnth=\count325
+\Gm@cntv=\count326
+\c@Gm@tempcnt=\count327
 \Gm@bindingoffset=\dimen268
 \Gm@wd@mp=\dimen269
 \Gm@odd@mp=\dimen270
@@ -462,7 +484,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen273
 \Gm@layouthoffset=\dimen274
 \Gm@layoutvoffset=\dimen275
-\Gm@dimlist=\toks41
+\Gm@dimlist=\toks49
  (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/pgf-umlsd\pgf-umlsd.sty
 Package: pgf-umlsd 2011/07/27 v0.6 Some LaTeX macros for UML Sequence Diagrams.
  (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
@@ -477,13 +499,13 @@ File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-\c@preinst=\count318
-\c@instnum=\count319
-\c@threadnum=\count320
-\c@seqlevel=\count321
-\c@callevel=\count322
-\c@callselflevel=\count323
-\c@blocklevel=\count324
+\c@preinst=\count328
+\c@instnum=\count329
+\c@threadnum=\count330
+\c@seqlevel=\count331
+\c@callevel=\count332
+\c@callselflevel=\count333
+\c@blocklevel=\count334
 )
 \mymargin=\skip78
  (E:\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
@@ -491,54 +513,54 @@ File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (E:\MikTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-LaTeX Font Info:    Trying to load font information for OT1+bch on input line 38.
+LaTeX Font Info:    Trying to load font information for OT1+bch on input line 44.
  (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 ) (E:\MikTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count325
+\l__color_backend_stack_int=\count335
 \l__pdf_internal_box=\box73
 ) (uni.aux)
 \openout1 = `uni.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
  (E:\MikTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
+\scratchcounter=\count336
 \scratchdimen=\dimen277
 \scratchbox=\box74
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count329
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count339
 \MPscratchDim=\dimen278
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks43
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks51
 ) (E:\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (E:\MikTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 44.
  (uni.out) (uni.out)
 \@outlinefile=\write4
 \openout4 = `uni.out'.
@@ -578,36 +600,36 @@ Package hyperref Info: Link coloring OFF on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/uni_logo.jpg, id=135, 950.55125pt x 963.6pt>
+<images/uni_logo.jpg, id=219, 950.55125pt x 963.6pt>
 File: images/uni_logo.jpg Graphic file (type jpg)
 <use images/uni_logo.jpg>
-Package pdftex.def Info: images/uni_logo.jpg  used on input line 46.
+Package pdftex.def Info: images/uni_logo.jpg  used on input line 52.
 (pdftex.def)             Requested size: 62.59596pt x 63.44487pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 47.
+(Font)              <12> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 53.
 File: images/uni_logo.jpg Graphic file (type jpg)
 <use images/uni_logo.jpg>
-Package pdftex.def Info: images/uni_logo.jpg  used on input line 63.
+Package pdftex.def Info: images/uni_logo.jpg  used on input line 69.
 (pdftex.def)             Requested size: 62.59596pt x 63.44487pt.
 
-Overfull \hbox (17.29642pt too wide) in paragraph at lines 63--64
+Overfull \hbox (17.29642pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 85.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 91.
 (C:\Users\LAPTA\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
@@ -621,7 +643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...La Conception d'Application}}{}{chapter.3}
+l.28 ...textbf {Use Case Diagrams}}{}{section.2.5}
                                                   % [2
 
 ])
@@ -634,47 +656,42 @@ l.35 ...La Conception d'Application}}{}{chapter.3}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \newpage
+l.115 \newpage
                [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \newpage
+l.130 \newpage
                [4]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \newpage
+l.148 \newpage
                [5]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 161.
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.187 	\item \textbf
+l.193 	\item \textbf
                     {Integrate Geolocation Services:} Enable real-time locat... [6]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.227 		      \item C
+l.233 		      \item C
                      onduct rigorous \textbf{functionality, performance, and... [7]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 \newpage
+l.257 \newpage
                [8]
 Chapter 1.
 
@@ -683,39 +700,42 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.275 	\item \textbf
+l.280 	\item \textbf
                     {Local Availability:} [9
 
 ]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
-            Default family used instead on input line 292.
+            Default family used instead on input line 298.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
-            Default family used instead on input line 293.
+            Default family used instead on input line 299.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
-            Default family used instead on input line 294.
+            Default family used instead on input line 300.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
-            Default family used instead on input line 295.
+            Default family used instead on input line 301.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family bch in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 302.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family bch in TS1 encoding.
+            Default family used instead on input line 303.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.305 	\item \textbf
-                    {Comprehensive doctor profiles}, making hospital visits ... [10]
+l.309 \begin{itemize}
+                      [10]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.321 \newpage
+l.328 \newpage
                [11]
 Chapter 2.
 
@@ -724,7 +744,7 @@ Chapter 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346 	\item \textbf
+l.353 	\item \textbf
                     {Find Available Doctors:} Check their specialties and sc... [12
 
 ]
@@ -733,75 +753,78 @@ l.346 	\item \textbf
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.386 \subsubsection{\textbf{Admin Tasks}}
+l.393 \subsubsection{\textbf{Admin Tasks}}
                                            [13]
-Overfull \hbox (11.42339pt too wide) in alignment at lines 404--410
+Overfull \hbox (13.24979pt too wide) in paragraph at lines 409--432
+ [][] 
+ []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.439 \newpage
+               [14]
+Overfull \hbox (11.42339pt too wide) in alignment at lines 446--452
  [] [] [] 
  []
 
 
-Overfull \hbox (11.42339pt too wide) in alignment at lines 410--416
+Overfull \hbox (11.42339pt too wide) in alignment at lines 452--458
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 419--423
+Underfull \hbox (badness 1097) in paragraph at lines 461--465
 \TS1/bch/m/n/12 � \OT1/bch/m/n/12 View doc-tor spe-cial-ties and
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 419--423
+Underfull \hbox (badness 1297) in paragraph at lines 461--465
 \TS1/bch/m/n/12 � \OT1/bch/m/n/12 Con-tact clin-ics for ap-point-
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 434--434
+Underfull \hbox (badness 3792) in paragraph at lines 476--476
 []|\OT1/bch/m/n/12 A med-i-cal pro-fes-sional reg-is-
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 435--438
+Underfull \hbox (badness 4378) in paragraph at lines 477--480
 \TS1/bch/m/n/12 � \OT1/bch/m/n/12 Man-age and up-date their
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 441--444
+Underfull \hbox (badness 3375) in paragraph at lines 483--486
 []|\TS1/bch/m/n/12 � \OT1/bch/m/n/12 Re-view and ap-prove/reject
  []
 
 
-Overfull \hbox (11.42339pt too wide) in alignment at lines 416--445
+Overfull \hbox (11.42339pt too wide) in alignment at lines 458--488
  [] [] [] 
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.445 \end{longtable}
-                      [14]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.467 	\item \textbf
-                    {Performance:} The application should provide quick sear... [15]
+l.497 ...f{Functional Requirements Specification}}
+                                                   [15]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 \subsubsection{\textbf{Doctor Interactions}}
+l.523 ...\textbf{Definition of Use Case Diagrams}}
                                                    [16]
-<images/doctorCAS.pdf, id=229, 291.33844pt x 231.86626pt>
+<images/doctorCAS.pdf, id=331, 291.33844pt x 231.86626pt>
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 502.
-(pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
-File: images/doctorCAS.pdf Graphic file (type pdf)
-<use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 511.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 549.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -809,11 +832,11 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 511.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.512 \end{center}
-                   [17 <./images/doctorCAS.pdf>]
+l.550 \end{center}
+                   [17]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 520.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 558.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -821,11 +844,11 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 520.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.521 \end{center}
-                   [18]
+l.559 \end{center}
+                   [18 <./images/doctorCAS.pdf>]
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 529.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 567.
 (pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
 
 
@@ -833,15 +856,27 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 529.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.530 \end{center}
+l.568 \end{center}
                    [19]
+File: images/doctorCAS.pdf Graphic file (type pdf)
+<use images/doctorCAS.pdf>
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 576.
+(pdftex.def)             Requested size: 452.9679pt x 360.53174pt.
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 \newpage
-               [20]
+l.577 \end{center}
+                   [20]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.612 \newpage
+               [21]
 Chapter 3.
 
 
@@ -849,14 +884,14 @@ Chapter 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.587 \newpage
-               [21
+l.634 \newpage
+               [22
 
 ]
-<images/appcucle@2x.pdf, id=253, 412.54124pt x 432.86719pt>
+<images/appcucle@2x.pdf, id=354, 412.54124pt x 432.86719pt>
 File: images/appcucle@2x.pdf Graphic file (type pdf)
 <use images/appcucle@2x.pdf>
-Package pdftex.def Info: images/appcucle@2x.pdf  used on input line 594.
+Package pdftex.def Info: images/appcucle@2x.pdf  used on input line 641.
 (pdftex.def)             Requested size: 317.07614pt x 332.7011pt.
 
 
@@ -864,12 +899,12 @@ Package pdftex.def Info: images/appcucle@2x.pdf  used on input line 594.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.613 	\item \textbf
-                    {Behavioral diagrams} - illustrate the dynamic behavior ... [22 <./images/appcucle@2x.pdf>]
-<images/diagramType.pdf, id=260, 663.22781pt x 313.9228pt>
+l.660 	\item \textbf
+                    {Behavioral diagrams} - illustrate the dynamic behavior ... [23 <./images/appcucle@2x.pdf>]
+<images/diagramType.pdf, id=360, 663.22781pt x 313.9228pt>
 File: images/diagramType.pdf Graphic file (type pdf)
 <use images/diagramType.pdf>
-Package pdftex.def Info: images/diagramType.pdf  used on input line 619.
+Package pdftex.def Info: images/diagramType.pdf  used on input line 666.
 (pdftex.def)             Requested size: 398.33858pt x 188.54193pt.
 
 
@@ -877,9 +912,9 @@ Package pdftex.def Info: images/diagramType.pdf  used on input line 619.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.641 
-       [23 <./images/diagramType.pdf>]
-Overfull \hbox (5.1182pt too wide) in paragraph at lines 653--654
+l.689 
+       [24 <./images/diagramType.pdf>]
+Overfull \hbox (5.1182pt too wide) in paragraph at lines 703--704
 []\OT1/bch/m/n/12 It re-flects both the log-i-cal ar-chi-tec-ture and the de-sign of the ap-pli-ca-tion's \OT1/bch/b/n/12 database\OT1/bch/m/n/12 . 
  []
 
@@ -889,22 +924,41 @@ Overfull \hbox (5.1182pt too wide) in paragraph at lines 653--654
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.670 	\item \textbf
-                    {Hospital}: A general entity with details such as name, ... [24]
-<images/dbclass.pdf, id=269, 1346.63098pt x 1047.915pt>
+l.724 		\item \texttt
+                     {user\_notify\_status}: Boolean indicating if notificat... [25]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.764 	\end{itemize}
+                     [26]
+<images/dbclass.pdf, id=374, 637.87816pt x 827.38272pt>
 File: images/dbclass.pdf Graphic file (type pdf)
 <use images/dbclass.pdf>
-Package pdftex.def Info: images/dbclass.pdf  used on input line 677.
-(pdftex.def)             Requested size: 430.31812pt x 334.85995pt.
+Package pdftex.def Info: images/dbclass.pdf  used on input line 796.
+(pdftex.def)             Requested size: 498.26744pt x 646.29018pt.
+
+Overfull \hbox (33.91862pt too wide) in paragraph at lines 796--797
+ | [] 
+ []
+
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.689 E
-       ach sequence diagram illustrates how different entities collaborate i... [25 <./images/dbclass.pdf>]
-Overfull \hbox (1.60826pt too wide) in paragraph at lines 707--709
+l.797 \end{center}
+                   [27]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 
+       [28 <./images/dbclass.pdf>]
+Overfull \hbox (1.60826pt too wide) in paragraph at lines 836--838
 \OT1/bch/m/n/12 ad-min adds or up-dates med-i-cal spe-cial-ties and their as-so-ci-ated doc-tors, in-clud-ing names
  []
 
@@ -918,8 +972,8 @@ Overfull \hbox (1.60826pt too wide) in paragraph at lines 707--709
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.766 \noindent
-               \underline{\textbf{• Admin Managing Terms and Conditions of... [26]
+l.895 \noindent
+               \underline{\textbf{• Admin Managing Terms and Conditions of... [29]
 Overfull \vbox (2.79732pt too high) has occurred while \output is active []
 
 
@@ -928,15 +982,15 @@ Overfull \vbox (2.79732pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.766 \noindent
-               \underline{\textbf{• Admin Managing Terms and Conditions of... [27]
+l.895 \noindent
+               \underline{\textbf{• Admin Managing Terms and Conditions of... [30]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.879 \noindent
-               \underline{\textbf{• Clinic Registering In The Application :}} [28]
+l.1008 \noindent
+                \underline{\textbf{• Clinic Registering In The Application... [31]
 Overfull \vbox (38.13469pt too high) has occurred while \output is active []
 
 
@@ -945,55 +999,55 @@ Overfull \vbox (38.13469pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.879 \noindent
-               \underline{\textbf{• Clinic Registering In The Application :}} [29]
+l.1008 \noindent
+                \underline{\textbf{• Clinic Registering In The Application... [32]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.939 
-       [30]
+l.1068 
+        [33]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.994 \newpage
-               [31]
+l.1123 \newpage
+                [34]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1047 \newpage
-                [32]
+l.1176 \newpage
+                [35]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1077 \end{document}
-                      [33] (uni.aux)
+l.1206 \end{document}
+                      [36] (uni.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `uni.out' has not changed.
-(rerunfilecheck)             Checksum: 822FE87092221A73B4D56C402414F425;5207.
+(rerunfilecheck)             Checksum: 06406559225FD52CAE5C64E09F614F82;8789.
  ) 
 Here is how much of TeX's memory you used:
- 22989 strings out of 473522
- 435180 string characters out of 5731444
- 889671 words of memory out of 5000000
- 45791 multiletter control sequences out of 15000+600000
- 580507 words of font info for 68 fonts, out of 8000000 for 9000
+ 23191 strings out of 473522
+ 438623 string characters out of 5731444
+ 892946 words of memory out of 5000000
+ 45976 multiletter control sequences out of 15000+600000
+ 580676 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,93p,621b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on uni.pdf (33 pages, 473174 bytes).
+ 84i,13n,93p,621b,1090s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on uni.pdf (36 pages, 352337 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 475 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 518 words of extra memory for PDF output out of 10000 (max. 10000000)
 
