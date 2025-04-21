@@ -540,40 +540,63 @@ This document has provided an overview of the system, focusing on the roles and 
 
 \noindent Below are the key \textbf{Use Case Diagrams} representing interactions for different roles in the \textbf{Hospital Finder Mobile Application}.
 
+\newpage
 \subsubsection{\textbf{Doctor Interactions}}
-The following diagram illustrates how a doctor interacts with the application. Doctors have limited access and can only perform actions related to their schedules and patient appointments.
+The following diagram illustrates how a doctor interacts with the application. Doctors have limited access and can only perform actions related to their schedules and their data.
 
 \vspace{0.5cm}
-\noindent \textbf{Use Case Diagram: Doctor Using the App}
+\noindent \textbf{• Use Case Diagram: Doctor Using the App}
+\vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} 
+\end{center}
+\vspace{-0.85cm}
+\begin{center}
+	\textit{\textbf{Figure 2.5.2.1: Doctor Using the App Case Diagram}}
 \end{center}
 
+\newpage
 \subsubsection{\textbf{User Interactions (Patients)}}
 Users or patients use the application to find nearby clinics and doctors, check their schedules, and obtain contact details for appointments.
 
 \vspace{0.5cm}
-\noindent \textbf{Use Case Diagram: Patient or User Using the App}
+\noindent \textbf{• Use Case Diagram: Patient or User Using the App}
+\vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/patientCas.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
-
+\vspace{-0.85cm}
+\begin{center}
+	\textit{\textbf{Figure 2.5.2.2: User Interactions Case Diagram}}
+\end{center}
+\newpage
 \subsubsection{\textbf{Clinic Interactions}}
 Clinics are responsible for registering in the application, adding doctors, and managing their clinic details. They must be approved by an admin before becoming active.
 
 \vspace{0.5cm}
-\noindent \textbf{Use Case Diagram: Clinic Using the App}
+\noindent \textbf{• Use Case Diagram: Clinic Using the App}
+\vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/clinicCAS.pdf} % Replace "diagram.pdf" with your actual filename
+\end{center}
+\vspace{-0.85cm}
+\begin{center}
+	\textit{\textbf{Figure 2.5.2.3: Clinic Using the App Case Diagram}}
 \end{center}
 
+\newpage
 \subsubsection{\textbf{Admin Interactions}}
 Admins ensure the integrity of the platform by reviewing clinic registration requests and either accepting or rejecting them. They also monitor system performance and maintain security.
 
 \vspace{0.5cm}
-\noindent \textbf{Use Case Diagram: Admin Using the App}
+\noindent \textbf{• Use Case Diagram: Admin Using the App}
+\vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/adminCAS.pdf} % Replace "diagram.pdf" with your actual filename
+\end{center}
+\vspace{-0.85cm}
+\begin{center}
+	\textit{\textbf{Figure 2.5.2.4: Admin Using the App Case Diagram}}
 \end{center}
 
 \section{\textbf{Conclusion}}
@@ -638,7 +661,7 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 
 \vspace*{0.6cm}
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{images/appcucle@2x.pdf}
+	\includegraphics[width=0.7\textwidth]{images/AppCycle.pdf}
 \end{center}
 \vspace{0.1cm}
 \begin{center}
@@ -1063,10 +1086,58 @@ This sequence diagram illustrates the process by which a clinic registers on the
 	\end{sdblock}
 \end{sequencediagram}
 
+\noindent\underline{\textbf{• Clinic Managing Doctor Accounts (Add, Delete, Suspend) :}}  
+This sequence diagram illustrates how a clinic directly manages doctor accounts—adding, deleting, or suspending—through the application interface. All operations interact with the database without any admin involvement.
+
+\vspace{1cm}
+
+\begin{sequencediagram}
+	% Participants
+	\newinst[0]{C}{Clinic}
+	\newinst[4]{A}{App Interface}
+	\newinst[4]{DB}{Database}
+
+	% Adding a Doctor
+	\begin{sdblock}{Add Doctor}{}
+		\begin{call}{C}{Enter Doctor Details}{A}{}
+			\begin{call}{A}{Store Doctor Info}{DB}{Success}
+			\end{call}
+			\mess{A}{Doctor Account Created}{C}
+		\end{call}
+	\end{sdblock}
+
+	% Deleting a Doctor
+	\postlevel
+	\vspace{0.8cm}
+	\prelevel
+	\begin{sdblock}{Delete Doctor}{}
+		\begin{call}{C}{Select Doctor to Delete}{A}{}
+			\begin{call}{A}{Delete Doctor Record}{DB}{Success}
+			\end{call}
+			\mess{A}{Doctor Account Deleted}{C}
+		\end{call}
+	\end{sdblock}
+
+	% Suspending a Doctor
+	\postlevel
+	\vspace{0.8cm}
+	\prelevel
+	\begin{sdblock}{Suspend Doctor}{}
+		\begin{call}{C}{Choose Doctor to Suspend}{A}{}
+			\begin{call}{A}{Update Status to Suspended}{DB}{Success}
+			\end{call}
+			\mess{A}{Doctor Account Suspended}{C}
+		\end{call}
+	\end{sdblock}
+
+\end{sequencediagram}
+
+\newpage
 \noindent\underline{\textbf{• Admin Managing Clinics Requests:}}
 This sequence diagram models the process by which the admin handles clinic registration requests. The admin reviews the applications, makes a decision, and updates the database accordingly.
 
 \vspace*{0.9cm}
+
 
 \begin{sequencediagram}
 	% Participants with increased spacing
