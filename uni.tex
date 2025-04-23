@@ -325,6 +325,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 
 
+
 \newpage
 
 \chapter{\textbf{Analysis and Specification of Requirements}}
@@ -565,7 +566,7 @@ Users or patients use the application to find nearby clinics and doctors, check 
 \begin{center}
 	\includegraphics[width=\textwidth]{images/patientCas.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
-\vspace{-0.85cm}
+\vspace{-0.35cm}
 \begin{center}
 	\textit{\textbf{Figure 2.5.2.2: User Interactions Case Diagram}}
 \end{center}
@@ -579,7 +580,7 @@ Clinics are responsible for registering in the application, adding doctors, and 
 \begin{center}
 	\includegraphics[width=\textwidth]{images/clinicCAS.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
-\vspace{-0.85cm}
+\vspace{-0.35cm}
 \begin{center}
 	\textit{\textbf{Figure 2.5.2.3: Clinic Using the App Case Diagram}}
 \end{center}
@@ -594,30 +595,21 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \begin{center}
 	\includegraphics[width=\textwidth]{images/adminCAS.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
-\vspace{-0.85cm}
+\vspace{-0.35cm}
 \begin{center}
 	\textit{\textbf{Figure 2.5.2.4: Admin Using the App Case Diagram}}
 \end{center}
 
+\newpage
 \section{\textbf{Conclusion}}
-\noindent This section has provided a detailed overview of \textbf{Use Case Diagrams} and their role in defining user interactions within the \textbf{Hospital Finder Mobile Application}. By mapping out different functionalities for doctors, users, clinics, and admins, these diagrams offer a structured approach to understanding the system's behavior.
 
-\noindent The next steps involve designing the App structure and implementing the system based on these well-defined interactions .
+\noindent This section has provided a detailed overview of \textbf{Use Case Diagrams} and their role in defining user interactions within the \textbf{Hospital Finder Mobile Application}.\vspace{0.5cm}
 
+\noindent By mapping out different functionalities for doctors, users, clinics, and admins, these diagrams offer a structured approach to understanding the system's behavior.\vspace{0.5cm}
 
+\noindent The next steps involve designing the app structure and implementing the system based on these well-defined interactions.\vspace{0.5cm}
 
-
-
-
-
-
-
-
-
-
-
-
-
+\noindent In the next chapter, we will dive deeper into the app and its conception through additional diagrams, further refining the system's design and architecture.
 
 
 
@@ -1270,6 +1262,57 @@ Each interaction was modeled to ensure that data flows seamlessly through the ap
 
 \noindent
 In summary, this conception phase has transformed abstract requirements into detailed structural and behavioral models. These models not only support the system’s current requirements but also anticipate future enhancements. The groundwork laid here will facilitate a smoother transition to the implementation phase, ensuring that development is aligned with the overall system design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\chapter{\textbf{The Implementation of Our Application }}
+\rule{\linewidth}{1.5pt}
+
+\section{\textbf{Introduction}}
+
+\noindent In this chapter, we present the design phase of our mobile application \textit{Hospital Finder}. Following the analysis and specification of requirements, this stage is essential to define the structural and behavioral aspects of the application.
+
+\noindent The design phase translates the identified functionalities into technical diagrams that guide implementation. These include use case diagrams, class diagrams, and sequence diagrams. Each diagram offers a different perspective, illustrating how components interact and how the system is structured internally.
+
+\subsection{Use Case Actors Overview}
+
+\noindent The application involves multiple actors such as:
+
+\begin{itemize}
+	\item \textbf{User}: the main end-user searching for hospitals or clinics.
+	\item \textbf{Clinic}: responsible for managing their own clinic profile and associated doctors.
+	\item \textbf{Admin}: oversees the system and manages reported data or misuse.
+	\item \textbf{Doctor}: while present in the system, the doctor does not interact directly with the application and is managed entirely by the clinic.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
