@@ -1323,11 +1323,13 @@ For development and testing, the following hardware was used:
 \subsection*{2.2.1 Technologies Used}
 It presents the main technologies adopted, such as the programming language, development platform, target mobile environment, and the chosen database management system.
 
-\subsubsection*{2.2.1.1 Presentation}
-For the development of our mobile application, we adopted a set of modern tools and technologies to ensure the quality, performance, and maintainability of the project. Below is an overview of the main components of our software environment:
-
 \begin{itemize}
-    \item \textbf{Programming Language:} We used \textbf{Dart}, through the \textbf{Flutter} framework, to develop a cross-platform mobile application (Android and iOS) from a single codebase.
+    \item \textbf{Programming Language:} The most vital and indispensable tool in our project is \textbf{Dart}, used through the \textbf{Flutter} framework. Flutter enables us to develop a cross-platform mobile application (Android and iOS) from a single codebase, significantly accelerating development and ensuring a consistent user experience. Below is a flowchart to illustrate how Flutter operates:  
+    \begin{center}
+    \includegraphics[width=\linewidth]{images/FlutterDiagram@2x.pdf}
+	\textit{\textbf{Figure 3.1: Flutter Architecture Flowchart}}
+    \end{center}
+
 
     \item \textbf{Development Environments:} We primarily used \textbf{Visual Studio Code} and \textbf{Android Studio} as our code editors and development environments, which are widely recognized and powerful for mobile app development.
 
@@ -1345,121 +1347,88 @@ For the development of our mobile application, we adopted a set of modern tools 
 
     \item \textbf{Additional Tools:} \textit{[This section is reserved for any additional tools or technologies we may have used during the development process.]}
 \end{itemize}
+\subsection*{2.2.2 Database Management System}
 
-\subsubsection*{2.2.1.2 Database Management System Used}
+\subsubsection*{Overview and Tools}
+In this project, special focus was given to designing and implementing the database using Laravel, which provides an efficient system for migrations, models, and seeders. This section describes the workflow, tools, and structure adopted for managing data throughout the application.
 
-In this project, special focus was given to designing and implementing the database using Laravel, which provides an efficient system for migrations, models, and seeders. This section describes the workflow, tools, and structure adopted for managing data throughout the application development.
+The database schema was initially designed using \textbf{dbdiagram.io}, a web-based tool for visualizing tables, fields, and relationships. This served as a blueprint, ensuring a well-structured relational database before implementation.
 
-\vspace{0.5cm}
-
-The database schema was initially designed using \textbf{dbdiagram.io}, a web-based tool that allows for clear visualization of tables, their fields, and relationships. This step served as a blueprint, ensuring a well-structured and relational database design before implementation.
-
-\vspace{0.5cm}
-
-After finalizing the design, the schema was implemented using Laravel’s \textbf{migration system}. Each table was defined in a separate migration file, outlining columns, data types, primary and foreign keys, and relevant constraints. Laravel’s migration mechanism supports version control for the database, allowing for easy maintenance and scalability over time.
+Throughout development, \textbf{phpMyAdmin} was used to manage and inspect the MySQL database, complementing Laravel’s command-line tools for data verification and query testing.
 
 \vspace{0.5cm}
 
-Following the migration setup, a dedicated \textbf{Eloquent model} was created for each table. These models act as an abstraction layer between the application and the database, handling operations such as data insertion, updates, deletion, and retrieval. Laravel automatically maps models to their corresponding tables and supports defining inter-model relationships (e.g., \texttt{hasMany}, \texttt{belongsTo}, \texttt{hasOne}, \texttt{belongsToMany}) that mirror the relational schema.
+\subsubsection*{Implementation with Laravel}
+The schema was implemented using Laravel’s \textbf{migration system}, with each table defined in separate migration files, specifying columns, data types, keys, and constraints. Laravel’s migrations provide version control, simplifying maintenance and scaling.
+
+\textbf{Eloquent models} were created for each table, acting as an abstraction layer to handle operations like insertion, updates, deletion, and retrieval. These models also define interrelations (e.g., \texttt{hasMany}, \texttt{belongsTo}), reflecting the relational schema.
+
+\textbf{Seeders} were used to populate the database with essential data, useful during development, testing, or first-time deployments.
 
 \vspace{0.5cm}
 
-To initialize the database with essential application data, \textbf{seeders} were created. Seeders insert predefined data into the tables, making them particularly useful during development, testing, or on first-time deployments.
+\subsubsection*{Authentication and Access Control}
+While backend authentication is covered in another section, the system enforces strict \textbf{role-based access control} (RBAC). Each user (doctor, clinic, admin, general user) receives an assigned role, and access permissions are enforced accordingly.
+
+\textbf{Firebase Authentication} (email/password, Google Sign-In) is integrated via the \textbf{Google Cloud Console}. After client-side login (Flutter), a Firebase token is sent to the backend, where Laravel verifies it using the Firebase Admin SDK and issues a Laravel session token with \textbf{Laravel Sanctum}.
+
+Sanctum securely manages API tokens and sessions. Custom middleware checks the user’s Firebase UID, fetches their role, and enforces permissions, returning a 403 error for unauthorized actions.
 
 \vspace{0.5cm}
 
-Throughout the development process, the database was managed and inspected using \textbf{phpMyAdmin}, a popular web-based tool for administering MySQL databases. phpMyAdmin facilitated direct interaction with the database for purposes such as data verification, relationship checks, and query testing, complementing Laravel’s command-line and code-driven operations.
-
-\vspace{0.5cm}
-
-Although backend authentication \textbf{(using Firebase And Laravel)} was not the focus of this section, the system does implement strict user authentication and role-based access control. Each user is assigned a specific role upon registration (e.g., doctor, clinic, admin, or general user), and strict permission logic ensures that a user of one type cannot access another role’s interface or perform unauthorized actions. For example, a doctor account cannot log in as a normal user or admin, and vice versa.
-
-\vspace{0.5cm}
-
-The authentication system integrates \textbf{Firebase Authentication} (via email/password and Google Sign-In), managed through the \textbf{Google Cloud Console}. Upon successful authentication on the client side (using Flutter), the user receives a Firebase token, which is then sent to the backend. On the Laravel side, we verify this token using Firebase’s Admin SDK and issue a Laravel session token using \textbf{Laravel Sanctum}.
-
-\vspace{0.5cm}
-
-Sanctum provides a simple and secure way to manage API tokens and session authentication. We implemented custom middleware that checks the user’s Firebase UID, retrieves their corresponding role from the database, and enforces access rules based on that role. Unauthorized access attempts result in a 403 Forbidden error, with clear JSON responses for frontend handling.
-
-\vspace{0.5cm}
-
-The following figures illustrate two key components of the system's security architecture. The first diagram explains how authentication is handled using Firebase and Laravel Sanctum, ensuring only verified users can access the system. The second diagram focuses on how user roles and permissions are enforced to control access to specific resources within the application.
-
-\vspace{0.5cm}
+\subsubsection*{Diagrams and Database Schema}
+The diagrams below illustrate two key components:
+\begin{itemize}
+\item \textbf{MVC Architecture} of our app with models, controllers, and views, where each use case is color-coded as shown.
+\item \textbf{Laravel Sanctum flow}, demonstrating how tokens are validated before requests reach the database or Hostinger API.
+\end{itemize}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}
-    \caption{Authentication Flow: Firebase Authentication integrated with Laravel Sanctum}
+\centering
+\includegraphics[width=1\textwidth]{images/MVC@2x.pdf}
+\caption{Our App MVC Architecture: Model-Controller-View Structure with Use-Case Colors}
 \end{figure}
-
-\vspace{0.5cm}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}
-    \caption{Role-Based Access Control: Enforcing Permissions for Users, Doctors, Clinics, and Admins}
+\centering
+\includegraphics[width=1\textwidth]{images/sanctum@2x.pdf}
+\caption{Authentication Laravel Sanctum Token Validation Before Database/API Access}
 \end{figure}
 
-\vspace{0.5cm}
-
-With a secure authentication and access control system in place, the structure of our database becomes the backbone for managing and organizing user-related data. To illustrate how different types of users and their interactions are handled within the system, we now highlight the most important tables—such as \texttt{users}, \texttt{clinics}, \texttt{doctors}, and \texttt{appointments}. These tables represent the core entities and relationships that power the application’s functionality.
-
-\vspace{0.5cm}
+Core tables—\texttt{users}, \texttt{clinics}, \texttt{doctors}, and \texttt{appointments}—represent the heart of the system. Their schemas are shown below.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}
-    \caption{Users Table Schema}
+\centering
+\includegraphics[width=1\textwidth]{images/table@2x.pdf}
+\caption{Users Table Schema}
 \end{figure}
-
-\vspace{0.5cm}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}    \caption{Clinics Table Schema}
+\centering
+\includegraphics[width=1\textwidth]{images/table@2x.pdf}
+\caption{Clinics Table Schema}
 \end{figure}
-
-\vspace{0.5cm}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}    \caption{Doctors Table Schema}
+\centering
+\includegraphics[width=1\textwidth]{images/table@2x.pdf}
+\caption{Doctors Table Schema}
 \end{figure}
-
-\vspace{0.5cm}
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{images/FlutterDiagram@2x.pdf}    \caption{Appointments Table Schema}
+\centering
+\includegraphics[width=1\textwidth]{images/table@2x.pdf}
+\caption{Appointments Table Schema}
 \end{figure}
 
-\vspace{0.5cm}
-
-Finally, the complete database structure and its initial data were deployed using the following Artisan command:
+\subsubsection*{Final Setup}
+To finalize setup, we used the following command:
 
 \begin{lstlisting}[style=darkbash, language=bash, caption={Laravel command to run migrations and seeders}]
 php artisan migrate --seed
 \end{lstlisting}
 
-This command runs all migration files to create the defined schema and immediately executes the seeders to populate the tables with required data. It ensures the database is fully prepared for integration with the rest of the application.
-
-\vspace{0.8cm}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth]{images/FlutterDiagram@2x.pdf}
-    \caption{Laravel MVC Architecture: Model-View-Controller Structure}
-\end{figure}
-
-
-
-
-
-
-
-
+This command runs all migrations and executes seeders, preparing the database for integration.
 
 
 

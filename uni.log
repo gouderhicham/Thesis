@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  27 APR 2025 02:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  2 MAY 2025 00:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1101,95 +1101,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 1322--1323
 
 
 
+pdfTeX warning: pdflatex (file ./images/FlutterDiagram@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/FlutterDiagram@2x.pdf, id=781, 664.4825pt x 321.46521pt>
+File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
+<use images/FlutterDiagram@2x.pdf>
+Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1329.
+(pdftex.def)             Requested size: 423.5932pt x 204.92767pt.
+
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1343 
-        [40]
+l.1339 
+        [40 <./images/FlutterDiagram@2x.pdf>]
+Overfull \hbox (5.51732pt too wide) in paragraph at lines 1357--1358
+[]\OT1/bch/m/n/12 Throughout de-vel-op-ment, \OT1/bch/b/n/12 ph-p-MyAd-min \OT1/bch/m/n/12 was used to man-age and in-spect the MySQL
+ []
+
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1372 
+l.1365 
         [41]
 
-pdfTeX warning: pdflatex (file ./images/FlutterDiagram@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/FlutterDiagram@2x.pdf, id=787, 664.4825pt x 321.46521pt>
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1393.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
+pdfTeX warning: pdflatex (file ./images/MVC@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/MVC@2x.pdf, id=966, 791.95876pt x 345.79187pt>
+File: images/MVC@2x.pdf Graphic file (type pdf)
+<use images/MVC@2x.pdf>
+Package pdftex.def Info: images/MVC@2x.pdf  used on input line 1388.
+(pdftex.def)             Requested size: 452.9679pt x 197.77878pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1396 
+l.1391 
         [42]
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1401.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1413.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
+
+pdfTeX warning: pdflatex (file ./images/sanctum@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/sanctum@2x.pdf, id=970, 676.5275pt x 453.62228pt>
+File: images/sanctum@2x.pdf Graphic file (type pdf)
+<use images/sanctum@2x.pdf>
+Package pdftex.def Info: images/sanctum@2x.pdf  used on input line 1394.
+(pdftex.def)             Requested size: 452.9679pt x 303.73154pt.
+
+
+pdfTeX warning: pdflatex (file ./images/table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/table@2x.pdf, id=971, 789.95125pt x 72.27pt>
+File: images/table@2x.pdf Graphic file (type pdf)
+<use images/table@2x.pdf>
+Package pdftex.def Info: images/table@2x.pdf  used on input line 1402.
+(pdftex.def)             Requested size: 452.9679pt x 41.44023pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1416 
-        [43 <./images/FlutterDiagram@2x.pdf>]
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1421.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1428.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1430 
-        [44]
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1435.
-(pdftex.def)             Requested size: 407.66833pt x 197.22166pt.
+l.1405 
+        [43 <./images/MVC@2x.pdf> <./images/sanctum@2x.pdf>]
+File: images/table@2x.pdf Graphic file (type pdf)
+<use images/table@2x.pdf>
+Package pdftex.def Info: images/table@2x.pdf  used on input line 1408.
+(pdftex.def)             Requested size: 452.9679pt x 41.44023pt.
+File: images/table@2x.pdf Graphic file (type pdf)
+<use images/table@2x.pdf>
+Package pdftex.def Info: images/table@2x.pdf  used on input line 1414.
+(pdftex.def)             Requested size: 452.9679pt x 41.44023pt.
+File: images/table@2x.pdf Graphic file (type pdf)
+<use images/table@2x.pdf>
+Package pdftex.def Info: images/table@2x.pdf  used on input line 1420.
+(pdftex.def)             Requested size: 452.9679pt x 41.44023pt.
  (E:\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 ) (E:\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1442.
-File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
-<use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1452.
-(pdftex.def)             Requested size: 385.02547pt x 186.26845pt.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1427.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1455 
-        [45]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1473 \end{document}
-                      [46] (uni.aux)
+l.1442 \end{document}
+                      [44 <./images/table@2x.pdf>] (uni.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1198,17 +1199,17 @@ Package rerunfilecheck Info: File `uni.out' has not changed.
 (rerunfilecheck)             Checksum: EDB11AFB8FDC098FCCC46A798DAE1680;9117.
  ) 
 Here is how much of TeX's memory you used:
- 25053 strings out of 473522
- 464920 string characters out of 5731444
- 1090536 words of memory out of 5000000
- 47811 multiletter control sequences out of 15000+600000
+ 25069 strings out of 473522
+ 465439 string characters out of 5731444
+ 1090846 words of memory out of 5000000
+ 47828 multiletter control sequences out of 15000+600000
  580676 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,99p,621b,1249s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,99p,621b,1251s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on uni.pdf (46 pages, 730838 bytes).
+Output written on uni.pdf (44 pages, 917147 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 554 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1344 PDF objects out of 1440 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 569 words of extra memory for PDF output out of 10000 (max. 10000000)
 
