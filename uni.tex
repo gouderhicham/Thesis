@@ -14,7 +14,7 @@
 \usepackage{float}  
 \usepackage{longtable}          
 \usepackage{atbegshi} 
-\usepackage{array}
+\usepackage{url}
 \usepackage{cellspace}
 \usepackage[a4paper, left=1in, right=1in, bottom=0.8in, top=0.8in]{geometry}
 \usepackage{tikz}
@@ -267,16 +267,21 @@ Our methodology consists of the following key steps:
 \chapter{\textbf{Theoretical Study and Technical Choices}}
 \rule{\linewidth}{1.5pt}
 
-\section{\textbf{Introduction}}
+\section*{\textbf{1 Introduction}}
+\addcontentsline{toc}{section}{Introduction}
 
-In today's digital age, access to precise and reliable healthcare information is essential. Many existing applications provide hospital location services, but they often lack \textbf{detailed and accurate clinic information}. 
+
+In today's digital age, access to precise and reliable healthcare information is essential. Many existing applications provide hospital location services, but they often lack \textbf{detailed and accurate clinic information}.
 This chapter explores the theoretical aspects of our \textbf{Hospital Finder Mobile Application}, analyzes existing solutions, and presents our improved approach.
 
-\section{\textbf{Preliminary Study}}
+\section*{\textbf{1 Preliminary Study}}
+\addcontentsline{toc}{section}{1 Preliminary Study}
+
 \vspace{-0.5cm}
 \rule{7.5cm}{1.5pt}
 \vspace{-0.5cm}
-\subsection{\textbf{Study of Existing Solutions: Geolocation, Search on Google Maps}}
+\subsection*{\textbf{1.1 Study of Existing Solutions: Geolocation, Search on Google Maps}}
+\addcontentsline{toc}{subsection}{1.1 Study of Existing Solutions: Geolocation, Search on Google Maps}
 
 Several solutions exist for finding hospitals and clinics, but they have \textbf{significant limitations}:
 
@@ -289,8 +294,8 @@ Several solutions exist for finding hospitals and clinics, but they have \textbf
 	      Currently, \textbf{no local application} provides a \textbf{dedicated hospital and clinic management system} that allows clinics to \textbf{register themselves, update details, and display real-time doctor availability}.
 \end{itemize}
 
-\subsection{\textbf{Critique of Existing Solutions and Proposed Solution}}
-
+\subsection*{\textbf{1.2 Critique of Existing Solutions and Proposed Solution}}
+\addcontentsline{toc}{subsection}{1.2 Critique of Existing Solutions and Proposed Solution}
 \textbf{Limitations of Existing Solutions:}
 \begin{itemize}
 	\item No \textbf{custom clinic registration} or modifications
@@ -311,7 +316,8 @@ To overcome these limitations, our \textbf{Hospital Finder Mobile Application} i
 	\item \textbf{Modern UI \& Better User Experience} → A \textbf{new, intuitive, and visually appealing interface}.
 \end{itemize}
 
-\section{\textbf{Conclusion}}
+\section*{\textbf{2 Conclusion}}
+\addcontentsline{toc}{section}{2 Conclusion}
 
 The existing hospital location solutions fail to provide \textbf{detailed, precise, and user-friendly} hospital and clinic information. Our \textbf{Hospital Finder Mobile Application} bridges this gap by offering:
 \begin{itemize}
@@ -339,11 +345,14 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \chapter{\textbf{Analysis and Specification of Requirements}}
 \rule{\linewidth}{1.5pt}  % Full-width underline  
 
-\section{\textbf{Introduction}}
+\section*{\textbf{1 Introduction}}
+\addcontentsline{toc}{section}{1 Introduction}
+
 
 \noindent To develop an efficient and user-friendly \textbf{Hospital Finder Mobile Application}, it is crucial to analyze the key actors involved, their roles, and the functional and non-functional requirements. This chapter presents an in-depth study of the application’s requirements and specifications.
 
-\section{\textbf{Global Analysis of the Application}}
+\section*{\textbf{2 Global Analysis of the Application}}
+\addcontentsline{toc}{section}{2 Global Analysis of the Application}
 
 \noindent This section defines the main actors interacting with the system, along with their respective tasks and permissions. The application has four primary actors:
 \begin{itemize}
@@ -353,10 +362,13 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Admin} – Approves new clinics and ensures system integrity.
 \end{itemize}
 
-\subsection{\textbf{User Definition}}
+\subsection*{\textbf{2.1 User Definition}}
+\addcontentsline{toc}{subsection}{2.1 User Definition}
 \noindent A \textbf{user} is a person who enters the application to access services such as searching for nearby clinics and doctors. Users do not need special registration and can quickly access relevant information.
 
-\subsubsection{\textbf{Main Tasks of a User}}
+\subsubsection*{\textbf{2.1.1 Main Tasks of a User}}
+\addcontentsline{toc}{subsubsection}{2.1.1 Main Tasks of a User}
+
 \begin{itemize}
 	\item \textbf{Find Nearby Clinics:} View their locations on the map.
 	\item \textbf{Find Available Doctors:} Check their specialties and schedules.
@@ -366,11 +378,13 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 \vspace{0.5cm}
 
-\subsection{\textbf{Clinic Definition}}
+\subsection*{\textbf{2.2 Clinic Definition}}
+\addcontentsline{toc}{subsection}{2.2 Clinic Definition}
 
 \noindent A \textbf{clinic} is an entity that registers in the application to add doctors and manage their data. Registration is not automatic; an admin must approve the clinic before it becomes active.
 
-\subsubsection{\textbf{Main Tasks of a Clinic}}
+\subsubsection*{\textbf{2.2.1 Main Tasks of a Clinic}}
+\addcontentsline{toc}{subsubsection}{2.2.1 Main Tasks of a Clinic}
 \begin{itemize}
 	\item \textbf{Enter Clinic Information:} Name, address, phone number, specialties.
 	\item \textbf{Wait for Admin Approval:} The clinic remains inactive until approval.
@@ -382,10 +396,12 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \end{itemize}
 
 \vspace{0.5cm}
-\subsection{\textbf{Doctor Definition}}
+\subsection*{\textbf{2.3 Doctor Definition}}
+\addcontentsline{toc}{subsection}{2.3 Doctor Definition}
 \noindent A \textbf{doctor} is a user who receives login credentials from the clinic they work at. Doctors cannot register independently but are added by their respective clinics.
 
-\subsubsection{\textbf{Doctor Tasks}}
+\subsubsection*{\textbf{2.3.1 Doctor Tasks}}
+\addcontentsline{toc}{subsubsection}{2.3.1 Doctor Tasks}
 \begin{itemize}
 	\item \textbf{Login:} Use the email and password provided by the clinic.
 	\item \textbf{Manage Schedule:} Set availability and update consultation hours.
@@ -395,11 +411,13 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \vspace{0.5cm}
 
 
-\subsection{\textbf{Admin Definition}}
+\subsection*{\textbf{2.4 Admin Definition}}
+\addcontentsline{toc}{subsection}{2.4 Admin Definition}
 
 \noindent The \textbf{admin} is responsible for approving or rejecting newly registered clinics. They have a separate admin application to manage the system efficiently.
 
-\subsubsection{\textbf{Admin Tasks}}
+\subsubsection*{\textbf{2.4.1 Admin Tasks}}
+\addcontentsline{toc}{subsubsection}{2.4.1 Admin Tasks}
 \begin{itemize}
 	\item \textbf{Review Clinic Registration Requests:} Check clinic information for validity.
 	\item \textbf{Approve or Reject Clinics:} Grant or deny access based on verification.
@@ -409,44 +427,45 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 
 
-\subsection{App Users Information Table}
+\subsection*{2.5 App Users Information Table}
+\addcontentsline{toc}{subsection}{2.5 App Users Information Table}
 \noindent The application collects specific information for each user type to support functionality, access control, and communication. Each user type—whether a patient, clinic, doctor, or admin—has a tailored set of required details that align with their role in the system. The table below outlines the key types of users in the application and the information stored for each to facilitate registration, authentication, and system interaction.
 \vspace{0.3cm}
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.3}
 	\begin{tabular}{|p{4cm}|p{11.5cm}|}
-	\hline
-	\rowcolor[HTML]{C0C0C0}
-	\textbf{User Type} & \textbf{Stored Information} \\
-	\hline
-	
-	\hspace{0.5cm}\textbf{Patient / Guest} & 
-	Full name, email, password, Google Login id, notification preferences. \\
-	\hline
-	
-	\hspace{1.4cm}\textbf{Clinic} & 
-	Clinic name, email, password, phone number, address, location coordinates, registration number and images. \\
-	\hline
-	
-	\hspace{1.4cm}\textbf{Doctor} & 
-	Full name, email, phone number, associated clinic and specialty, availability schedule. \\
-	\hline
-	
-	\hspace{1.4cm}\textbf{Admin} & 
-	Email and password only, used for platform management access. \\
-	\hline
-	
+		\hline
+		\rowcolor[HTML]{C0C0C0}
+		\textbf{User Type}                     & \textbf{Stored Information}                                       \\
+		\hline
+
+		\hspace{0.5cm}\textbf{Patient / Guest} &
+		Full name, email, password, Google Login id, notification preferences.                                     \\
+		\hline
+
+		\hspace{1.4cm}\textbf{Clinic}          &
+		Clinic name, email, password, phone number, address, location coordinates, registration number and images. \\
+		\hline
+
+		\hspace{1.4cm}\textbf{Doctor}          &
+		Full name, email, phone number, associated clinic and specialty, availability schedule.                    \\
+		\hline
+
+		\hspace{1.4cm}\textbf{Admin}           &
+		Email and password only, used for platform management access.                                              \\
+		\hline
 	\end{tabular}
 	\begin{center}
-	    \vspace{0.5cm}
-		\textit{\textbf{Figure 2.2.5: App user types and the information they store.}}
+		\vspace{0.5cm}
+		\textit{\textbf{Figure: App user types and the information they store.}}
 	\end{center}
-	\end{table}
-	
+\end{table}
+
 
 \newpage
-\subsection{App Users Roles Table}
+\subsection*{2.6 App Users Roles Table}
+\addcontentsline{toc}{subsection}{2.6 App Users Roles Table}	
 \noindent The application consists of multiple user roles, each with distinct responsibilities and functionalities. Understanding these roles is essential for ensuring smooth operation and proper management within the system. Below is a breakdown of the key roles and their main tasks:
 \vspace{0.2cm}
 % Longtable for splitting across pages
@@ -493,17 +512,18 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	• Monitor system performance and security.\newline
 	• Ensure proper functionality of the platform.                                                                                                                                                                                        \\
 	\hline
-	
 \end{longtable}
 \begin{center}
-	\textit{\textbf{Figure 2.2.6: App user roles and desception.}}
+	\textit{\textbf{Figure: App user roles and desception.}}
 \end{center}
 
 
-\subsection{Conclusion}
+\subsection*{2.6 Conclusion}
+\addcontentsline{toc}{subsection}{2.6 Conclusion}
 This document has provided an overview of the system, focusing on the roles and responsibilities of users. The Hospital Finder Mobile App ensures smooth interaction between patients, clinics, and administrators.
 \vspace{0.5cm}
-\section{\textbf{Functional Requirements Specification}}
+\section*{\textbf{3 Functional Requirements Specification}}
+\addcontentsline{toc}{section}{3 Functional Requirements Specification}
 
 \noindent The functional requirements define the expected behavior of the application. These include:
 
@@ -515,8 +535,8 @@ This document has provided an overview of the system, focusing on the roles and 
 	\item \textbf{Admin Panel:} The admin can approve or reject clinic registrations.
 \end{itemize}
 
-\section{\textbf{Non-Functional Requirements Specification}}
-
+\section*{\textbf{4 Non-Functional Requirements Specification}}
+\addcontentsline{toc}{section}{4 Non-Functional Requirements Specification}
 \noindent The non-functional requirements define the application's quality attributes, such as performance, security, and usability.
 
 \begin{itemize}
@@ -527,9 +547,11 @@ This document has provided an overview of the system, focusing on the roles and 
 \end{itemize}
 
 
-\section{\textbf{Use Case Diagrams}}
+\section*{\textbf{5 Use Case Diagrams}}
+\addcontentsline{toc}{section}{5 Use Case Diagrams}
 \rule{0.45\linewidth}{0.7pt}
-\subsection{\textbf{Definition of Use Case Diagrams}}
+\subsection*{\textbf{5.1 Definition of Use Case Diagrams}}
+\addcontentsline{toc}{subsection}{5.1 Definition of Use Case Diagrams}
 
 
 \noindent A \textbf{Use Case Diagram} is a visual representation that describes the interactions between users (actors) and the system. It outlines the different functionalities provided by the application and the roles of each user in relation to those functionalities.
@@ -545,12 +567,15 @@ This document has provided an overview of the system, focusing on the roles and 
 
 \noindent The goal of these diagrams is to **provide a clear, high-level understanding** of how different actors interact with the system’s functionalities, making it easier for developers, stakeholders, and designers to visualize and refine the system requirements.
 
-\subsection{\textbf{Use Case Diagrams for the Application}}
+\subsection*{\textbf{5.2 Use Case Diagrams for the Application}}
+\addcontentsline{toc}{subsection}{5.2 Use Case Diagrams for the Application}
+
 
 \noindent Below are the key \textbf{Use Case Diagrams} representing interactions for different roles in the \textbf{Hospital Finder Mobile Application}.
 
 \newpage
-\subsubsection{\textbf{Doctor Interactions}}
+\subsubsection*{\textbf{5.2.1 Doctor Interactions}}
+\addcontentsline{toc}{subsubsection}{5.2.1 Doctor Interactions}
 The following diagram illustrates how a doctor interacts with the application. Doctors have limited access and can only perform actions related to their schedules and their data.
 
 \vspace{0.5cm}
@@ -563,15 +588,16 @@ The following diagram illustrates how a doctor interacts with the application. D
 \noindent \textbf{• Use Case Diagram: Doctor Using the App}
 \vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/doctorCAS.pdf} 
+	\includegraphics[width=\textwidth]{images/doctorCAS.pdf}
 \end{center}
 \vspace{-0.85cm}
 \begin{center}
-	\textit{\textbf{Figure 2.5.2.1: Doctor Using the App Case Diagram}}
+	\textit{\textbf{Figure: Doctor Using the App Case Diagram}}
 \end{center}
 
 \newpage
-\subsubsection{\textbf{User Interactions (Patients)}}
+\subsubsection*{\textbf{5.2.2 User Interactions (Patients)}}
+\addcontentsline{toc}{subsubsection}{5.2.2 User Interactions (Patients)}
 Users or patients use the application to find nearby clinics and doctors, check their schedules, and obtain contact details for appointments.
 
 \vspace{0.5cm}
@@ -582,10 +608,11 @@ Users or patients use the application to find nearby clinics and doctors, check 
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
-	\textit{\textbf{Figure 2.5.2.2: User Interactions Case Diagram}}
+	\textit{\textbf{Figure: User Interactions Case Diagram}}
 \end{center}
 \newpage
-\subsubsection{\textbf{Clinic Interactions}}
+\subsubsection*{\textbf{5.2.3 Clinic Interactions}}
+\addcontentsline{toc}{subsubsection}{5.2.3 Clinic Interactions}
 Clinics are responsible for registering in the application, adding doctors, and managing their clinic details. They must be approved by an admin before becoming active.
 
 \vspace{0.5cm}
@@ -596,11 +623,12 @@ Clinics are responsible for registering in the application, adding doctors, and 
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
-	\textit{\textbf{Figure 2.5.2.3: Clinic Using the App Case Diagram}}
+	\textit{\textbf{Figure: Clinic Using the App Case Diagram}}
 \end{center}
 
 \newpage
-\subsubsection{\textbf{Admin Interactions}}
+\subsubsection*{\textbf{5.2.4 Admin Interactions}}
+\addcontentsline{toc}{subsubsection}{5.2.4 Admin Interactions}
 Admins ensure the integrity of the platform by reviewing clinic registration requests and either accepting or rejecting them. They also monitor system performance and maintain security.
 
 \vspace{0.5cm}
@@ -611,11 +639,12 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
-	\textit{\textbf{Figure 2.5.2.4: Admin Using the App Case Diagram}}
+	\textit{\textbf{Figure: Admin Using the App Case Diagram}}
 \end{center}
 
 \newpage
-\section{\textbf{Conclusion}}
+\section*{\textbf{6 Conclusion}}
+\addcontentsline{toc}{section}{6 Conclusion}
 
 \noindent This section has provided a detailed overview of \textbf{Use Case Diagrams} and their role in defining user interactions within the \textbf{Hospital Finder Mobile Application}.\vspace{0.5cm}
 
@@ -640,17 +669,19 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 
 \newpage
 
-\chapter{\textbf{La Conception d'Application}}
+\chapter{\textbf{Application's Conception}}
 \rule{\linewidth}{1.5pt}
 
 
-\section{\textbf{Introduction}}
+\section*{\textbf{1 Introduction}}
+\addcontentsline{toc}{section}{1 Introduction}
 
 \noindent In this chapter, we present the design phase of our mobile application \textit{Hospital Finder}. Following the analysis and specification of requirements, this stage is essential to define the structural and behavioral aspects of the application.
 
 \noindent The design phase translates the identified functionalities into technical diagrams that guide implementation. These include use case diagrams, class diagrams, and sequence diagrams. Each diagram offers a different perspective, illustrating how components interact and how the system is structured internally.
 
-\subsection{Use Case Actors Overview}
+\subsection*{1.1 Use Case Actors Overview}
+\addcontentsline{toc}{subsection}{1.1 Use Case Actors Overview}
 
 \noindent The application involves multiple actors such as:
 
@@ -671,11 +702,12 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \end{center}
 \vspace{0.1cm}
 \begin{center}
-	\textit{\textbf{Figure 3.1: Application Cycle between App actors .}}
+	\textit{\textbf{Figure: Application Cycle between App actors .}}
 \end{center}
 \vspace{0.5cm}
 
-\section{Detailed Design}
+\section*{2 Detailed Design}
+\addcontentsline{toc}{section}{2 Detailed Design}
 
 This section presents the core structural design of the \textit{Hospital Finder} application. After analyzing the system’s requirements and actors, we now focus on how these elements are implemented internally.
 
@@ -696,7 +728,7 @@ This section presents the core structural design of the \textit{Hospital Finder}
 
 \end{center}
 \begin{center}
-	\textit{\textbf{Figure 3.1: Classification of UML diagrams (structure vs behavior).}}
+	\textit{\textbf{Figure: Classification of UML diagrams (structure vs behavior).}}
 \end{center}
 \vspace{0.5cm}
 \noindent In Chapter 2, we presented a \textbf{Use Case Diagram}, which belongs to the behavioral category. In this chapter, we will explore two additional diagrams:
@@ -707,11 +739,13 @@ This section presents the core structural design of the \textit{Hospital Finder}
 
 \noindent These diagrams allow us to model both the architecture and the interactions in our application in a clear and structured manner. We begin with the class diagram in the next section.
 
-\subsection{Class Diagram}
+\subsection*{2.1 Class Diagram}
+\addcontentsline{toc}{subsection}{2.1 Class Diagram}
 
 A class diagram plays a key role in the object-oriented design of software systems. In this section, we will define what a class diagram is, explain its importance in the development process, and finally present the class diagram of our \textit{Hospital Finder} application.
 
-\subsubsection{What is a Class Diagram ?}
+\subsubsection*{2.1.1 What is a Class Diagram ?}
+\addcontentsline{toc}{subsubsection}{2.1.1 What is a Class Diagram ?}
 \vspace{0.1cm}
 
 A \textbf{class diagram} is a static structural diagram that describes the types of objects in the system and the various kinds of \textbf{relationships} that exist among them. It shows the system's \textbf{classes}, their \textbf{attributes}, \textbf{methods}, and the \textbf{associations} between objects. It is one of the most commonly used diagrams in \textbf{UML} (Unified Modeling Language) and serves as a \textbf{blueprint} for the \textbf{implementation phase}.
@@ -719,7 +753,8 @@ A \textbf{class diagram} is a static structural diagram that describes the types
 \noindent Each class is represented as a rectangle divided into compartments. The top compartment shows the \textbf{class name}, the middle one lists the \textbf{attributes}, and the bottom lists the \textbf{operations} or \textbf{methods}.
 
 
-\subsubsection{Why Use a Class Diagram ?}
+\subsubsection*{2.1.2 Why Use a Class Diagram ?}
+\addcontentsline{toc}{subsubsection}{2.1.2 Why Use a Class Diagram ?}
 \vspace{0.1cm}
 
 
@@ -736,113 +771,125 @@ The \textbf{class diagram} is essential in the software development lifecycle fo
 \noindent In the context of our project, the \textbf{class diagram} acts as a bridge between the \textbf{actors} (users, clinics, doctors, and admins) and the data handled internally. It helps clarify how the \textbf{components} of the system interact with one another and ensures a consistent and maintainable code structure.
 
 
-\subsubsection{Class Diagram of the Application}
+\subsubsection*{2.1.3 Class Diagram of the Application}
+\addcontentsline{toc}{subsubsection}{2.1.3 Class Diagram of the Application}
 \vspace{0.1cm}
 
 
 The class diagram of the \textit{Hospital Finder} application was developed based on the functional and non-functional requirements outlined during the analysis phase. It models the following key classes:
-
 \begin{itemize}
 
-	\item \textbf{users}: Stores core information for every system user. This includes:
-	\begin{itemize}
-		\item \texttt{id}: Primary key.
-		\item \texttt{google\_id}: Used when logging in with Google.
-		\item \texttt{name}, \texttt{email}, \texttt{password}: Basic user credentials.
-		\item \texttt{email\_verified\_at}: Timestamp indicating when the user's email was verified.
-		\item \texttt{user\_notify\_status}: Boolean indicating if notifications are enabled.
-		\item \texttt{fcm\_token}: Used for Firebase push notifications.
-		\item \texttt{user\_role}: Small integer representing the role type.
-		\item \texttt{created\_at}: Account creation date.
-	\end{itemize}
+	\item \textbf{users}: Stores core information for every system user.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{google\_id}: Used for Google login.
+		      \item \texttt{name}, \texttt{email}: Basic user details.
+		      \item \texttt{user\_notify\_status}: Boolean for notifications.
+		      \item \texttt{fcm\_token}: Firebase push notifications.
+		      \item \texttt{user\_role}: Role type (small integer).
+		      \item \texttt{profile\_image}: User profile picture.
+	      \end{itemize}
 
-	\item \textbf{role}: Defines all possible roles within the app (e.g., admin, doctor, clinic, general user). Supports role-based access control.
+	\item \textbf{role}: Defines all possible user roles.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{role\_name}: Name of the role.
+	      \end{itemize}
 
-	\item \textbf{roles\_user}: A pivot table allowing users to have multiple roles. Fields include:
-	\begin{itemize}
-		\item \texttt{user\_id}: References \texttt{users.id}.
-		\item \texttt{role\_id}: References \texttt{role.id}.
-	\end{itemize}
+	\item \textbf{roles\_user}: Connects users and roles (many-to-many).
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{user\_id}, \texttt{role\_id}: User and role references.
+	      \end{itemize}
 
-	\item \textbf{specialties}: Stores medical specialties such as dermatology or pediatrics. Includes:
-	\begin{itemize}
-		\item \texttt{name}: The default name (usually in Arabic).
-		\item \texttt{name\_fr}: The name written in Latin (French) characters.
-		\item \texttt{specialy\_img}: Optional image representing the specialty.
-	\end{itemize}
+	\item \textbf{specialties}: Medical specialties.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{name}, \texttt{name\_fr}: Names (default and French).
+		      \item \texttt{specialy\_img}: Optional image.
+	      \end{itemize}
 
-	\item \textbf{municipalities}: Represents cities or regions where clinics are located. Includes:
-	\begin{itemize}
-		\item \texttt{name}: Default name.
-		\item \texttt{name\_fr}: Latin-character version of the name.
-	\end{itemize}
+	\item \textbf{municipalities}: Cities or regions.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{name}, \texttt{name\_fr}: Names (default and French).
+	      \end{itemize}
 
-	\item \textbf{clinic\_schedules}: Contains working hours of clinics. Includes:
-	\begin{itemize}
-		\item \texttt{clinic\_id}: References the clinic.
-		\item \texttt{day}, \texttt{opening\_time}, \texttt{closing\_time}: Working day and hours.
-	\end{itemize}
+	\item \textbf{clinic\_schedules}: Clinic working hours.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{clinic\_id}: Linked clinic.
+		      \item \texttt{day}, \texttt{opening\_time}, \texttt{closing\_time}: Work schedule.
+	      \end{itemize}
 
-	\item \textbf{Clinics}: Represents registered health facilities. Each clinic:
-	\begin{itemize}
-		\item Belongs to a \texttt{user} (usually the clinic owner or admin).
-		\item Is located in a \texttt{municipality}.
-		\item Includes details like multilingual name (\texttt{name}, \texttt{name\_fr}), contact info, location (latitude and longitude), and media (profile and cover images).
-		\item Has a \texttt{type} (e.g., clinic or hospital).
-		\item Has a \texttt{status} (active/inactive), registration number, and creation timestamp.
-	\end{itemize}
+	\item \textbf{Clinics}: Registered health facilities.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{user\_id}: Linked user.
+		      \item \texttt{municipalities\_id}: Linked municipality.
+		      \item \texttt{name}, \texttt{type}: Name and type (clinic/hospital).
+		      \item \texttt{address}, \texttt{Statue}: Location and status.
+	      \end{itemize}
 
-	\item \textbf{doctor}: Contains profiles of medical professionals. Each doctor:
-	\begin{itemize}
-		\item Is a registered \texttt{user}.
-		\item Works at a specific \texttt{clinic}.
-		\item Belongs to a specific \texttt{specialty}.
-		\item Has personal details such as \texttt{name}, \texttt{email}, \texttt{phone}, and \texttt{created\_at}.
-	\end{itemize}
+	\item \textbf{doctor}: Medical professional profiles.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{user\_id}, \texttt{clinic\_id}, \texttt{specialties\_id}: Linked user, clinic, specialty.
+		      \item \texttt{name}, \texttt{Presence}: Name and availability.
+	      \end{itemize}
 
-	\item \textbf{Doctor\_schedules}: Specifies working hours for doctors. (Note: \texttt{clinic\_id} in this table seems to be misnamed and likely refers to \texttt{doctor\_id}.)
+	\item \textbf{Doctor\_schedules}: Doctor working hours.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{clinic\_id}: Linked doctor.
+		      \item \texttt{day}, \texttt{opening\_time}, \texttt{closing\_time}: Schedule.
+	      \end{itemize}
 
-	\item \textbf{notifications}: Stores push or in-app notifications sent to users. Includes:
-	\begin{itemize}
-		\item \texttt{title}, \texttt{content}: Notification text.
-		\item \texttt{is\_read}: Boolean indicating if the user has seen the notification.
-		\item \texttt{user\_id}: Target recipient.
-	\end{itemize}
+	\item \textbf{notifications}: System notifications.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{title}, \texttt{content}: Notification message.
+		      \item \texttt{is\_read}: Read status.
+		      \item \texttt{user\_id}: Recipient.
+	      \end{itemize}
 
-	\item \textbf{reports}: Enables users to report other users for various reasons. Includes:
-	\begin{itemize}
-		\item \texttt{reporter\_id}: The user submitting the report.
-		\item \texttt{reported\_id}: The user being reported.
-		\item \texttt{reason}, \texttt{created\_at}: Reason for reporting and time of submission.
-	\end{itemize}
+	\item \textbf{reports}: User reports against others.
+	      \begin{itemize}
+		      \item \texttt{id}: Primary key.
+		      \item \texttt{reporter\_id}, \texttt{reported\_id}: Reporter and reported users.
+	      \end{itemize}
 
 \end{itemize}
+
 \vspace{4cm}
 \begin{center}
 	\textbf{ The class diagram is shown below : }
 \end{center}
 \begin{center}
-	\hspace*{-0.4cm}\includegraphics[width=1.1\textwidth]{images/dbclass.pdf}
+	\hspace*{-1cm}\includegraphics[width=1.1\textwidth]{images/dbclass.pdf}
 \end{center}
 \vspace{0.5cm}
 \begin{center}
-	\textit{\textbf{3.2.1.3 Figure : Class diagram of the Hospital Finder application.}}
+	\textit{\textbf{Figure: Class diagram of the Hospital Finder application.}}
 
 \end{center}
 \vspace{0.5cm}
-\subsection{Sequence Diagrams}
+\subsection*{2.2 Sequence Diagrams}
+\addcontentsline{toc}{subsection}{2.2 Sequence Diagrams}
 \vspace{-0.3cm}
 \rule{7.2cm}{1.2pt}
 \vspace{-0.3cm}
 
-\subsubsection{Definition}
+\subsubsection*{2.2.1 Definition}
+\addcontentsline{toc}{subsubsection}{2.2.1 Definition}
 \vspace{0.1cm}
 
 Sequence diagrams are a type of UML behavioral diagram that show how objects or components in a system interact with each other over time. They describe the flow of messages and the order of operations between actors and system parts in specific scenarios.
 
 Each sequence diagram illustrates how different entities collaborate in a particular process, using lifelines, messages, and activation bars to convey their roles and responsibilities.
 
-\subsubsection{Purpose and Importance}
+\subsubsection*{2.2.2 Purpose and Importance}
+\addcontentsline{toc}{subsubsection}{2.2.2 Purpose and Importance}
 \vspace{0.1cm}
 
 
@@ -855,7 +902,8 @@ In our case, these diagrams allow us to:
 \end{itemize}
 
 
-\subsubsection{Application Sequence Diagrams}
+\subsubsection*{2.2.3 Application Sequence Diagrams}
+\addcontentsline{toc}{subsubsection}{2.2.3 Application Sequence Diagrams}
 \vspace{0.1cm}
 
 Below, we present a set of sequence diagrams that demonstrate different operations carried out by the admin user. Each diagram focuses on a specific use case and models the message flow involved.
@@ -968,60 +1016,60 @@ This sequence diagram models the process in which the user searches for a clinic
 
 \noindent
 \begin{minipage}{\textwidth}
-The user logs into the app, performs a search, and the app displays results or error messages if the search does not yield results.
+	The user logs into the app, performs a search, and the app displays results or error messages if the search does not yield results.
 
-\vspace{0.9cm}
+	\vspace{0.9cm}
 
-\begin{sequencediagram}
-	% Participants with increased spacing
-	\newinst[1]{U}{User}
-	\newinst[4]{S}{App Interface}
-	\newinst[4]{DB}{Database}
+	\begin{sequencediagram}
+		% Participants with increased spacing
+		\newinst[1]{U}{User}
+		\newinst[4]{S}{App Interface}
+		\newinst[4]{DB}{Database}
 
-	% Login and Initial Search
-	\begin{call}{U}{Login(username, password)}{S}{}
-		\begin{call}{S}{Validate Credentials}{DB}{Result}
-		\end{call}
-		\begin{sdblock}{alt}{Are credentials valid?}
-			\begin{sdblock}{option}{Yes}
-				\mess{S}{Login Success}{U}
+		% Login and Initial Search
+		\begin{call}{U}{Login(username, password)}{S}{}
+			\begin{call}{S}{Validate Credentials}{DB}{Result}
+			\end{call}
+			\begin{sdblock}{alt}{Are credentials valid?}
+				\begin{sdblock}{option}{Yes}
+					\mess{S}{Login Success}{U}
+				\end{sdblock}
+				\begin{sdblock}{option}{No}
+					\mess{S}{Login Failed or Search as Guest}{U}
+				\end{sdblock}
 			\end{sdblock}
-			\begin{sdblock}{option}{No}
-				\mess{S}{Login Failed or Search as Guest}{U}
+		\end{call}
+
+		\postlevel
+		\vspace{0.5cm}
+		\prelevel
+
+		% Search Loop
+		\begin{sdblock}{loop}{Until valid clinic/doctor found}
+			\begin{call}{U}{Enter Clinic/Doctor Name}{S}{}
+			\end{call}
+
+			\begin{call}{S}{Search Records}{DB}{Search Results}
+			\end{call}
+
+			\begin{sdblock}{alt}{Found?}
+				\begin{sdblock}{Yes}{}
+					\begin{call}{S}{Display Results}{U}{}
+					\end{call}
+				\end{sdblock}
+
+				\begin{sdblock}{No}{}
+					\begin{call}{S}{Show "Not Found" Error}{U}{}
+					\end{call}
+					\begin{call}{U}{Retry Search}{S}{}
+					\end{call}
+				\end{sdblock}
 			\end{sdblock}
 		\end{sdblock}
-	\end{call}
 
-	\postlevel
-	\vspace{0.5cm}
-	\prelevel
-
-	% Search Loop
-	\begin{sdblock}{loop}{Until valid clinic/doctor found}
-		\begin{call}{U}{Enter Clinic/Doctor Name}{S}{}
+		\begin{call}{S}{Display Final Results}{U}{}
 		\end{call}
-
-		\begin{call}{S}{Search Records}{DB}{Search Results}
-		\end{call}
-
-		\begin{sdblock}{alt}{Found?}
-			\begin{sdblock}{Yes}{}
-				\begin{call}{S}{Display Results}{U}{}
-				\end{call}
-			\end{sdblock}
-
-			\begin{sdblock}{No}{}
-				\begin{call}{S}{Show "Not Found" Error}{U}{}
-				\end{call}
-				\begin{call}{U}{Retry Search}{S}{}
-				\end{call}
-			\end{sdblock}
-		\end{sdblock}
-	\end{sdblock}
-
-	\begin{call}{S}{Display Final Results}{U}{}
-	\end{call}
-\end{sequencediagram}
+	\end{sequencediagram}
 
 
 \end{minipage}
@@ -1084,7 +1132,7 @@ This sequence diagram illustrates the process by which a clinic registers on the
 	\end{sdblock}
 \end{sequencediagram}
 
-\noindent\underline{\textbf{• Clinic Managing Doctor Accounts (Add, Delete, Suspend) :}}  
+\noindent\underline{\textbf{• Clinic Managing Doctor Accounts (Add, Delete, Suspend) :}}
 This sequence diagram illustrates how a clinic directly manages doctor accounts—adding, deleting, or suspending—through the application interface. All operations interact with the database without any admin involvement.
 
 \vspace{1cm}
@@ -1243,7 +1291,8 @@ This sequence diagram models the process when a user submits a report. After sub
 
 
 \newpage
-\section{Conclusion}
+\section*{3 Conclusion}
+\addcontentsline{toc}{section}{3 Conclusion}
 
 \vspace{1em}
 
@@ -1296,147 +1345,460 @@ This chapter is dedicated to the practical realization of our mobile application
 
 
 \section*{2 Work Environment}
+\addcontentsline{toc}{section}{2 Work Environment}
 \vspace{-0.5cm}
 \rule{0.45\linewidth}{1pt} \\[-1.2cm]
 \subsection*{2.1 Hardware Environment}
+\addcontentsline{toc}{subsection}{2.1 Hardware Environment}
 For development and testing, the following hardware was used:
 
 \begin{itemize}
-    \item \textbf{Development Machines:}
-    \begin{itemize}
-        \item \textbf{HP EliteBook 840 G4} – Intel Core i5-7200U, 16GB DDR4 RAM (2444MHz), 256GB SSD.
-        \item \textbf{Dell Laptop 1} – Intel Core i5 9th Gen, 16GB RAM.
-        \item \textbf{Dell Laptop 2} – Intel Core i5 6th Gen, 16GB RAM.
-    \end{itemize}
-    
-    \item \textbf{Test Devices:}
-    \begin{itemize}
-        \item Samsung Galaxy S21
-        \item Samsung Galaxy S21 FE
-        \item Redmi Note 8 Pro
-    \end{itemize}
+	\item \textbf{Development Machines:}
+	      \begin{itemize}
+		      \item \textbf{HP EliteBook 840 G4} – Intel Core i5-7200U, 16GB DDR4 RAM (2444MHz), 256GB SSD.
+		      \item \textbf{Dell Laptop 1} – Intel Core i5 9th Gen, 16GB RAM.
+		      \item \textbf{Dell Laptop 2} – Intel Core i5 6th Gen, 16GB RAM.
+	      \end{itemize}
+
+	\item \textbf{Test Devices:}
+	      \begin{itemize}
+		      \item Samsung Galaxy S21
+		      \item Samsung Galaxy S21 FE
+		      \item Redmi Note 8 Pro
+	      \end{itemize}
 \end{itemize}
 
 \subsection*{2.2 Software Environment}
+\addcontentsline{toc}{subsection}{2.2 Software Environment}
 \vspace{-0.3cm}
 \rule{0.40\linewidth}{0.5pt} \\[-1.2cm]
-\subsection*{2.2.1 Technologies Used}
-It presents the main technologies adopted, such as the programming language, development platform, target mobile environment, and the chosen database management system.
+\subsubsection*{2.2.1 Technologies Used}
+\addcontentsline{toc}{subsubsection}{2.2.1 Technologies Used}
+It presents the main technologies adopted, such as the programming language, development platform, and the chosen database management .
 
 \begin{itemize}
-    \item \textbf{Programming Language:} The most vital and indispensable tool in our project is \textbf{Dart}, used through the \textbf{Flutter} framework. Flutter enables us to develop a cross-platform mobile application (Android and iOS) from a single codebase, significantly accelerating development and ensuring a consistent user experience. Below is a flowchart to illustrate how Flutter operates:  
-    \begin{center}
-    \includegraphics[width=\linewidth]{images/FlutterDiagram@2x.pdf}
-	\textit{\textbf{Figure 3.1: Flutter Architecture Flowchart}}
-    \end{center}
+	\item \textbf{Programming Language:} The most vital and indispensable tool in our project is \textbf{Dart}, used through the \textbf{Flutter} framework. Flutter enables us to develop a cross-platform mobile application (Android and iOS) from a single codebase, significantly accelerating development and ensuring a consistent user experience. Below is a flowchart to illustrate how Flutter operates:
+	      \vspace{0.5cm}
+	      \begin{center}
+		      \includegraphics[width=\linewidth]{images/FlutterDiagram@2x.pdf}
+		      \textit{\textbf{Figure: Flutter Architecture Flowchart}}
+	      \end{center}
 
 
-    \item \textbf{Development Environments:} We primarily used \textbf{Visual Studio Code} and \textbf{Android Studio} as our code editors and development environments, which are widely recognized and powerful for mobile app development.
+	\item \textbf{Development Environments:} We primarily used \textbf{Visual Studio Code} and \textbf{Android Studio} as our code editors and development environments, which are widely recognized and powerful for mobile app development.
 
-    \item \textbf{Backend:} We chose the \textbf{Laravel} PHP framework for creating the backend API. It provided us with a clear MVC structure, enhanced security, and easy management of routes and controllers.
+	\item \textbf{Backend:} We chose the \textbf{Laravel} PHP framework for creating the backend API. It provided us with a clear MVC structure, enhanced security, and easy management of routes and controllers.
 
-    \item \textbf{Database:} The application uses a \textbf{MySQL} database, which we designed and hosted on a \textbf{Hostinger} server. The backend files were also deployed on this server to handle API communication with the mobile app.
+	\item \textbf{Database:} The application uses a \textbf{MySQL} database, which we designed and hosted on a \textbf{Hostinger} server. The backend files were also deployed on this server to handle API communication with the mobile app.
 
-    \item \textbf{Firebase:} Integrated for backend services, particularly \textbf{authentication}. We used \textbf{Google Console} to enable patients to log in using their Google accounts.
+	\item \textbf{Firebase:} Integrated for backend services, particularly \textbf{authentication}. We used \textbf{Google Console} to enable patients to log in using their Google accounts.
 
-    \item \textbf{Testing Tools:} We used \textbf{Postman} to test various API requests and endpoints before integrating them into the mobile app.
+	\item \textbf{Testing Tools:} We used \textbf{Postman} to test various API requests and endpoints before integrating them into the mobile app.
 
-    \item \textbf{Version Control:} Our source code was managed using \textbf{Git} and hosted on \textbf{GitHub}, which facilitated team collaboration and version tracking.
+	\item \textbf{Version Control:} Our source code was managed using \textbf{Git} and hosted on \textbf{GitHub}, which facilitated team collaboration and version tracking.
 
-    \item \textbf{Design Tools:} We used \textbf{Figma} to design the user interface of the app and create user flow diagrams. For database modeling and class diagrams, we used \textbf{dbdiagram.io}.
+	\item \textbf{Design Tools:} We used \textbf{Figma} to design the user interface of the app and create user flow diagrams. For database modeling and class diagrams, we used \textbf{dbdiagram.io}.
 
-    \item \textbf{Additional Tools:} \textit{[This section is reserved for any additional tools or technologies we may have used during the development process.]}
 \end{itemize}
-\subsection*{2.2.2 Database Management System}
 
-\subsubsection*{Overview and Tools}
+\subsection*{2.3 Database Management System}
+\addcontentsline{toc}{subsection}{2.3 Database Management System}
+\rule{0.40\linewidth}{0.5pt} \\[-1.0cm]
+\subsubsection*{• 2.3.1 Overview and Tools}
+\addcontentsline{toc}{subsubsection}{2.3.1 Overview and Tools}
 In this project, special focus was given to designing and implementing the database using Laravel, which provides an efficient system for migrations, models, and seeders. This section describes the workflow, tools, and structure adopted for managing data throughout the application.
 
-The database schema was initially designed using \textbf{dbdiagram.io}, a web-based tool for visualizing tables, fields, and relationships. This served as a blueprint, ensuring a well-structured relational database before implementation.
+\noindent The database schema was initially designed using \textbf{dbdiagram.io}, a web-based tool for visualizing tables, fields, and relationships. This served as a blueprint, ensuring a well-structured relational database before implementation.
 
-Throughout development, \textbf{phpMyAdmin} was used to manage and inspect the MySQL database, complementing Laravel’s command-line tools for data verification and query testing.
+\noindent Throughout development, \textbf{phpMyAdmin} was used to manage and inspect the MySQL database, complementing Laravel’s command-line tools for data verification and query testing.
 
 \vspace{0.5cm}
 
-\subsubsection*{Implementation with Laravel}
+\subsubsection*{• 2.3.2 Implementation with Laravel}
+\addcontentsline{toc}{subsubsection}{2.3.2 Implementation with Laravel}
+
 The schema was implemented using Laravel’s \textbf{migration system}, with each table defined in separate migration files, specifying columns, data types, keys, and constraints. Laravel’s migrations provide version control, simplifying maintenance and scaling.
 
-\textbf{Eloquent models} were created for each table, acting as an abstraction layer to handle operations like insertion, updates, deletion, and retrieval. These models also define interrelations (e.g., \texttt{hasMany}, \texttt{belongsTo}), reflecting the relational schema.
+\noindent \textbf{Eloquent models} were created for each table, acting as an abstraction layer to handle operations like insertion, updates, deletion, and retrieval. These models also define interrelations (e.g., \texttt{hasMany}, \texttt{belongsTo}), reflecting the relational schema.
 
-\textbf{Seeders} were used to populate the database with essential data, useful during development, testing, or first-time deployments.
+\noindent \textbf{Seeders} were used to populate the database with essential data, useful during development, testing, or first-time deployments.
 
 \vspace{0.5cm}
 
-\subsubsection*{Authentication and Access Control}
+\subsubsection*{• 2.3.3 Authentication and Access Control}
+\addcontentsline{toc}{subsubsection}{2.3.3 Authentication and Access Control}
+
 While backend authentication is covered in another section, the system enforces strict \textbf{role-based access control} (RBAC). Each user (doctor, clinic, admin, general user) receives an assigned role, and access permissions are enforced accordingly.
 
-\textbf{Firebase Authentication} (email/password, Google Sign-In) is integrated via the \textbf{Google Cloud Console}. After client-side login (Flutter), a Firebase token is sent to the backend, where Laravel verifies it using the Firebase Admin SDK and issues a Laravel session token with \textbf{Laravel Sanctum}.
+\noindent \textbf{Firebase Authentication} (email/password, Google Sign-In) is integrated via the \textbf{Google Cloud Console}. After client-side login (Flutter), a Firebase token is sent to the backend, where Laravel verifies it using the Firebase Admin SDK and issues a Laravel session token with \textbf{Laravel Sanctum}.
 
-Sanctum securely manages API tokens and sessions. Custom middleware checks the user’s Firebase UID, fetches their role, and enforces permissions, returning a 403 error for unauthorized actions.
+\noindent \textbf{Sanctum} securely manages API tokens and sessions. Custom middleware checks the user’s Firebase UID, fetches their role, and enforces permissions, returning a 403 error for unauthorized actions.
 
 \vspace{0.5cm}
 
-\subsubsection*{Diagrams and Database Schema}
+\subsubsection*{• 2.3.4 Diagrams and Database Schema}
+\addcontentsline{toc}{subsubsection}{2.3.4 Diagrams and Database Schema}
+
 The diagrams below illustrate two key components:
 \begin{itemize}
-\item \textbf{MVC Architecture} of our app with models, controllers, and views, where each use case is color-coded as shown.
-\item \textbf{Laravel Sanctum flow}, demonstrating how tokens are validated before requests reach the database or Hostinger API.
+	\item \textbf{MVC Architecture} of our app with models, controllers, and views. Note that the shown models, views, and controllers are only a few examples of the many present in the application. Each use case’s components are consistently represented in the same color, helping to visually group related parts.
+	\item \textbf{Laravel Sanctum flow}, demonstrating how tokens are validated before requests reach the database and Hostinger API. The flow includes step indicators:
+
+	      \par \texttt{1.1} – Generate Token On Login
+	      \par \texttt{2.1} – Api Request
+	      \par \texttt{2.2} – Check of Token is Valid Using Laravel Sanctum Api
+	      \par \texttt{2.3} – Reject if not Valid
+	      \par \texttt{3.1} – Allow Data Access ( CRED Operation )
+	      \par \texttt{3.2} – Response ( OK / Not OK )
+	      \par \texttt{3.3} – Display Response
+	      \par \texttt{4.1} – Avoid 3rd parties Api from accessing our App api using sanctum
+
 \end{itemize}
+\vspace*{0.4cm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{images/sanctum@2x.pdf}
+\end{figure}
+\begin{center}
+	\vspace*{0.3cm}
+	\textit{Figure: Authentication Laravel Sanctum Token Validation Before Database/API Access.}
+\end{center}
+\vspace*{0.8cm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{images/MVC@2x.pdf}
+\end{figure}
+\begin{center}
+	\vspace*{0.3cm}
+	\textit{Figure: Our App MVC Architecture: Model-Controller-View Structure }
+\end{center}
+
+
+\newpage
+\noindent For our database tables we show below some of our core tables \textbf{— \texttt{users}, \texttt{clinics}, \texttt{doctors},\texttt{role},\texttt{Schedule} and \texttt{Sanctum Validation Table} — }represent the heart of the system. Their schemas are shown below.
+\vspace*{0.5cm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/user_table.pdf}
+\end{figure}
+\begin{center}
+	
+	\textbf{\textit{Figure: Users Table Schema}}
+\end{center}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/MVC@2x.pdf}
-\caption{Our App MVC Architecture: Model-Controller-View Structure with Use-Case Colors}
+	\centering
+	\hspace*{-0.5cm}
+	\includegraphics[width=1.1\textwidth]{images/clinic_table@2x.pdf}
 \end{figure}
+\begin{center}
+	\textbf{\textit{Figure: Clinics Table Schema}}
+\end{center}
+
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/sanctum@2x.pdf}
-\caption{Authentication Laravel Sanctum Token Validation Before Database/API Access}
+	\centering
+	\hspace*{-0.7cm}
+	\includegraphics[width=1.1\textwidth]{images/doctor_table@2x.pdf}
 \end{figure}
-
-Core tables—\texttt{users}, \texttt{clinics}, \texttt{doctors}, and \texttt{appointments}—represent the heart of the system. Their schemas are shown below.
+\begin{center}
+	\textbf{\textit{Figure: Doctor Table Schema}}
+\end{center}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/table@2x.pdf}
-\caption{Users Table Schema}
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/sanctum_table@2x.pdf}
 \end{figure}
+\begin{center}
+	\textbf{\textit{Figure: Sanctum Validation Table Schema}}
+\end{center}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/table@2x.pdf}
-\caption{Clinics Table Schema}
+	\centering
+	\hspace*{-0.9cm}
+	\includegraphics[width=1.1\textwidth]{images/schedule_table@2x.pdf}
 \end{figure}
+\begin{center}
+	\textbf{\textit{Figure: Schedule Table Schema}}
+\end{center}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/table@2x.pdf}
-\caption{Doctors Table Schema}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth]{images/table@2x.pdf}
-\caption{Appointments Table Schema}
-\end{figure}
-
-\subsubsection*{Final Setup}
+\subsubsection*{• 2.3.5 Final Setup}
+\addcontentsline{toc}{subsubsection}{2.3.5 Final Setup}
 To finalize setup, we used the following command:
 
-\begin{lstlisting}[style=darkbash, language=bash, caption={Laravel command to run migrations and seeders}]
-php artisan migrate --seed
+\begin{lstlisting}[style=darkbash, language=bash, caption={Laravel command to run migrations and seeders}, belowcaptionskip=10pt]
+	php artisan migrate --seed
 \end{lstlisting}
+	
 
-This command runs all migrations and executes seeders, preparing the database for integration.
+\noindent This command runs all migrations and executes seeders, preparing the database for integration.
+
+\section*{3 Application's interfaces}
+\addcontentsline{toc}{section}{3 Application's interfaces}
+In this section, we will present the main interfaces of our application. The app is designed to be user-friendly and intuitive, ensuring a smooth experience for all users types .
+
+\subsection*{3.1 User Interface}
+\addcontentsline{toc}{subsection}{3.1 User Interface}
+\vspace{0.5cm}
+
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/userApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
+\newpage
+\subsection*{3.2 Admin Interface}
+\addcontentsline{toc}{subsection}{3.2 Admin Interface}
+\vspace{0.5cm}
+
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/adminApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
+
+	\newpage
+	\subsection*{3.3 Clinic Interface}
+	\addcontentsline{toc}{subsection}{3.3 Clinic Interface}
+	\vspace{0.5cm}
+	
+	\begin{center}
+		\begin{tabular}{c@{\hspace{4cm}}c}
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 1
+			\end{minipage} &
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}				
+				\centering \small Caption 2
+			\end{minipage} \\
+			\noalign{\vspace{1.7cm}}
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}				
+				\centering \small Caption 3
+			\end{minipage} &
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 4
+			\end{minipage} \\
+		\end{tabular}
+		\end{center}
+	\newpage
+	\begin{center}
+		\begin{tabular}{c@{\hspace{4cm}}c}
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 1
+			\end{minipage} &
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 2
+			\end{minipage} \\
+			\noalign{\vspace{1.7cm}}
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 3
+			\end{minipage} &
+			\begin{minipage}{0.31\textwidth}
+				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+				\centering \small Caption 4
+			\end{minipage} \\
+		\end{tabular}
+		\end{center}
+	
+		\newpage
+\subsection*{3.4 Doctor Interface}
+\addcontentsline{toc}{subsection}{3.4 Doctor Interface}
+\vspace{0.5cm}
+
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+	\end{center}
 
 
+\newpage
+\section*{4 Conclusion}
+\addcontentsline{toc}{section}{4 Conclusion}
+
+\noindent In this chapter, we provided a comprehensive overview of the technical implementation of our mobile application. 
+
+\vspace{0.3cm}
+
+\noindent We detailed the hardware and software environments, explained the selection of technologies, and outlined the database architecture and authentication mechanisms. 
+
+\vspace{0.3cm}
+
+\noindent By presenting key code snippets, diagrams, and database schemas, we offered a clear view of the internal workings that ensure the app’s functionality, security, and user experience. 
+
+\vspace{0.3cm}
+
+\noindent This practical insight serves as a foundation for understanding how the various components of our system come together to deliver a robust and scalable solution.
 
 
+\newpage
+\begin{center}
+	\Huge \textbf{General Conclusion} \\
+	\addcontentsline{toc}{chapter}{General Conclusion}
+	\vspace*{0.3cm}
+\end{center}
+
+\noindent In conclusion, this work has made it possible to \textbf{design}, \textbf{develop}, and \textbf{deploy} a functional mobile application, integrating \textbf{modern technologies} and \textbf{effective development practices}.
+
+\vspace{0.3cm}
+
+\noindent Thanks to a \textbf{rigorous approach}, we were able to ensure a \textbf{smooth}, \textbf{secure}, and \textbf{user-friendly experience} that meets the identified needs.
+
+\vspace{0.3cm}
+
+\noindent The \textbf{challenges} encountered throughout the project were valuable \textbf{opportunities for learning and improvement}, helping to strengthen both our \textbf{technical} and \textbf{organizational skills}.
+
+\vspace{0.3cm}
+
+\noindent This project provides a \textbf{solid foundation} for future \textbf{enhancements} and \textbf{evolutions}. We fully intend to \textbf{continue improving the application}, adding new \textbf{features}, refining existing functionalities, and incorporating user feedback to ensure the app remains \textbf{innovative}, \textbf{relevant}, and aligned with evolving user expectations.
 
 
+\vspace{1cm}
 
+\newpage
+\addcontentsline{toc}{chapter}{Bibliographie}
 
+\begin{thebibliography}{18}
+    \bibitem{flutter} Flutter Documentation, \textit{\url{https://flutter.dev/docs}}
+    \bibitem{laravel} Laravel Documentation, \textit{\url{https://laravel.com/docs}}
+    \bibitem{mysql} MySQL Documentation, \textit{\url{https://dev.mysql.com/doc/}}
+    \bibitem{firebase} Firebase Documentation, \textit{\url{https://firebase.google.com/docs}}
+    \bibitem{github} GitHub Guides, \textit{\url{https://guides.github.com}}
+    \bibitem{figma} Figma Help Center, \textit{\url{https://help.figma.com}}
+    \bibitem{googlemap} Google Maps Platform Documentation, \textit{\url{https://developers.google.com/maps/documentation}}
+    \bibitem{php} PHP Manual, \textit{\url{https://www.php.net/manual/en/}}
+    \bibitem{vscode} Visual Studio Code Docs, \textit{\url{https://code.visualstudio.com/docs}}
+    \bibitem{androidstudio} Android Studio User Guide, \textit{\url{https://developer.android.com/studio}}
+    \bibitem{postman} Postman Learning Center, \textit{\url{https://learning.postman.com}}
+    \bibitem{dbdiagram} dbdiagram.io Documentation, \textit{\url{https://dbdiagram.io/docs}}
+    \bibitem{sanctum} Laravel Sanctum Documentation, \textit{\url{https://laravel.com/docs/sanctum}}
+    \bibitem{git} Git Documentation, \textit{\url{https://git-scm.com/doc}}
+    \bibitem{hostinger} Hostinger Tutorials, \textit{\url{https://www.hostinger.com/tutorials}}
+    \bibitem{fluttermap} Flutter Map Package, \textit{\url{https://pub.dev/packages/flutter_map}}
+    \bibitem{mvcflutter} Faiz Rahmat, “Understanding MVC Architecture in Flutter: A Comprehensive Guide with Examples,” Medium, \textit{\url{https://medium.com/@Faiz_Rhm/understanding-mvc-architecture-in-flutter-a-comprehensive-guide-with-examples-5d1a372c7eaf}}
+    \bibitem{mvclaravel} Laravel and MVC Framework, GeeksforGeeks, \textit{\url{https://www.geeksforgeeks.org/introduction-to-laravel-and-mvc-framework/}}
+\end{thebibliography}
 
+	
 
 \end{document}
