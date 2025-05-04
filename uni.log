@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  3 MAY 2025 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  4 MAY 2025 03:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,13 +824,13 @@ Underfull \hbox (badness 3792) in paragraph at lines 504--504
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 505--508
-\TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Man-age and up-date their
+Underfull \hbox (badness 3375) in paragraph at lines 511--514
+[]|\TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Re-view and ap-prove/re-ject
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 511--514
-[]|\TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Re-view and ap-prove/re-ject
+Underfull \hbox (badness 5862) in paragraph at lines 511--514
+\TS1/bch/m/n/12 ˆ \OT1/bch/m/n/12 Sus-pend/Delete Clinic Ac-
  []
 
 
@@ -851,21 +851,21 @@ l.525 ...3 Functional Requirements Specification}}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.553 ...tbf{5.1 Definition of Use Case Diagrams}}
-                                                   [17]
+l.557 
+       [17]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.576 \newpage
+l.575 \newpage
                [18]
 
 pdfTeX warning: pdflatex (file ./images/doctorCAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <images/doctorCAS.pdf, id=395, 625.33624pt x 417.56pt>
 File: images/doctorCAS.pdf Graphic file (type pdf)
 <use images/doctorCAS.pdf>
-Package pdftex.def Info: images/doctorCAS.pdf  used on input line 591.
+Package pdftex.def Info: images/doctorCAS.pdf  used on input line 590.
 (pdftex.def)             Requested size: 452.9679pt x 302.47156pt.
 
 
@@ -873,29 +873,29 @@ Package pdftex.def Info: images/doctorCAS.pdf  used on input line 591.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.598 \newpage
+l.597 \newpage
                [19 <./images/doctorCAS.pdf>]
 
-pdfTeX warning: pdflatex (file ./images/patientCas.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/patientCas.pdf, id=483, 645.35422pt x 610.28pt>
-File: images/patientCas.pdf Graphic file (type pdf)
-<use images/patientCas.pdf>
-Package pdftex.def Info: images/patientCas.pdf  used on input line 607.
-(pdftex.def)             Requested size: 452.9679pt x 428.34778pt.
+pdfTeX warning: pdflatex (file ./images/patient@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/patient@2x.pdf, id=483, 625.4578pt x 644.4075pt>
+File: images/patient@2x.pdf Graphic file (type pdf)
+<use images/patient@2x.pdf>
+Package pdftex.def Info: images/patient@2x.pdf  used on input line 606.
+(pdftex.def)             Requested size: 452.9679pt x 466.69675pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.613 \newpage
-               [20 <./images/patientCas.pdf>]
+l.612 \newpage
+               [20 <./images/patient@2x.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/clinicCAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/clinicCAS.pdf, id=557, 657.45625pt x 512.91624pt>
+<images/clinicCAS.pdf, id=625, 657.45625pt x 512.91624pt>
 File: images/clinicCAS.pdf Graphic file (type pdf)
 <use images/clinicCAS.pdf>
-Package pdftex.def Info: images/clinicCAS.pdf  used on input line 622.
+Package pdftex.def Info: images/clinicCAS.pdf  used on input line 621.
 (pdftex.def)             Requested size: 452.9679pt x 353.38821pt.
 
 
@@ -903,29 +903,29 @@ Package pdftex.def Info: images/clinicCAS.pdf  used on input line 622.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.629 \newpage
+l.628 \newpage
                [21 <./images/clinicCAS.pdf>]
 
-pdfTeX warning: pdflatex (file ./images/adminCAS.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/adminCAS.pdf, id=645, 715.67375pt x 501.875pt>
-File: images/adminCAS.pdf Graphic file (type pdf)
-<use images/adminCAS.pdf>
-Package pdftex.def Info: images/adminCAS.pdf  used on input line 638.
-(pdftex.def)             Requested size: 452.9679pt x 317.65324pt.
+pdfTeX warning: pdflatex (file ./images/adminCAs@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<images/adminCAs@2x.pdf, id=713, 715.67375pt x 609.77812pt>
+File: images/adminCAs@2x.pdf Graphic file (type pdf)
+<use images/adminCAs@2x.pdf>
+Package pdftex.def Info: images/adminCAs@2x.pdf  used on input line 637.
+(pdftex.def)             Requested size: 452.9679pt x 385.9487pt.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.645 \newpage
-               [22 <./images/adminCAS.pdf>]
+l.644 \newpage
+               [22 <./images/adminCAs@2x.pdf>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.670 \newpage
+l.669 \newpage
                [23]
 Chapter 3.
 
@@ -934,16 +934,16 @@ Chapter 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.694 \newpage
+l.693 \newpage
                [24
 
 ]
 
 pdfTeX warning: pdflatex (file ./images/AppCycle.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/AppCycle.pdf, id=746, 550.055pt x 577.15625pt>
+<images/AppCycle.pdf, id=864, 550.055pt x 577.15625pt>
 File: images/AppCycle.pdf Graphic file (type pdf)
 <use images/AppCycle.pdf>
-Package pdftex.def Info: images/AppCycle.pdf  used on input line 701.
+Package pdftex.def Info: images/AppCycle.pdf  used on input line 700.
 (pdftex.def)             Requested size: 317.07614pt x 332.7077pt.
 
 
@@ -951,12 +951,12 @@ Package pdftex.def Info: images/AppCycle.pdf  used on input line 701.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.721 	\item \textbf
+l.720 	\item \textbf
                     {Behavioral diagrams} - illustrate the dynamic behavior ... [25 <./images/AppCycle.pdf>]
-<images/diagramType.pdf, id=753, 663.22781pt x 313.9228pt>
+<images/diagramType.pdf, id=871, 663.22781pt x 313.9228pt>
 File: images/diagramType.pdf Graphic file (type pdf)
 <use images/diagramType.pdf>
-Package pdftex.def Info: images/diagramType.pdf  used on input line 727.
+Package pdftex.def Info: images/diagramType.pdf  used on input line 726.
 (pdftex.def)             Requested size: 398.33858pt x 188.54193pt.
 
 
@@ -964,9 +964,9 @@ Package pdftex.def Info: images/diagramType.pdf  used on input line 727.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.752 
+l.751 
        [26 <./images/diagramType.pdf>]
-Overfull \hbox (5.1182pt too wide) in paragraph at lines 767--768
+Overfull \hbox (5.1182pt too wide) in paragraph at lines 766--767
 []\OT1/bch/m/n/12 It re-flects both the log-i-cal ar-chi-tec-ture and the de-sign of the ap-pli-ca-tion's \OT1/bch/b/n/12 database\OT1/bch/m/n/12 . 
  []
 
@@ -976,24 +976,24 @@ Overfull \hbox (5.1182pt too wide) in paragraph at lines 767--768
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.789 		      \item \texttt
+l.788 		      \item \texttt
                            {user\_role}: Role type (small integer). [27]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.837 		      \item \texttt
+l.836 		      \item \texttt
                            {user\_id}, \texttt{clinic\_id}, \texttt{specialt... [28]
 
 pdfTeX warning: pdflatex (file ./images/dbclass.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/dbclass.pdf, id=765, 879.8675pt x 1111.19217pt>
+<images/dbclass.pdf, id=883, 879.8675pt x 1111.19217pt>
 File: images/dbclass.pdf Graphic file (type pdf)
 <use images/dbclass.pdf>
-Package pdftex.def Info: images/dbclass.pdf  used on input line 869.
+Package pdftex.def Info: images/dbclass.pdf  used on input line 868.
 (pdftex.def)             Requested size: 498.26744pt x 629.26596pt.
 
-Overfull \hbox (16.8468pt too wide) in paragraph at lines 869--870
+Overfull \hbox (16.8468pt too wide) in paragraph at lines 868--869
  | [] 
  []
 
@@ -1003,42 +1003,33 @@ Overfull \hbox (16.8468pt too wide) in paragraph at lines 869--870
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.870 \end{center}
+l.869 \end{center}
                    [29]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.882 
+l.881 
        [30 <./images/dbclass.pdf>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.911 \newpage
+l.910 \newpage
                [31]
 \pgf@layerbox@umlsd@background=\box77
 \pgf@layerboxsaved@umlsd@background=\box78
 \pgf@layerbox@umlsd@threadlayer=\box79
 \pgf@layerboxsaved@umlsd@threadlayer=\box80
 
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 912--971
+[]$[]$ 
+ []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.963 \newpage
-               [32]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1077 \noindent
-                \underline{\textbf{â€¢ Clinic Registering In The Application... [33]
-Overfull \vbox (38.13469pt too high) has occurred while \output is active []
+Overfull \vbox (35.6507pt too high) has occurred while \output is active []
 
 
 
@@ -1046,9 +1037,9 @@ Overfull \vbox (38.13469pt too high) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1077 \noindent
-                \underline{\textbf{â€¢ Clinic Registering In The Application... [34]
-Overfull \hbox (3.27168pt too wide) in paragraph at lines 1135--1137
+l.972 \noindent
+               \underline{\textbf{â€¢ Clinic Registering In The Application :}} [32]
+Overfull \hbox (3.27168pt too wide) in paragraph at lines 1030--1032
 $[]$ \OT1/bch/m/n/12 This se-quence di-a-gram
  []
 
@@ -1058,39 +1049,39 @@ $[]$ \OT1/bch/m/n/12 This se-quence di-a-gram
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1137 
-        [35]
+l.1032 
+        [33]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1181 \newpage
+l.1076 \newpage
+                [34]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1135 \newpage
+                [35]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1188 \newpage
                 [36]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1240 \newpage
+l.1230 \newpage
                 [37]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1293 \newpage
-                [38]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1335 \newpage
-                [39]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1350--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
 
  []
 
@@ -1100,21 +1091,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 1350--1351
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1365 		      \item S
-                      amsung Galaxy S21 [40
+l.1260 		      \item S
+                      amsung Galaxy S21 [38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1270
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./images/FlutterDiagram@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/FlutterDiagram@2x.pdf, id=1130, 664.4825pt x 321.46521pt>
+<images/FlutterDiagram@2x.pdf, id=1242, 664.4825pt x 321.46521pt>
 File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
 <use images/FlutterDiagram@2x.pdf>
-Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1383.
+Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1278.
 (pdftex.def)             Requested size: 423.5932pt x 204.92767pt.
 
 
@@ -1122,9 +1113,9 @@ Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1383.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1393 
-        [41 <./images/FlutterDiagram@2x.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
+l.1288 
+        [39 <./images/FlutterDiagram@2x.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1301--1302
 
  []
 
@@ -1134,9 +1125,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1423 
-        [42]
-Overfull \hbox (3.57637pt too wide) in paragraph at lines 1433--1434
+l.1318 
+        [40]
+Overfull \hbox (3.57637pt too wide) in paragraph at lines 1328--1329
 \OT1/bch/b/n/12 Firebase Au-then-ti-ca-tion \OT1/bch/m/n/12 (email/-pass-word, Google Sign-In) is in-te-grated via the \OT1/bch/b/n/12 Google
  []
 
@@ -1146,22 +1137,22 @@ Overfull \hbox (3.57637pt too wide) in paragraph at lines 1433--1434
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1454 	      \par \texttt{4.1}
-                                â€“ Avoid 3rd parties Api from accessing our... [43]
+l.1349 	      \par \texttt{4.1}
+                                â€“ Avoid 3rd parties Api from accessing our... [41]
 
 pdfTeX warning: pdflatex (file ./images/sanctum@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/sanctum@2x.pdf, id=1319, 676.5275pt x 453.62228pt>
+<images/sanctum@2x.pdf, id=1430, 676.5275pt x 453.62228pt>
 File: images/sanctum@2x.pdf Graphic file (type pdf)
 <use images/sanctum@2x.pdf>
-Package pdftex.def Info: images/sanctum@2x.pdf  used on input line 1460.
+Package pdftex.def Info: images/sanctum@2x.pdf  used on input line 1355.
 (pdftex.def)             Requested size: 452.9679pt x 303.73154pt.
 
 
 pdfTeX warning: pdflatex (file ./images/MVC@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/MVC@2x.pdf, id=1320, 791.95876pt x 345.79187pt>
+<images/MVC@2x.pdf, id=1431, 791.95876pt x 345.79187pt>
 File: images/MVC@2x.pdf Graphic file (type pdf)
 <use images/MVC@2x.pdf>
-Package pdftex.def Info: images/MVC@2x.pdf  used on input line 1469.
+Package pdftex.def Info: images/MVC@2x.pdf  used on input line 1364.
 (pdftex.def)             Requested size: 452.9679pt x 197.77878pt.
 
 
@@ -1169,48 +1160,48 @@ Package pdftex.def Info: images/MVC@2x.pdf  used on input line 1469.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1477 \newpage
-                [44 <./images/sanctum@2x.pdf> <./images/MVC@2x.pdf>]
+l.1372 \newpage
+                [42 <./images/sanctum@2x.pdf> <./images/MVC@2x.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/user_table.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/user_table.pdf, id=1630, 1170.73616pt x 467.7475pt>
+<images/user_table.pdf, id=1741, 1170.73616pt x 467.7475pt>
 File: images/user_table.pdf Graphic file (type pdf)
 <use images/user_table.pdf>
-Package pdftex.def Info: images/user_table.pdf  used on input line 1482.
+Package pdftex.def Info: images/user_table.pdf  used on input line 1377.
 (pdftex.def)             Requested size: 407.66833pt x 162.87187pt.
 
 
 pdfTeX warning: pdflatex (file ./images/clinic_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/clinic_table@2x.pdf, id=1631, 1407.62117pt x 467.7475pt>
+<images/clinic_table@2x.pdf, id=1742, 1407.62117pt x 467.7475pt>
 File: images/clinic_table@2x.pdf Graphic file (type pdf)
 <use images/clinic_table@2x.pdf>
-Package pdftex.def Info: images/clinic_table@2x.pdf  used on input line 1492.
+Package pdftex.def Info: images/clinic_table@2x.pdf  used on input line 1387.
 (pdftex.def)             Requested size: 498.26744pt x 165.56975pt.
 
-Overfull \hbox (33.60518pt too wide) in paragraph at lines 1491--1493
+Overfull \hbox (33.60518pt too wide) in paragraph at lines 1386--1388
  []|  [] 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./images/doctor_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/doctor_table@2x.pdf, id=1632, 1473.505pt x 305.14pt>
+<images/doctor_table@2x.pdf, id=1743, 1473.505pt x 305.14pt>
 File: images/doctor_table@2x.pdf Graphic file (type pdf)
 <use images/doctor_table@2x.pdf>
-Package pdftex.def Info: images/doctor_table@2x.pdf  used on input line 1502.
+Package pdftex.def Info: images/doctor_table@2x.pdf  used on input line 1397.
 (pdftex.def)             Requested size: 498.26744pt x 103.18283pt.
 
-Overfull \hbox (27.9147pt too wide) in paragraph at lines 1501--1503
+Overfull \hbox (27.9147pt too wide) in paragraph at lines 1396--1398
  []|  [] 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./images/sanctum_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/sanctum_table@2x.pdf, id=1633, 1090.0725pt x 302.12875pt>
+<images/sanctum_table@2x.pdf, id=1744, 1090.0725pt x 302.12875pt>
 File: images/sanctum_table@2x.pdf Graphic file (type pdf)
 <use images/sanctum_table@2x.pdf>
-Package pdftex.def Info: images/sanctum_table@2x.pdf  used on input line 1510.
+Package pdftex.def Info: images/sanctum_table@2x.pdf  used on input line 1405.
 (pdftex.def)             Requested size: 407.66833pt x 112.98912pt.
 
 
@@ -1218,17 +1209,17 @@ Package pdftex.def Info: images/sanctum_table@2x.pdf  used on input line 1510.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1512 \begin{center}
-                      [45 <./images/user_table.pdf> <./images/clinic_table@2x.pdf> <./images/doctor_table@2x.pdf>]
+l.1407 \begin{center}
+                      [43 <./images/user_table.pdf> <./images/clinic_table@2x.pdf> <./images/doctor_table@2x.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/schedule_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/schedule_table@2x.pdf, id=2457, 1679.27374pt x 142.5325pt>
+<images/schedule_table@2x.pdf, id=2569, 1679.27374pt x 142.5325pt>
 File: images/schedule_table@2x.pdf Graphic file (type pdf)
 <use images/schedule_table@2x.pdf>
-Package pdftex.def Info: images/schedule_table@2x.pdf  used on input line 1519.
+Package pdftex.def Info: images/schedule_table@2x.pdf  used on input line 1414.
 (pdftex.def)             Requested size: 498.26744pt x 42.2903pt.
 
-Overfull \hbox (22.22424pt too wide) in paragraph at lines 1518--1520
+Overfull \hbox (22.22424pt too wide) in paragraph at lines 1413--1415
  []|  [] 
  []
 
@@ -1237,57 +1228,26 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 ) (E:\MikTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1529.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1424.
 
 
 pdfTeX warning: pdflatex (file ./images/userApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/userApp.pdf, id=2458, 324.21124pt x 616.3025pt>
+<images/userApp.pdf, id=2570, 324.21124pt x 616.3025pt>
 File: images/userApp.pdf Graphic file (type pdf)
 <use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1547.
+Package pdftex.def Info: images/userApp.pdf  used on input line 1442.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/userApp.pdf Graphic file (type pdf)
 <use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1551.
+Package pdftex.def Info: images/userApp.pdf  used on input line 1446.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/userApp.pdf Graphic file (type pdf)
 <use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1556.
+Package pdftex.def Info: images/userApp.pdf  used on input line 1451.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/userApp.pdf Graphic file (type pdf)
 <use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1560.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1564 	\end{center}
-                     [46 <./images/sanctum_table@2x.pdf> <./images/schedule_table@2x.pdf>]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1565 \newpage
-                [47 <./images/userApp.pdf>]
-File: images/userApp.pdf Graphic file (type pdf)
-<use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1569.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/userApp.pdf Graphic file (type pdf)
-<use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1573.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/userApp.pdf Graphic file (type pdf)
-<use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1578.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/userApp.pdf Graphic file (type pdf)
-<use images/userApp.pdf>
-Package pdftex.def Info: images/userApp.pdf  used on input line 1582.
+Package pdftex.def Info: images/userApp.pdf  used on input line 1455.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 
 
@@ -1295,50 +1255,57 @@ Package pdftex.def Info: images/userApp.pdf  used on input line 1582.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1587 \newpage
-                [48]
+l.1459 	\end{center}
+                     [44 <./images/sanctum_table@2x.pdf> <./images/schedule_table@2x.pdf>]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1460 \newpage
+                [45 <./images/userApp.pdf>]
+File: images/userApp.pdf Graphic file (type pdf)
+<use images/userApp.pdf>
+Package pdftex.def Info: images/userApp.pdf  used on input line 1464.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/userApp.pdf Graphic file (type pdf)
+<use images/userApp.pdf>
+Package pdftex.def Info: images/userApp.pdf  used on input line 1468.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/userApp.pdf Graphic file (type pdf)
+<use images/userApp.pdf>
+Package pdftex.def Info: images/userApp.pdf  used on input line 1473.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/userApp.pdf Graphic file (type pdf)
+<use images/userApp.pdf>
+Package pdftex.def Info: images/userApp.pdf  used on input line 1477.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1482 \newpage
+                [46]
 
 pdfTeX warning: pdflatex (file ./images/adminApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/adminApp.pdf, id=2851, 324.21124pt x 616.3025pt>
+<images/adminApp.pdf, id=2963, 324.21124pt x 616.3025pt>
 File: images/adminApp.pdf Graphic file (type pdf)
 <use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1595.
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1490.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/adminApp.pdf Graphic file (type pdf)
 <use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1599.
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1494.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/adminApp.pdf Graphic file (type pdf)
 <use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1604.
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1499.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/adminApp.pdf Graphic file (type pdf)
 <use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1608.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1613 \newpage
-                [49 <./images/adminApp.pdf>]
-File: images/adminApp.pdf Graphic file (type pdf)
-<use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1617.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/adminApp.pdf Graphic file (type pdf)
-<use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1621.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/adminApp.pdf Graphic file (type pdf)
-<use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1626.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/adminApp.pdf Graphic file (type pdf)
-<use images/adminApp.pdf>
-Package pdftex.def Info: images/adminApp.pdf  used on input line 1630.
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1503.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 
 
@@ -1346,50 +1313,50 @@ Package pdftex.def Info: images/adminApp.pdf  used on input line 1630.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1636 	\newpage
-                 [50]
+l.1508 \newpage
+                [47 <./images/adminApp.pdf>]
+File: images/adminApp.pdf Graphic file (type pdf)
+<use images/adminApp.pdf>
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1512.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/adminApp.pdf Graphic file (type pdf)
+<use images/adminApp.pdf>
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1516.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/adminApp.pdf Graphic file (type pdf)
+<use images/adminApp.pdf>
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1521.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/adminApp.pdf Graphic file (type pdf)
+<use images/adminApp.pdf>
+Package pdftex.def Info: images/adminApp.pdf  used on input line 1525.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1531 	\newpage
+                 [48]
 
 pdfTeX warning: pdflatex (file ./images/clinicApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/clinicApp.pdf, id=2897, 324.21124pt x 616.3025pt>
+<images/clinicApp.pdf, id=3008, 324.21124pt x 616.3025pt>
 File: images/clinicApp.pdf Graphic file (type pdf)
 <use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1644.
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1539.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/clinicApp.pdf Graphic file (type pdf)
 <use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1648.
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1543.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/clinicApp.pdf Graphic file (type pdf)
 <use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1653.
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1548.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/clinicApp.pdf Graphic file (type pdf)
 <use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1657.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1662 	\newpage
-                 [51 <./images/clinicApp.pdf>]
-File: images/clinicApp.pdf Graphic file (type pdf)
-<use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1666.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/clinicApp.pdf Graphic file (type pdf)
-<use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1670.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/clinicApp.pdf Graphic file (type pdf)
-<use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1675.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/clinicApp.pdf Graphic file (type pdf)
-<use images/clinicApp.pdf>
-Package pdftex.def Info: images/clinicApp.pdf  used on input line 1679.
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1552.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 
 
@@ -1397,50 +1364,50 @@ Package pdftex.def Info: images/clinicApp.pdf  used on input line 1679.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1685 		\newpage
-                  [52]
+l.1557 	\newpage
+                 [49 <./images/clinicApp.pdf>]
+File: images/clinicApp.pdf Graphic file (type pdf)
+<use images/clinicApp.pdf>
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1561.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/clinicApp.pdf Graphic file (type pdf)
+<use images/clinicApp.pdf>
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1565.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/clinicApp.pdf Graphic file (type pdf)
+<use images/clinicApp.pdf>
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1570.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/clinicApp.pdf Graphic file (type pdf)
+<use images/clinicApp.pdf>
+Package pdftex.def Info: images/clinicApp.pdf  used on input line 1574.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1580 		\newpage
+                  [50]
 
 pdfTeX warning: pdflatex (file ./images/doctorApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/doctorApp.pdf, id=2940, 324.21124pt x 616.3025pt>
+<images/doctorApp.pdf, id=3052, 324.21124pt x 616.3025pt>
 File: images/doctorApp.pdf Graphic file (type pdf)
 <use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1693.
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1588.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/doctorApp.pdf Graphic file (type pdf)
 <use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1697.
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1592.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/doctorApp.pdf Graphic file (type pdf)
 <use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1702.
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1597.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 File: images/doctorApp.pdf Graphic file (type pdf)
 <use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1706.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1711 \newpage
-                [53 <./images/doctorApp.pdf>]
-File: images/doctorApp.pdf Graphic file (type pdf)
-<use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1715.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/doctorApp.pdf Graphic file (type pdf)
-<use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1719.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/doctorApp.pdf Graphic file (type pdf)
-<use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1724.
-(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
-File: images/doctorApp.pdf Graphic file (type pdf)
-<use images/doctorApp.pdf>
-Package pdftex.def Info: images/doctorApp.pdf  used on input line 1728.
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1601.
 (pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
 
 
@@ -1448,28 +1415,52 @@ Package pdftex.def Info: images/doctorApp.pdf  used on input line 1728.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1735 \newpage
+l.1606 \newpage
+                [51 <./images/doctorApp.pdf>]
+File: images/doctorApp.pdf Graphic file (type pdf)
+<use images/doctorApp.pdf>
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1610.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/doctorApp.pdf Graphic file (type pdf)
+<use images/doctorApp.pdf>
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1614.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/doctorApp.pdf Graphic file (type pdf)
+<use images/doctorApp.pdf>
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1619.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+File: images/doctorApp.pdf Graphic file (type pdf)
+<use images/doctorApp.pdf>
+Package pdftex.def Info: images/doctorApp.pdf  used on input line 1623.
+(pdftex.def)             Requested size: 140.41893pt x 266.92332pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1630 \newpage
+                [52]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1649 \newpage
+                [53]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1673 \newpage
                 [54]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1754 \newpage
-                [55]
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1778 \newpage
-                [56]
-Underfull \hbox (badness 2941) in paragraph at lines 1798--1799
+Underfull \hbox (badness 2941) in paragraph at lines 1693--1694
 \OT1/bch/m/n/12 sive Guide with Ex-am-ples," Medium, []$\OT1/cmtt/m/it/12 https : / / medium . com / @Faiz _ Rhm /
  []
 
 
-Overfull \hbox (150.43312pt too wide) in paragraph at lines 1798--1799
+Overfull \hbox (150.43312pt too wide) in paragraph at lines 1693--1694
 \OT1/cmtt/m/it/12 understanding-[]mvc-[]architecture-[]in-[]flutter-[]a-[]comprehensive-[]guide-[]with-[]examples-[]5d1a372c7eaf$[] 
  []
 
@@ -1479,8 +1470,8 @@ Overfull \hbox (150.43312pt too wide) in paragraph at lines 1798--1799
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1804 \end{document}
-                      [57
+l.1699 \end{document}
+                      [55
 
 ]
 
@@ -1488,8 +1479,8 @@ l.1804 \end{document}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1804 \end{document}
-                      [58] (uni.aux)
+l.1699 \end{document}
+                      [56] (uni.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1498,17 +1489,17 @@ Package rerunfilecheck Info: File `uni.out' has not changed.
 (rerunfilecheck)             Checksum: 76A5728AD87BC9F85BC75A7C226758DE;12898.
  ) 
 Here is how much of TeX's memory you used:
- 25131 strings out of 473522
- 467196 string characters out of 5731444
- 1091828 words of memory out of 5000000
- 47900 multiletter control sequences out of 15000+600000
+ 25063 strings out of 473522
+ 465852 string characters out of 5731444
+ 1072600 words of memory out of 5000000
+ 47832 multiletter control sequences out of 15000+600000
  580844 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,99p,621b,1253s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on uni.pdf (58 pages, 2340949 bytes).
+Output written on uni.pdf (56 pages, 2363575 bytes).
 PDF statistics:
- 3080 PDF objects out of 3580 (max. 8388607)
+ 3192 PDF objects out of 3580 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
  753 words of extra memory for PDF output out of 10000 (max. 10000000)
 

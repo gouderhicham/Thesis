@@ -358,7 +358,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \begin{itemize}
 	\item \textbf{User} – Searches for hospitals and doctors.
 	\item \textbf{Clinic} – Registers doctors and manages clinic information.
-	\item \textbf{Doctor} – Manages schedules and appointments.
+	\item \textbf{Doctor} – View personal data and working hours .
 	\item \textbf{Admin} – Approves new clinics and ensures system integrity.
 \end{itemize}
 
@@ -404,8 +404,8 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \addcontentsline{toc}{subsubsection}{2.3.1 Doctor Tasks}
 \begin{itemize}
 	\item \textbf{Login:} Use the email and password provided by the clinic.
-	\item \textbf{Manage Schedule:} Set availability and update consultation hours.
-	\item \textbf{Receive Appointments:} Accept patient calls and schedule visits.
+	\item \textbf{Check Schedule:} See availability and working hours. 
+	\item \textbf{Check Personal Data:} View personal data and make sure patients have the correct information to get in contact or ask about them . 
 \end{itemize}
 
 \vspace{0.5cm}
@@ -421,10 +421,10 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \begin{itemize}
 	\item \textbf{Review Clinic Registration Requests:} Check clinic information for validity.
 	\item \textbf{Approve or Reject Clinics:} Grant or deny access based on verification.
+	\item \textbf{Review User Reports:} Check reports made by users and decide to ignore it or take action.
+	\item \textbf{Suspend / Delete Clinic Account:} Admin can suspend or deleted clinic account if clinic is reported multiple times. 
 	\item \textbf{Ensure System Integrity:} Monitor and manage the overall platform.
 \end{itemize}
-
-
 
 
 \subsection*{2.5 App Users Information Table}
@@ -503,14 +503,14 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 	\hspace*{0.85cm}\textbf{Doctor}                                                                            & A medical professional registered under a clinic who cannot independently sign up.  &
 	• Log in with clinic-provided credentials.\newline
-	• Manage and update their schedule.\newline
-	• Receive and manage patient appointments.                                                                                                                                                                                            \\
+	• View their schedule.\newline
+	• View their personal data.                                                                                                                                                                                            \\
 	\hline
 
 	\hspace*{0.85cm}\textbf{Admin}                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
 	• Review and approve/reject clinic registrations.\newline
-	• Monitor system performance and security.\newline
-	• Ensure proper functionality of the platform.                                                                                                                                                                                        \\
+	• Review Reports.\newline   
+	• Suspend/Delete Clinic Account.                                                                                                                                                   \\
 	\hline
 \end{longtable}
 \begin{center}
@@ -530,9 +530,8 @@ This document has provided an overview of the system, focusing on the roles and 
 \begin{itemize}
 	\item \textbf{User Authentication:} Clinics, doctors, and admins must log in securely.
 	\item \textbf{Geolocation Services:} Users can find nearby clinics and doctors with precise locations.
-	\item \textbf{Clinic and Doctor Management:} Clinics can add doctors, and doctors can update their availability.
-	\item \textbf{Appointment Booking:} Users can call clinics and book appointments.
-	\item \textbf{Admin Panel:} The admin can approve or reject clinic registrations.
+	\item \textbf{Clinic and Doctor Management:} Clinics can add doctors, and update their availability.
+	\item \textbf{Admin Panel:} The admin can approve or reject clinic registrations and user reports and also can delete or suspent Clinic account.
 \end{itemize}
 
 \section*{\textbf{4 Non-Functional Requirements Specification}}
@@ -604,7 +603,7 @@ Users or patients use the application to find nearby clinics and doctors, check 
 \noindent \textbf{• Use Case Diagram: Patient or User Using the App}
 \vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/patientCas.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/patient@2x.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
@@ -635,7 +634,7 @@ Admins ensure the integrity of the platform by reviewing clinic registration req
 \noindent \textbf{• Use Case Diagram: Admin Using the App}
 \vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/adminCAS.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/adminCAs@2x.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
@@ -909,114 +908,10 @@ In our case, these diagrams allow us to:
 Below, we present a set of sequence diagrams that demonstrate different operations carried out by the admin user. Each diagram focuses on a specific use case and models the message flow involved.
 
 \newpage
-\noindent\underline{\textbf{• Admin Managing Specialties (Clinics):}}
-This diagram below illustrates how the admin adds or deletes medical specialties, including names and photos and addresses...  through the app interface, with all changes saved to the database.
-\vspace{1cm}
-\begin{sequencediagram}
-	% Participants
-	\newthread{A}{Admin}
-	\newinst[4]{S}{App Interface}
-	\newinst[4]{DB}{Database}
 
-	% Login Sequence
-	\begin{call}{A}{Login(username, password)}{S}{Authentication Result}
-		\begin{call}{S}{Validate Credentials}{DB}{User Data}
-		\end{call}
-	\end{call}
-
-	% Main Operation
-	\begin{call}{A}{Specialty Operation}{S}{}
-		\begin{sdblock}{alt}{Add or Delete?}
-			% Add Specialty Path
-			\begin{sdblock}{Add Specialty}{}
-				\begin{call}{S}{Create Specialty Entry}{DB}{Success}
-				\end{call}
-				\begin{call}{A}{Update Specialty Name}{S}{Confirmation}
-					\begin{call}{S}{Store Name}{DB}{Success}
-					\end{call}
-				\end{call}
-				\begin{call}{A}{Update Specialty Photo}{S}{Confirmation}
-					\begin{call}{S}{Store Photo}{DB}{Success}
-					\end{call}
-				\end{call}
-			\end{sdblock}
-
-			% Delete Specialty Path
-			\begin{sdblock}{Delete Specialty}{}
-				\begin{call}{A}{Select Specialty to Delete}{S}{Confirmation}
-					\begin{call}{S}{Delete Specialty Entry}{DB}{Success}
-					\end{call}
-				\end{call}
-			\end{sdblock}
-		\end{sdblock}
-
-		% Final Operations
-		\begin{call}{S}{Finalize Operation}{DB}{Success}
-		\end{call}
-	\end{call}
-
-	% Final Response
-	\mess{S}{Operation Complete}{A}
-\end{sequencediagram}
-
-
-\newpage
-\noindent\underline{\textbf{• Admin Managing Terms and Conditions of the App:}}
-This sequence diagram models how the admin adds or edits the Terms and Conditions of the application. Admin actions pass through the interface, updating the data in the database accordingly.\vspace{1.5cm}
-
-
-\begin{sequencediagram}
-	% Participants with increased spacing
-	\newinst[0]{A}{Admin}
-	\newinst[4]{S}{App Interface}
-	\newinst[4]{DB}{Database}
-
-	% Vertical space before operations
-	\postlevel
-	\vspace{0.5cm}
-	\prelevel
-
-	% Main Operation
-	\begin{call}{A}{Terms Operation}{S}{}
-		\begin{sdblock}{alt}{Edit or Add?}
-			% Edit Terms Path
-			\begin{sdblock}{Edit Terms}{}
-				\begin{call}{A}{Modification of Terms}{S}{Confirmation}
-					\begin{call}{S}{Update Terms}{DB}{Success}
-					\end{call}
-				\end{call}
-				\begin{call}{A}{Save Changes}{S}{Confirmation}
-					\begin{call}{S}{Commit Changes}{DB}{Success}
-					\end{call}
-				\end{call}
-			\end{sdblock}
-
-			% Add Terms Path
-			\begin{sdblock}{Add Terms}{}
-				\begin{call}{A}{Enter Terms Information}{S}{Confirmation}
-					\begin{call}{S}{Create New Terms}{DB}{Success}
-					\end{call}
-				\end{call}
-				\begin{call}{A}{Save}{S}{Confirmation}
-					\begin{call}{S}{Finalize Terms}{DB}{Success}
-					\end{call}
-				\end{call}
-			\end{sdblock}
-		\end{sdblock}
-
-	\end{call}
-
-	\mess{S}{Operation Complete}{A}
-\end{sequencediagram}
-
-\vspace{0.7cm}
-\noindent\underline{\textbf{• Searching for a Clinic or Doctor:}}\\
-This sequence diagram models the process in which the user searches for a clinic or doctor.
-
-
-\noindent
 \begin{minipage}{\textwidth}
-	The user logs into the app, performs a search, and the app displays results or error messages if the search does not yield results.
+	\noindent\underline{\textbf{• Searching for a Clinic or Doctor:}}
+	This diagram models the process in which the user searches for a clinic or doctor.
 
 	\vspace{0.9cm}
 
@@ -1306,7 +1201,7 @@ We began with the class diagram, which defined the main entities such as users, 
 \vspace{1em}
 
 \noindent
-Subsequently, we introduced a series of sequence diagrams to illustrate the dynamic behavior of the system. These diagrams covered key interactions including user registration, clinic requests, login, searching, and admin management operations. Particular focus was placed on administrator features—such as reviewing clinic applications, editing terms and conditions, and handling user reports—emphasizing the application's flexibility and administrative control.
+Subsequently, we introduced a series of sequence diagrams to illustrate the dynamic behavior of the system. These diagrams covered key interactions including user registration, clinic requests, login, searching, and admin management operations. Particular focus was placed on administrator features—such as reviewing clinic applications and handling user reports—emphasizing the application's flexibility and administrative control.
 
 \vspace{1em}
 
