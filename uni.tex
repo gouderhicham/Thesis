@@ -404,8 +404,8 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 \addcontentsline{toc}{subsubsection}{2.3.1 Doctor Tasks}
 \begin{itemize}
 	\item \textbf{Login:} Use the email and password provided by the clinic.
-	\item \textbf{Check Schedule:} See availability and working hours. 
-	\item \textbf{Check Personal Data:} View personal data and make sure patients have the correct information to get in contact or ask about them . 
+	\item \textbf{Check Schedule:} See availability and working hours.
+	\item \textbf{Check Personal Data:} View personal data and make sure patients have the correct information to get in contact or ask about them .
 \end{itemize}
 
 \vspace{0.5cm}
@@ -422,7 +422,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Review Clinic Registration Requests:} Check clinic information for validity.
 	\item \textbf{Approve or Reject Clinics:} Grant or deny access based on verification.
 	\item \textbf{Review User Reports:} Check reports made by users and decide to ignore it or take action.
-	\item \textbf{Suspend / Delete Clinic Account:} Admin can suspend or deleted clinic account if clinic is reported multiple times. 
+	\item \textbf{Suspend / Delete Clinic Account:} Admin can suspend or deleted clinic account if clinic is reported multiple times.
 	\item \textbf{Ensure System Integrity:} Monitor and manage the overall platform.
 \end{itemize}
 
@@ -437,22 +437,22 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\begin{tabular}{|p{4cm}|p{11.5cm}|}
 		\hline
 		\rowcolor[HTML]{C0C0C0}
-		\textbf{User Type}                     & \textbf{Stored Information}                                       \\
+		\textbf{User Type}             & \textbf{Stored Information}                                               \\
 		\hline
 
-		\hspace{0.5cm}\textbf{Patient / Guest} &
+		\hspace{1.2cm}\textbf{Patient} &
 		Full name, email, password, Google Login id, notification preferences.                                     \\
 		\hline
 
-		\hspace{1.4cm}\textbf{Clinic}          &
+		\hspace{1.4cm}\textbf{Clinic}  &
 		Clinic name, email, password, phone number, address, location coordinates, registration number and images. \\
 		\hline
 
-		\hspace{1.4cm}\textbf{Doctor}          &
+		\hspace{1.4cm}\textbf{Doctor}  &
 		Full name, email, phone number, associated clinic and specialty, availability schedule.                    \\
 		\hline
 
-		\hspace{1.4cm}\textbf{Admin}           &
+		\hspace{1.4cm}\textbf{Admin}   &
 		Email and password only, used for platform management access.                                              \\
 		\hline
 	\end{tabular}
@@ -465,7 +465,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 
 \newpage
 \subsection*{2.6 App Users Roles Table}
-\addcontentsline{toc}{subsection}{2.6 App Users Roles Table}	
+\addcontentsline{toc}{subsection}{2.6 App Users Roles Table}
 \noindent The application consists of multiple user roles, each with distinct responsibilities and functionalities. Understanding these roles is essential for ensuring smooth operation and proper management within the system. Below is a breakdown of the key roles and their main tasks:
 \vspace{0.2cm}
 % Longtable for splitting across pages
@@ -504,13 +504,13 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\hspace*{0.85cm}\textbf{Doctor}                                                                            & A medical professional registered under a clinic who cannot independently sign up.  &
 	• Log in with clinic-provided credentials.\newline
 	• View their schedule.\newline
-	• View their personal data.                                                                                                                                                                                            \\
+	• View their personal data.                                                                                                                                                                                                           \\
 	\hline
 
 	\hspace*{0.85cm}\textbf{Admin}                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
 	• Review and approve/reject clinic registrations.\newline
-	• Review Reports.\newline   
-	• Suspend/Delete Clinic Account.                                                                                                                                                   \\
+	• Review Reports.\newline
+	• Suspend/Delete Clinic Account.                                                                                                                                                                                                      \\
 	\hline
 \end{longtable}
 \begin{center}
@@ -603,7 +603,7 @@ Users or patients use the application to find nearby clinics and doctors, check 
 \noindent \textbf{• Use Case Diagram: Patient or User Using the App}
 \vspace{0.6cm}
 \begin{center}
-	\includegraphics[width=\textwidth]{images/patient@2x.pdf} % Replace "diagram.pdf" with your actual filename
+	\includegraphics[width=\textwidth]{images/patientCAS.pdf} % Replace "diagram.pdf" with your actual filename
 \end{center}
 \vspace{-0.35cm}
 \begin{center}
@@ -930,7 +930,7 @@ Below, we present a set of sequence diagrams that demonstrate different operatio
 					\mess{S}{Login Success}{U}
 				\end{sdblock}
 				\begin{sdblock}{option}{No}
-					\mess{S}{Login Failed or Search as Guest}{U}
+					\mess{S}{Login Faild Try Login Again}{U}
 				\end{sdblock}
 			\end{sdblock}
 		\end{call}
@@ -1377,7 +1377,7 @@ The diagrams below illustrate two key components:
 	\includegraphics[width=0.9\textwidth]{images/user_table.pdf}
 \end{figure}
 \begin{center}
-	
+
 	\textbf{\textit{Figure: Users Table Schema}}
 \end{center}
 
@@ -1424,7 +1424,7 @@ To finalize setup, we used the following command:
 \begin{lstlisting}[style=darkbash, language=bash, caption={Laravel command to run migrations and seeders}, belowcaptionskip=10pt]
 	php artisan migrate --seed
 \end{lstlisting}
-	
+
 
 \noindent This command runs all migrations and executes seeders, preparing the database for integration.
 
@@ -1456,7 +1456,7 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 \newpage
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
@@ -1478,7 +1478,7 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 \newpage
 \subsection*{3.2 Admin Interface}
 \addcontentsline{toc}{subsection}{3.2 Admin Interface}
@@ -1504,7 +1504,7 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 \newpage
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
@@ -1526,58 +1526,58 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 
-	\newpage
-	\subsection*{3.3 Clinic Interface}
-	\addcontentsline{toc}{subsection}{3.3 Clinic Interface}
-	\vspace{0.5cm}
-	
-	\begin{center}
-		\begin{tabular}{c@{\hspace{4cm}}c}
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 1
-			\end{minipage} &
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}				
-				\centering \small Caption 2
-			\end{minipage} \\
-			\noalign{\vspace{1.7cm}}
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}				
-				\centering \small Caption 3
-			\end{minipage} &
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 4
-			\end{minipage} \\
-		\end{tabular}
-		\end{center}
-	\newpage
-	\begin{center}
-		\begin{tabular}{c@{\hspace{4cm}}c}
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 1
-			\end{minipage} &
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 2
-			\end{minipage} \\
-			\noalign{\vspace{1.7cm}}
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 3
-			\end{minipage} &
-			\begin{minipage}{0.31\textwidth}
-				\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-				\centering \small Caption 4
-			\end{minipage} \\
-		\end{tabular}
-		\end{center}
-	
-		\newpage
+\newpage
+\subsection*{3.3 Clinic Interface}
+\addcontentsline{toc}{subsection}{3.3 Clinic Interface}
+\vspace{0.5cm}
+
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 1
+		\end{minipage}     &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 4
+		\end{minipage}     \\
+	\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 2
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 3
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
+			\centering \small Caption 4
+		\end{minipage} \\
+	\end{tabular}
+\end{center}
+
+\newpage
 \subsection*{3.4 Doctor Interface}
 \addcontentsline{toc}{subsection}{3.4 Doctor Interface}
 \vspace{0.5cm}
@@ -1602,7 +1602,7 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 \newpage
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
@@ -1624,22 +1624,22 @@ In this section, we will present the main interfaces of our application. The app
 			\centering \small Caption 4
 		\end{minipage} \\
 	\end{tabular}
-	\end{center}
+\end{center}
 
 
 \newpage
 \section*{4 Conclusion}
 \addcontentsline{toc}{section}{4 Conclusion}
 
-\noindent In this chapter, we provided a comprehensive overview of the technical implementation of our mobile application. 
+\noindent In this chapter, we provided a comprehensive overview of the technical implementation of our mobile application.
 
 \vspace{0.3cm}
 
-\noindent We detailed the hardware and software environments, explained the selection of technologies, and outlined the database architecture and authentication mechanisms. 
+\noindent We detailed the hardware and software environments, explained the selection of technologies, and outlined the database architecture and authentication mechanisms.
 
 \vspace{0.3cm}
 
-\noindent By presenting key code snippets, diagrams, and database schemas, we offered a clear view of the internal workings that ensure the app’s functionality, security, and user experience. 
+\noindent By presenting key code snippets, diagrams, and database schemas, we offered a clear view of the internal workings that ensure the app’s functionality, security, and user experience.
 
 \vspace{0.3cm}
 
@@ -1674,26 +1674,26 @@ In this section, we will present the main interfaces of our application. The app
 \addcontentsline{toc}{chapter}{Bibliographie}
 
 \begin{thebibliography}{18}
-    \bibitem{flutter} Flutter Documentation, \textit{\url{https://flutter.dev/docs}}
-    \bibitem{laravel} Laravel Documentation, \textit{\url{https://laravel.com/docs}}
-    \bibitem{mysql} MySQL Documentation, \textit{\url{https://dev.mysql.com/doc/}}
-    \bibitem{firebase} Firebase Documentation, \textit{\url{https://firebase.google.com/docs}}
-    \bibitem{github} GitHub Guides, \textit{\url{https://guides.github.com}}
-    \bibitem{figma} Figma Help Center, \textit{\url{https://help.figma.com}}
-    \bibitem{googlemap} Google Maps Platform Documentation, \textit{\url{https://developers.google.com/maps/documentation}}
-    \bibitem{php} PHP Manual, \textit{\url{https://www.php.net/manual/en/}}
-    \bibitem{vscode} Visual Studio Code Docs, \textit{\url{https://code.visualstudio.com/docs}}
-    \bibitem{androidstudio} Android Studio User Guide, \textit{\url{https://developer.android.com/studio}}
-    \bibitem{postman} Postman Learning Center, \textit{\url{https://learning.postman.com}}
-    \bibitem{dbdiagram} dbdiagram.io Documentation, \textit{\url{https://dbdiagram.io/docs}}
-    \bibitem{sanctum} Laravel Sanctum Documentation, \textit{\url{https://laravel.com/docs/sanctum}}
-    \bibitem{git} Git Documentation, \textit{\url{https://git-scm.com/doc}}
-    \bibitem{hostinger} Hostinger Tutorials, \textit{\url{https://www.hostinger.com/tutorials}}
-    \bibitem{fluttermap} Flutter Map Package, \textit{\url{https://pub.dev/packages/flutter_map}}
-    \bibitem{mvcflutter} Faiz Rahmat, “Understanding MVC Architecture in Flutter: A Comprehensive Guide with Examples,” Medium, \textit{\url{https://medium.com/@Faiz_Rhm/understanding-mvc-architecture-in-flutter-a-comprehensive-guide-with-examples-5d1a372c7eaf}}
-    \bibitem{mvclaravel} Laravel and MVC Framework, GeeksforGeeks, \textit{\url{https://www.geeksforgeeks.org/introduction-to-laravel-and-mvc-framework/}}
+	\bibitem{flutter} Flutter Documentation, \textit{\url{https://flutter.dev/docs}}
+	\bibitem{laravel} Laravel Documentation, \textit{\url{https://laravel.com/docs}}
+	\bibitem{mysql} MySQL Documentation, \textit{\url{https://dev.mysql.com/doc/}}
+	\bibitem{firebase} Firebase Documentation, \textit{\url{https://firebase.google.com/docs}}
+	\bibitem{github} GitHub Guides, \textit{\url{https://guides.github.com}}
+	\bibitem{figma} Figma Help Center, \textit{\url{https://help.figma.com}}
+	\bibitem{googlemap} Google Maps Platform Documentation, \textit{\url{https://developers.google.com/maps/documentation}}
+	\bibitem{php} PHP Manual, \textit{\url{https://www.php.net/manual/en/}}
+	\bibitem{vscode} Visual Studio Code Docs, \textit{\url{https://code.visualstudio.com/docs}}
+	\bibitem{androidstudio} Android Studio User Guide, \textit{\url{https://developer.android.com/studio}}
+	\bibitem{postman} Postman Learning Center, \textit{\url{https://learning.postman.com}}
+	\bibitem{dbdiagram} dbdiagram.io Documentation, \textit{\url{https://dbdiagram.io/docs}}
+	\bibitem{sanctum} Laravel Sanctum Documentation, \textit{\url{https://laravel.com/docs/sanctum}}
+	\bibitem{git} Git Documentation, \textit{\url{https://git-scm.com/doc}}
+	\bibitem{hostinger} Hostinger Tutorials, \textit{\url{https://www.hostinger.com/tutorials}}
+	\bibitem{fluttermap} Flutter Map Package, \textit{\url{https://pub.dev/packages/flutter_map}}
+	\bibitem{mvcflutter} Faiz Rahmat, “Understanding MVC Architecture in Flutter: A Comprehensive Guide with Examples,” Medium, \textit{\url{https://medium.com/@Faiz_Rhm/understanding-mvc-architecture-in-flutter-a-comprehensive-guide-with-examples-5d1a372c7eaf}}
+	\bibitem{mvclaravel} Laravel and MVC Framework, GeeksforGeeks, \textit{\url{https://www.geeksforgeeks.org/introduction-to-laravel-and-mvc-framework/}}
 \end{thebibliography}
 
-	
+
 
 \end{document}
