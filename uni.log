@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  5 MAY 2025 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.14)  7 MAY 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -851,8 +851,8 @@ l.525 ...3 Functional Requirements Specification}}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.557 
-       [17]
+l.548 \newpage
+               [17]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
@@ -907,11 +907,11 @@ l.628 \newpage
                [21 <./images/clinicCAS.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/adminCAs@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/adminCAs@2x.pdf, id=667, 715.67375pt x 609.77812pt>
+<images/adminCAs@2x.pdf, id=667, 715.67375pt x 504.55pt>
 File: images/adminCAs@2x.pdf Graphic file (type pdf)
 <use images/adminCAs@2x.pdf>
 Package pdftex.def Info: images/adminCAs@2x.pdf  used on input line 637.
-(pdftex.def)             Requested size: 452.9679pt x 385.9487pt.
+(pdftex.def)             Requested size: 452.9679pt x 319.34634pt.
 
 
 
@@ -940,7 +940,7 @@ l.693 \newpage
 ]
 
 pdfTeX warning: pdflatex (file ./images/AppCycle.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/AppCycle.pdf, id=818, 550.055pt x 577.15625pt>
+<images/AppCycle.pdf, id=820, 550.055pt x 577.15625pt>
 File: images/AppCycle.pdf Graphic file (type pdf)
 <use images/AppCycle.pdf>
 Package pdftex.def Info: images/AppCycle.pdf  used on input line 700.
@@ -953,7 +953,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.720 	\item \textbf
                     {Behavioral diagrams} - illustrate the dynamic behavior ... [25 <./images/AppCycle.pdf>]
-<images/diagramType.pdf, id=825, 663.22781pt x 313.9228pt>
+<images/diagramType.pdf, id=827, 663.22781pt x 313.9228pt>
 File: images/diagramType.pdf Graphic file (type pdf)
 <use images/diagramType.pdf>
 Package pdftex.def Info: images/diagramType.pdf  used on input line 726.
@@ -987,7 +987,7 @@ l.836 		      \item \texttt
                            {user\_id}, \texttt{clinic\_id}, \texttt{specialt... [28]
 
 pdfTeX warning: pdflatex (file ./images/dbclass.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/dbclass.pdf, id=837, 879.8675pt x 1111.19217pt>
+<images/dbclass.pdf, id=839, 879.8675pt x 1111.19217pt>
 File: images/dbclass.pdf Graphic file (type pdf)
 <use images/dbclass.pdf>
 Package pdftex.def Info: images/dbclass.pdf  used on input line 868.
@@ -1102,7 +1102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1269--1270
 
 
 pdfTeX warning: pdflatex (file ./images/FlutterDiagram@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/FlutterDiagram@2x.pdf, id=1196, 664.4825pt x 321.46521pt>
+<images/FlutterDiagram@2x.pdf, id=1198, 664.4825pt x 321.46521pt>
 File: images/FlutterDiagram@2x.pdf Graphic file (type pdf)
 <use images/FlutterDiagram@2x.pdf>
 Package pdftex.def Info: images/FlutterDiagram@2x.pdf  used on input line 1278.
@@ -1141,7 +1141,7 @@ l.1349 	      \par \texttt{4.1}
                                 – Avoid 3rd parties Api from accessing our... [41]
 
 pdfTeX warning: pdflatex (file ./images/sanctum@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/sanctum@2x.pdf, id=1384, 676.5275pt x 453.62228pt>
+<images/sanctum@2x.pdf, id=1386, 676.5275pt x 453.62228pt>
 File: images/sanctum@2x.pdf Graphic file (type pdf)
 <use images/sanctum@2x.pdf>
 Package pdftex.def Info: images/sanctum@2x.pdf  used on input line 1355.
@@ -1149,7 +1149,7 @@ Package pdftex.def Info: images/sanctum@2x.pdf  used on input line 1355.
 
 
 pdfTeX warning: pdflatex (file ./images/MVC@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/MVC@2x.pdf, id=1385, 791.95876pt x 345.79187pt>
+<images/MVC@2x.pdf, id=1387, 791.95876pt x 345.79187pt>
 File: images/MVC@2x.pdf Graphic file (type pdf)
 <use images/MVC@2x.pdf>
 Package pdftex.def Info: images/MVC@2x.pdf  used on input line 1364.
@@ -1164,7 +1164,7 @@ l.1372 \newpage
                 [42 <./images/sanctum@2x.pdf> <./images/MVC@2x.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/user_table.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/user_table.pdf, id=1695, 1170.73616pt x 467.7475pt>
+<images/user_table.pdf, id=1697, 1170.73616pt x 467.7475pt>
 File: images/user_table.pdf Graphic file (type pdf)
 <use images/user_table.pdf>
 Package pdftex.def Info: images/user_table.pdf  used on input line 1377.
@@ -1172,7 +1172,7 @@ Package pdftex.def Info: images/user_table.pdf  used on input line 1377.
 
 
 pdfTeX warning: pdflatex (file ./images/clinic_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/clinic_table@2x.pdf, id=1696, 1407.62117pt x 467.7475pt>
+<images/clinic_table@2x.pdf, id=1698, 1407.62117pt x 467.7475pt>
 File: images/clinic_table@2x.pdf Graphic file (type pdf)
 <use images/clinic_table@2x.pdf>
 Package pdftex.def Info: images/clinic_table@2x.pdf  used on input line 1387.
@@ -1185,7 +1185,7 @@ Overfull \hbox (33.60518pt too wide) in paragraph at lines 1386--1388
 
 
 pdfTeX warning: pdflatex (file ./images/doctor_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/doctor_table@2x.pdf, id=1697, 1473.505pt x 305.14pt>
+<images/doctor_table@2x.pdf, id=1699, 1473.505pt x 305.14pt>
 File: images/doctor_table@2x.pdf Graphic file (type pdf)
 <use images/doctor_table@2x.pdf>
 Package pdftex.def Info: images/doctor_table@2x.pdf  used on input line 1397.
@@ -1198,7 +1198,7 @@ Overfull \hbox (27.9147pt too wide) in paragraph at lines 1396--1398
 
 
 pdfTeX warning: pdflatex (file ./images/sanctum_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/sanctum_table@2x.pdf, id=1698, 1090.0725pt x 302.12875pt>
+<images/sanctum_table@2x.pdf, id=1700, 1090.0725pt x 302.12875pt>
 File: images/sanctum_table@2x.pdf Graphic file (type pdf)
 <use images/sanctum_table@2x.pdf>
 Package pdftex.def Info: images/sanctum_table@2x.pdf  used on input line 1405.
@@ -1213,7 +1213,7 @@ l.1407 \begin{center}
                       [43 <./images/user_table.pdf> <./images/clinic_table@2x.pdf> <./images/doctor_table@2x.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/schedule_table@2x.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/schedule_table@2x.pdf, id=2523, 1679.27374pt x 142.5325pt>
+<images/schedule_table@2x.pdf, id=2525, 1679.27374pt x 142.5325pt>
 File: images/schedule_table@2x.pdf Graphic file (type pdf)
 <use images/schedule_table@2x.pdf>
 Package pdftex.def Info: images/schedule_table@2x.pdf  used on input line 1414.
@@ -1232,7 +1232,7 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 
 
 pdfTeX warning: pdflatex (file ./images/userApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/userApp.pdf, id=2524, 324.21124pt x 616.3025pt>
+<images/userApp.pdf, id=2526, 324.21124pt x 616.3025pt>
 File: images/userApp.pdf Graphic file (type pdf)
 <use images/userApp.pdf>
 Package pdftex.def Info: images/userApp.pdf  used on input line 1442.
@@ -1290,7 +1290,7 @@ l.1482 \newpage
                 [46]
 
 pdfTeX warning: pdflatex (file ./images/adminApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/adminApp.pdf, id=2917, 324.21124pt x 616.3025pt>
+<images/adminApp.pdf, id=2919, 324.21124pt x 616.3025pt>
 File: images/adminApp.pdf Graphic file (type pdf)
 <use images/adminApp.pdf>
 Package pdftex.def Info: images/adminApp.pdf  used on input line 1490.
@@ -1341,7 +1341,7 @@ l.1531 \newpage
                 [48]
 
 pdfTeX warning: pdflatex (file ./images/clinicApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/clinicApp.pdf, id=2962, 324.21124pt x 616.3025pt>
+<images/clinicApp.pdf, id=2964, 324.21124pt x 616.3025pt>
 File: images/clinicApp.pdf Graphic file (type pdf)
 <use images/clinicApp.pdf>
 Package pdftex.def Info: images/clinicApp.pdf  used on input line 1539.
@@ -1392,7 +1392,7 @@ l.1580 \newpage
                 [50]
 
 pdfTeX warning: pdflatex (file ./images/doctorApp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/doctorApp.pdf, id=3006, 324.21124pt x 616.3025pt>
+<images/doctorApp.pdf, id=3008, 324.21124pt x 616.3025pt>
 File: images/doctorApp.pdf Graphic file (type pdf)
 <use images/doctorApp.pdf>
 Package pdftex.def Info: images/doctorApp.pdf  used on input line 1588.
@@ -1491,15 +1491,15 @@ Package rerunfilecheck Info: File `uni.out' has not changed.
 Here is how much of TeX's memory you used:
  25063 strings out of 473522
  465796 string characters out of 5731444
- 1072599 words of memory out of 5000000
+ 1072596 words of memory out of 5000000
  47832 multiletter control sequences out of 15000+600000
  580844 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,99p,621b,1253s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\LAPTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/LAPTA/AppData/Roaming/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><E:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on uni.pdf (56 pages, 2340102 bytes).
+Output written on uni.pdf (56 pages, 2340748 bytes).
 PDF statistics:
- 3146 PDF objects out of 3580 (max. 8388607)
+ 3148 PDF objects out of 3580 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
  753 words of extra memory for PDF output out of 10000 (max. 10000000)
 
