@@ -130,7 +130,7 @@
 
 \noindent To address this issue, we propose the development of a mobile application designed to provide the geographic locations of healthcare institutions in \textbf{El Oued}, with the potential for future expansion to other cities. \vspace*{0.5cm}
 
-\noindent The app will offer detailed information about these facilities and integrate mapping services to assist users in navigation. Additionally, it may include a direct communication feature for inquiries and appointment scheduling. \vspace*{0.5cm}
+\noindent The app will offer detailed information about these facilities and integrate mapping services to assist users in navigation. \vspace*{0.5cm}
 
 \noindent By combining real-time location-based services with a user-friendly interface, the application aims to simplify the process of finding healthcare facilities, improve patient navigation, and enhance overall access to medical services. \vspace*{0.5cm}
 
@@ -199,7 +199,7 @@ The primary goal of this application is to \textbf{simplify the process of findi
 	\item \textbf{Enhance Patient Decision-Making:} Offer users hospital \textbf{ratings, available doctors, specialization areas, and real-time service availability}.
 	\item \textbf{Reduce Search Time:} Optimize search and filtering functionalities to help users find the best hospital quickly.
 	\item \textbf{Integrate Geolocation Services:} Enable real-time location tracking to suggest \textbf{the closest and most relevant medical facilities}.
-	\item \textbf{Facilitate Patient-Hospital Communication:} Provide direct contact options such as \textbf{phone calls, appointment booking, and navigation assistance}.
+	\item \textbf{Facilitate Patient-Hospital Communication:} Provide direct contact options such as \textbf{phone calls and navigation assistance}.
 \end{itemize}
 
 \noindent By implementing these objectives, the \textbf{Hospital Finder Mobile Application} seeks to \textbf{enhance healthcare accessibility} and \textbf{reduce the time required to locate medical facilities}.
@@ -359,7 +359,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{User} – Searches for hospitals and doctors.
 	\item \textbf{Clinic} – Registers doctors and manages clinic information.
 	\item \textbf{Doctor} – View personal data and working hours .
-	\item \textbf{Admin} – Approves new clinics and ensures system integrity.
+	\item \textbf{Admin} – Approves new clinics, Check reports, add specialization and ensures system integrity.
 \end{itemize}
 
 \subsection*{\textbf{2.1 User Definition}}
@@ -373,7 +373,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Find Nearby Clinics:} View their locations on the map.
 	\item \textbf{Find Available Doctors:} Check their specialties and schedules.
 	\item \textbf{View Clinic Schedules:} Check the availability of clinics and doctors.
-	\item \textbf{Contact Clinics:} Get phone numbers for appointments and inquiries.
+	\item \textbf{Contact Clinics:} Get phone numbers and Email for appointments and inquiries.
 \end{itemize}
 
 \vspace{0.5cm}
@@ -423,6 +423,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\item \textbf{Approve or Reject Clinics:} Grant or deny access based on verification.
 	\item \textbf{Review User Reports:} Check reports made by users and decide to ignore it or take action.
 	\item \textbf{Suspend / Delete Clinic Account:} Admin can suspend or deleted clinic account if clinic is reported multiple times.
+	\item \textbf{Add Specializations:} Admin can add specialization to be used later by clinics for more category specification.
 	\item \textbf{Ensure System Integrity:} Monitor and manage the overall platform.
 \end{itemize}
 
@@ -489,7 +490,7 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	• Search for nearby clinics and doctors.\newline
 	• View doctor specialties and clinic details.\newline
 	• Check clinic and doctor schedules.\newline
-	• Contact clinics for appointments.                                                                                                                                                                                                   \\
+	• Contact clinics throu phone call.                                                                                                                                                                                                   \\
 	\hline
 
 	\hspace*{0.9cm}\textbf{Clinic}                                                                             &
@@ -510,7 +511,8 @@ The existing hospital location solutions fail to provide \textbf{detailed, preci
 	\hspace*{0.85cm}\textbf{Admin}                                                                             & The system manager responsible for approving clinics and ensuring smooth operation. &
 	• Review and approve/reject clinic registrations.\newline
 	• Review Reports.\newline
-	• Suspend/Delete Clinic Account.                                                                                                                                                                                                      \\
+	• Suspend/Delete Clinic Account.         
+	• Add Medical Specialization                                                                                                                                                             \\
 	\hline
 \end{longtable}
 \begin{center}
@@ -531,7 +533,7 @@ This document has provided an overview of the system, focusing on the roles and 
 	\item \textbf{User Authentication:} Clinics, doctors, and admins must log in securely.
 	\item \textbf{Geolocation Services:} Users can find nearby clinics and doctors with precise locations.
 	\item \textbf{Clinic and Doctor Management:} Clinics can add doctors, and update their availability.
-	\item \textbf{Admin Panel:} The admin can approve or reject clinic registrations and user reports and also can delete or suspent Clinic account.
+	\item \textbf{Admin Panel:} The admin can approve or reject clinic registrations and user reports , add specialization and also can suspent or delete Clinic account.
 \end{itemize}
 
 \section*{\textbf{4 Non-Functional Requirements Specification}}
@@ -597,7 +599,7 @@ The following diagram illustrates how a doctor interacts with the application. D
 \newpage
 \subsubsection*{\textbf{5.2.2 User Interactions (Patients)}}
 \addcontentsline{toc}{subsubsection}{5.2.2 User Interactions (Patients)}
-Users or patients use the application to find nearby clinics and doctors, check their schedules, and obtain contact details for appointments.
+Users or patients use the application to find nearby clinics and doctors, check their schedules, and obtain contact details for inquiries or appointments booking.
 
 \vspace{0.5cm}
 \noindent \textbf{• Use Case Diagram: Patient or User Using the App}
@@ -1183,6 +1185,47 @@ This sequence diagram models the process when a user submits a report. After sub
 	\prelevel
 	\mess{DB}{Status Updated}{A}
 \end{sequencediagram}
+
+\newpage
+\noindent\underline{\textbf{• Admin Managing Specializations:}}
+This sequence diagram models the process of admin adding or removing specializations.
+
+\vspace*{1cm}
+
+\begin{sequencediagram}
+    % Participants
+    \newinst[0]{Ad}{Admin}
+    \newinst[4]{A}{App Interface}
+    \newinst[4]{DB}{Database}
+
+    % Admin Initiates Action
+    \begin{sdblock}{Add/Delete Specialization}{}
+
+        \begin{call}{Ad}{Add/Delete Specialization}{A}{}
+        \end{call}
+
+        \postlevel
+        \vspace{4cm}
+        \prelevel
+
+        \begin{call}{A}{Update Specializations}{DB}{Confirmation}
+        \end{call}
+
+        \postlevel
+        \vspace{4cm}
+        \prelevel
+
+        \mess{A}{Update Success}{Ad}
+        
+    \end{sdblock}
+
+    % Database sends update notification to interface
+    \postlevel
+    \vspace{0.6cm}
+    \prelevel
+    \mess{DB}{Specializations Updated}{A}
+\end{sequencediagram}
+
 
 
 \newpage
