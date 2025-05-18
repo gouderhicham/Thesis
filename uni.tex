@@ -233,7 +233,7 @@ Our methodology consists of the following key steps:
 	      \begin{itemize}
 		      \item Implement a \textbf{cross-platform mobile application}.
 		      \item Utilize \textbf{Flutter for the front-end} to ensure compatibility with both Android and iOS.
-		      \item Store and manage data using \textbf{Firebase and a structured database modify later}.
+		      \item Store and manage data using \textbf{Firebase and MySQL}.
 	      \end{itemize}
 
 	\item \textbf{Testing and Validation}
@@ -247,9 +247,9 @@ Our methodology consists of the following key steps:
 		      \item Deploy the application for public use, ensuring \textbf{a smooth user experience}.
 		      \item Plan for \textbf{future updates}, including:
 		            \begin{itemize}
-			            \item \textbf{AI-based hospital recommendations modify later}
-			            \item \textbf{Telemedicine features}
-			            \item \textbf{Integration with electronic health records (EHR)}
+			            \item \textbf{AI-based Medicine Recommendations }
+			            \item \textbf{Ability To Book Appointments From The App }
+			            \item \textbf{List of Generic Medications And their Prices }
 		            \end{itemize}
 	      \end{itemize}
 \end{enumerate}
@@ -1482,21 +1482,44 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/user/1.jpg}}
+			\centering \small User Login
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/user/2.jpg}}
+			\centering \small Home Page 1
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/user/3.jpg}}
+			\centering \small Home Page 2
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/user/11.jpg}}
+			\centering \small Clinics Map Page
+		\end{minipage} \\
+	\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/user/12.jpg}}
+			\centering \small Clinic Search
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/user/13.jpg}}
+			\centering \small Clinic GPS Tracking
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/user/5.jpg}}
+			\centering \small Clinc Page 1
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/user/6.jpg}}
+			\centering \small Clinic Page 2
 		\end{minipage} \\
 	\end{tabular}
 \end{center}
@@ -1504,23 +1527,30 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/user/7.jpg}}
+			\centering \small Clinic Doctors List
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/user/4.jpg}}
+			\centering \small Doctor Page 1
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/user/8.jpg}}
+			\centering \small Doctor Page 2
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/userApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/user/10.jpg}}
+			\centering \small Clinics Browser
 		\end{minipage} \\
 	\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/user/9.jpg}}
+			\centering \small Side Menu
+		\end{minipage} 
 \end{center}
 \newpage
 \subsection*{3.2 Admin Interface}
@@ -1530,21 +1560,21 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/admin/1.jpg}}
+			\centering \small Home 
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/admin/9.jpg}}
+			\centering \small Unregistred Clinics
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/admin/10.jpg}}
+			\centering \small Unregistred Clinic Details
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/admin/3.jpg}}
+			\centering \small Registered Clinics
 		\end{minipage} \\
 	\end{tabular}
 \end{center}
@@ -1552,22 +1582,35 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/admin/7.jpg}}
+			\centering \small Specialties Page
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/admin/8.jpg}}
+			\centering \small Add Specialty
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/admin/6.jpg}}
+			\centering \small Reported Clinics
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/adminApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/admin/4.jpg}}
+			\centering \small Reported Clinic Details 1
 		\end{minipage} \\
+	\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/admin/5.jpg}}
+			\centering \small Reported Clinic Details 2
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/admin/2.jpg}}
+			\centering \small Doctors List
+		\end{minipage} 
 	\end{tabular}
 \end{center}
 
@@ -1579,21 +1622,21 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/2.jpg}}
+			\centering \small Clinic Login
 		\end{minipage}     &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/3.jpg}}
+			\centering \small Clinic Registration 1
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/4.jpg}}
+			\centering \small Clinic Registration 2
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/1.jpg}}
+			\centering \small Clinic Sign In Fail
 		\end{minipage}     \\
 	\end{tabular}
 \end{center}
@@ -1601,22 +1644,40 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/5.jpg}}
+			\centering \small Clinic Doctors List
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/6.jpg}}
+			\centering \small Add Doctor
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 3
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/8.jpg}}
+			\centering \small Clinic Page 1
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/clinicApp.pdf}
-			\centering \small Caption 4
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/9.jpg}}
+			\centering \small Clinic Page 2
 		\end{minipage} \\
+	\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{c@{\hspace{4cm}}c}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/11.jpg}}
+			\centering \small Edit Schedule
+		\end{minipage} &
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/10.jpg}}
+			\centering \small Language Selection
+		\end{minipage} \\
+		\noalign{\vspace{1.7cm}}
+		\begin{minipage}{0.31\textwidth}
+            \fbox{\includegraphics[width=\linewidth]{images/clinic/7.jpg}}
+			\centering \small Side Menu
+		\end{minipage}
 	\end{tabular}
 \end{center}
 
@@ -1628,47 +1689,20 @@ In this section, we will present the main interfaces of our application. The app
 \begin{center}
 	\begin{tabular}{c@{\hspace{4cm}}c}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 1
+            \fbox{\includegraphics[width=\linewidth]{images/doctor/3.jpg}}
+			\centering \small Doctor Login 
 		\end{minipage} &
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 2
+            \fbox{\includegraphics[width=\linewidth]{images/doctor/1.jpg}}
+			\centering \small Doctor Page 1
 		\end{minipage} \\
 		\noalign{\vspace{1.7cm}}
 		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 3
-		\end{minipage} &
-		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 4
-		\end{minipage} \\
+            \fbox{\includegraphics[width=\linewidth]{images/doctor/2.jpg}}
+			\centering \small Doctor Page 2
+		\end{minipage}
 	\end{tabular}
 \end{center}
-\newpage
-\begin{center}
-	\begin{tabular}{c@{\hspace{4cm}}c}
-		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 1
-		\end{minipage} &
-		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 2
-		\end{minipage} \\
-		\noalign{\vspace{1.7cm}}
-		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 3
-		\end{minipage} &
-		\begin{minipage}{0.31\textwidth}
-			\includegraphics[width=\linewidth]{images/doctorApp.pdf}
-			\centering \small Caption 4
-		\end{minipage} \\
-	\end{tabular}
-\end{center}
-
 
 \newpage
 \section*{4 Conclusion}
